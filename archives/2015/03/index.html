@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   
+
     <title>((title))</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="MF">
@@ -14,7 +16,7 @@
     
     
     
-    <link rel="alternate" href="/atom.xml## RSS address." title="((title))" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="((title))" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
@@ -25,27 +27,35 @@
     
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
-    
+
+<!-- (p)analytics.ejs -->
 
 
-<script type="text/javascript">
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?null";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
-    <link href='http://fonts.useso.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+<!-- (p)analytics EOF -->
+
+<!-- (p)webfonts.ejs -->
+
+<!-- 
+//
+link href='http://fonts.useso.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'
+link href='http://fonts.useso.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'
+link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type='text/css'
+//
+ -->
+
+<!-- (p)webfonts EOF -->
+
+
 </head>
+
+<!-- (p)head.ejs EOF -->
 
     <body>
       <header>
-        <div>
+        <!-- (p)header.ejs -->
+
+<div>
 		
 			<div id="imglogo">
 				<a href="/"><img src="/img/logo.svg" alt="((title))" title="((title))"/></a>
@@ -76,9 +86,14 @@ var _hmt = _hmt || [];
 			</nav>
 </div>
 
+<!-- (p)header EOF -->
+
       </header>
       <div id="container">
-        
+        <!-- archive.ejs -->
+<!-- (p)archive.ejs -->
+
+
 
 <div class="archive-title" >
   <h2 class="archive-icon">2015/3</h2>
@@ -91,7 +106,9 @@ var _hmt = _hmt || [];
 <div id="main" class="archive-part clearfix">
   <div id="archive-page">
 
-  <section class="post" itemscope itemprop="blogPost">
+  <!-- (p)article.ejs -->
+
+<section class="post" itemscope itemprop="blogPost">
   
     <a href="/2015/03/25/" title="日本語での動作チェック" itemprop="url">
   
@@ -101,7 +118,12 @@ var _hmt = _hmt || [];
   </a>
 </section>
 
-  <section class="post" itemscope itemprop="blogPost">
+<!-- (p)article EOF -->
+
+
+  <!-- (p)article.ejs -->
+
+<section class="post" itemscope itemprop="blogPost">
   
     <a href="/2015/03/23/" title="Hello World" itemprop="url">
   
@@ -111,12 +133,21 @@ var _hmt = _hmt || [];
   </a>
 </section>
 
+<!-- (p)article EOF -->
+
+
 
   </div>
 </div>
 
+<!-- (p)archive EOF -->
+
+<!-- archive EOF -->
+
       </div>
-      <footer><div id="footer" >
+      <footer><!-- (p)footer.ejs -->
+
+<div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -137,8 +168,12 @@ var _hmt = _hmt || [];
 		
 		</p>
 </div>
+
+<!-- (p)footer EOF -->
 </footer>
-      <script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+      <!-- (p)after_footer.ejs -->
+
+<script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
@@ -189,6 +224,8 @@ $(document).ready(function(){
 
 
 
+<!-- (p)search.ejs -->
+
 
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
@@ -207,5 +244,14 @@ google.setOnLoadCallback(function(){
 },true);
 </script>
 
+
+<!-- (p)search EOF -->
+
+
+<!-- (p)after_footer EOF -->
+
     </body>
    </html>
+
+
+<!-- layout.ejs EOF -->
