@@ -103,8 +103,7 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
     <h1 itemprop="name">日本語での動作チェック</h1>
     
      
-           <p itemprop="description" >さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。
-中国というと気になる「情報リーク」も、GitHubベースで動く物なので問題なさそうである。所詮ネット</p>
+           <p itemprop="description" >さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多 ... </p>
         
     
     <time datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
@@ -123,7 +122,7 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
     <h1 itemprop="name">Hello World</h1>
     
      
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
+           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info ... </p>
         
     
     <time datetime="2015-03-23T13:32:10.987Z" itemprop="datePublished">2015-03-23</time>
@@ -227,31 +226,6 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  
-  var ua = navigator.userAgent;
-  if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
-    //return 'sp';
-  }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
-    //return 'tab';
-  }else{
-    //return 'other';
-	scrLength = 200;
-	scrSpeed = 500;
-	scrEasing = 'easeOutCirc';
-	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
-	$(document).on(mousewheelevent,function(e){
-		e.preventDefault();
-		var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
-		if (delta < 0){
-			scrSet =  $(document).scrollTop()+scrLength;
-		} else {
-			scrSet =  $(document).scrollTop()-scrLength;
-		}
-		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
-		return false;
-	});
-  }
-  
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
   });
@@ -292,6 +266,31 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,208-$(this).scrollTop()));
   });
+  
+  var ua = navigator.userAgent;
+  if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+    //return 'sp';
+  }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+    //return 'tab';
+  }else{
+    //return 'other';
+	scrLength = 150;
+	scrSpeed = 500;
+	scrEasing = 'easeOutCirc';
+	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+	$(document).on(mousewheelevent,function(e){
+		e.preventDefault();
+		var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
+		if (delta < 0){
+			scrSet =  $(document).scrollTop()+scrLength;
+		} else {
+			scrSet =  $(document).scrollTop()-scrLength;
+		}
+		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
+		return false;
+	});
+  }
+  
 });
 </script>
 
