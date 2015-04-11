@@ -1,5 +1,5 @@
 
- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -92,9 +92,13 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
     </header>
     <div id="container">
       <!-- post.ejs -->
+<!-- (pp)article.ejs -->
+
 <div id="main" class="post" itemscope itemprop="blogPost">
 	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
+		<!-- (pp)header.ejs -->
+
+<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2015/03/25/" title="日本語での動作チェック" itemprop="url">日本語での動作チェック</a>
@@ -109,8 +113,16 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
     
   </p>
 </header>
+
+<!-- (pp)header EOF -->
+
 	<div class="article-content">
-		
+		<!-- (pp)gallery.ejs -->
+
+
+
+<!-- (pp)gallery EOF -->
+
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
@@ -132,10 +144,15 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <p><a href="http://pagent.github.io/2014/12/05/hexo-vs-octopress/" target="_blank">HexoとOctopressの比較 - Pagent</a></p>
 
 	</div>
-		<footer class="article-footer clearfix">
+		<!-- (pp)footer.ejs -->
+
+<footer class="article-footer clearfix">
+<!-- (pp)catetags.ejs -->
 
 
 
+
+<!-- (pp)catetags EOF -->
 
 <div class="article-share" id="share">
 
@@ -144,8 +161,13 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 
 </div>
 </footer>
+
+<!-- (pp)footer EOF -->
+
 	</article>
-	
+	<!-- (pp)pagination.ejs -->
+
+
 <nav class="article-nav clearfix">
  
 
@@ -159,8 +181,19 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 
 </nav>
 
-	
-</div>  
+
+<!-- (pp)pagination EOF -->
+
+	<!-- (pp)comment.ejs -->
+
+
+
+<!-- (pp)comment EOF -->
+
+</div>
+
+<!-- (pp)article EOF -->
+
 <!-- post EOF -->
 
       <!-- (p)sidebar.ejs -->
@@ -257,8 +290,34 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
     <!-- (p)after_footer.ejs -->
 
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
+<script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){ 
+$(document).ready(function(){
+  
+  var ua = navigator.userAgent;
+  if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+    //return 'sp';
+  }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+    //return 'tab';
+  }else{
+    //return 'other';
+	scrLength = 200;
+	scrSpeed = 500;
+	scrEasing = 'easeOutCirc';
+	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+	$(document).on(mousewheelevent,function(e){
+		e.preventDefault();
+		var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
+		if (delta < 0){
+			scrSet =  $(document).scrollTop()+scrLength;
+		} else {
+			scrSet =  $(document).scrollTop()-scrLength;
+		}
+		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
+		return false;
+	});
+  }
+  
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
   });
