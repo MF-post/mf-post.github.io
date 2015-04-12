@@ -25,7 +25,8 @@
     <link rel="apple-touch-icon" href="/img/catman.jpg">
     <link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
     
-    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://mf-post.github.io/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
 <!-- (p)analytics.ejs -->
@@ -47,6 +48,76 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- (p)webfonts EOF -->
 
 
+
+<!-- custom over-ride CSS -->
+<style>
+.footer-top {
+	position:fixed;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	width:100%;
+	height:30px;
+	background:#333;
+	border-bottom:1px solid #555;
+	}
+
+.footer-top.static {
+	position:static;
+	}
+
+.footer-top > p {
+	float:left;
+	padding-left:15px;
+	line-height:30px;
+	font-size:18px;
+	}
+
+.footer-top ul {
+	float:right;
+	padding-right:15px;
+	padding-top:3px;
+	}
+
+.footer-top li {
+	float:left;
+	}
+
+.footer-top li + li {
+	margin-left:15px;
+	}
+
+.footer-top li i {
+	font-size:25px;
+	}
+
+.footer-bottom {
+	padding:15px 0;
+	}
+
+.footer-bottom .txt {
+	font-size:14px;
+	margin-bottom:10px;
+	color:#999;
+	}
+
+.footer {
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	overflow:hidden;
+	/*padding:15px 0;*/
+	background:#333;
+	color:#666;
+	/*font-size:11px;*/
+	text-align:center;
+	text-shadow:-1px -1px 0 rgba(0,0,0,.4);
+	}
+</style>
+
+
 </head>
 
 <!-- (p)head.ejs EOF -->
@@ -63,7 +134,7 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 			
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="((title))">((title))</a></h1>
-				<h2 class="blog-motto">MF-blog</h2>
+				<h3 class="blog-motto">MF-blog<span id="chalert"></span></h3>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
@@ -147,26 +218,33 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
       </div>
       <footer><!-- (p)footer.ejs -->
 
-<div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
+<div id="footer">
+<div id="footer-top">
 	
 	
 	<div class="social-font clearfix">
 		
 		
 		
-		
-		
 	</div>
-		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015 
-		
-		<a href="http://mf-post.github.io" target="_blank" title="MF">MF</a>
-		
-		</p>
+
+<p>DEMO</p>
+	<ul>
+		<li><i class="icon-google-plus"></i></li>
+		<li><i class="icon-instagram"></i></li>
+		<li><i class="icon-twitter-sign"></i></li>
+		<li><i class="icon-facebook-sign"></i></li>
+	</ul>
+</div>
+<div class="footer-bottom">
+	<p class="txt">フッターの最下部です。</p>
+	<p class="txt">フッターの最下部です。</p>
+	<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015 
+	
+	<a href="http://mf-post.github.io" target="_blank" title="MF">MF</a>
+	
+	</p>
+</div>
 </div>
 
 <!-- (p)footer EOF -->
@@ -201,7 +279,7 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-        
+      
     }
   });
   c.click(function(){
@@ -218,13 +296,52 @@ $(document).ready(function(){
     o.css("top",Math.max(80,208-$(this).scrollTop()));
   });
   
+  
+  // -- footer scroll-fix --
+  var $elem = $(".footer-top"),
+      $content = $(".footer"),
+      $win = $(window);
+  var contentTop = 0;
+  function updatePosition(){
+       contentTop = $content.offset().top + $elem.outerHeight();
+  }
+  function update(){
+       if( $win.scrollTop() + $win.height() > contentTop ){
+            $elem.addClass("static");
+       }else if( $elem.hasClass("static") ){
+         // $elem.removeClass("static");
+       }
+  }
+  $win
+    .load(function(){
+         updatePosition();
+         update();
+    })
+    .resize(function(){
+         updatePosition();
+         update();
+    })
+    .scroll(function(){
+         update();
+    });
+  
+  
+  // -- smooth scrool --
   var ua = navigator.userAgent;
   if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
-    //return 'sp';
+    bwtp = 'sp';
   }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
-    //return 'tab';
+    bwtp = 'tab';
   }else{
-    //return 'other';
+    bwtp = 'other';
+	
+	var uac = window.navigator.userAgent.toLowerCase();
+	if (uac.indexOf('chrome') == -1) {
+		var chalert = document.getElementById('chalert');
+		var textNode = document.createTextNode(' ※chrome推奨');
+		chalert.appendChild(textNode);
+	}
+	
 	scrLength = 150;
 	scrSpeed = 500;
 	scrEasing = 'easeOutCirc';
