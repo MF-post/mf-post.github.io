@@ -4,7 +4,7 @@
   <subtitle><![CDATA[MF-blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://mf-post.github.io/"/>
-  <updated>2015-04-18T11:42:06.608Z</updated>
+  <updated>2015-04-18T11:50:05.955Z</updated>
   <id>http://mf-post.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://mf-post.github.io/2015/04/12/"/>
     <id>http://mf-post.github.io/2015/04/12/</id>
     <published>2015-04-12T08:51:25.000Z</published>
-    <updated>2015-04-18T11:42:06.608Z</updated>
+    <updated>2015-04-18T11:50:05.955Z</updated>
     <content type="html"><![CDATA[<p>タグによってOGimage変える・・・？</p>
 ]]></content>
     <summary type="html">
@@ -27,7 +27,7 @@
 ]]>
     </summary>
     
-      <category term="上田城" scheme="http://mf-post.github.io/source/tags/%E4%B8%8A%E7%94%B0%E5%9F%8E/"/>
+      <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
     
   </entry>
   
@@ -36,7 +36,7 @@
     <link href="http://mf-post.github.io/2015/04/11/"/>
     <id>http://mf-post.github.io/2015/04/11/</id>
     <published>2015-04-11T08:50:49.000Z</published>
-    <updated>2015-04-18T11:43:10.740Z</updated>
+    <updated>2015-04-18T11:49:54.707Z</updated>
     <content type="html"><![CDATA[<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
 ]]></content>
     <summary type="html">
@@ -44,9 +44,9 @@
 ]]>
     </summary>
     
-      <category term="上田城" scheme="http://mf-post.github.io/source/tags/%E4%B8%8A%E7%94%B0%E5%9F%8E/"/>
+      <category term="あ" scheme="http://mf-post.github.io/source/tags/%E3%81%82/"/>
     
-      <category term="沼田城" scheme="http://mf-post.github.io/source/tags/%E6%B2%BC%E7%94%B0%E5%9F%8E/"/>
+      <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
     
   </entry>
   
