@@ -4,7 +4,7 @@
   <subtitle><![CDATA[MF-blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://mf-post.github.io/"/>
-  <updated>2015-04-12T09:02:12.115Z</updated>
+  <updated>2015-04-18T11:42:06.608Z</updated>
   <id>http://mf-post.github.io/</id>
   
   <author>
@@ -19,15 +19,15 @@
     <link href="http://mf-post.github.io/2015/04/12/"/>
     <id>http://mf-post.github.io/2015/04/12/</id>
     <published>2015-04-12T08:51:25.000Z</published>
-    <updated>2015-04-12T09:02:12.115Z</updated>
-    <content type="html"><![CDATA[<p>タグによってOGimage変えるとかいうのは、果たしてやるべきだろうか？</p>
+    <updated>2015-04-18T11:42:06.608Z</updated>
+    <content type="html"><![CDATA[<p>タグによってOGimage変える・・・？</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>タグによってOGimage変えるとかいうのは、果たしてやるべきだろうか？</p>
+    <![CDATA[<p>タグによってOGimage変える・・・？</p>
 ]]>
     </summary>
     
-      <category term="起床" scheme="http://mf-post.github.io/source/tags/%E8%B5%B7%E5%BA%8A/"/>
+      <category term="上田城" scheme="http://mf-post.github.io/source/tags/%E4%B8%8A%E7%94%B0%E5%9F%8E/"/>
     
   </entry>
   
@@ -36,17 +36,17 @@
     <link href="http://mf-post.github.io/2015/04/11/"/>
     <id>http://mf-post.github.io/2015/04/11/</id>
     <published>2015-04-11T08:50:49.000Z</published>
-    <updated>2015-04-12T09:20:47.547Z</updated>
-    <content type="html"><![CDATA[<p>タグがhtml内でどう記述されているのか、列挙のための区切り文字は何か。</p>
+    <updated>2015-04-18T11:43:10.740Z</updated>
+    <content type="html"><![CDATA[<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>タグがhtml内でどう記述されているのか、列挙のための区切り文字は何か。</p>
+    <![CDATA[<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
 ]]>
     </summary>
     
-      <category term="睡眠" scheme="http://mf-post.github.io/source/tags/%E7%9D%A1%E7%9C%A0/"/>
+      <category term="上田城" scheme="http://mf-post.github.io/source/tags/%E4%B8%8A%E7%94%B0%E5%9F%8E/"/>
     
-      <category term="起床" scheme="http://mf-post.github.io/source/tags/%E8%B5%B7%E5%BA%8A/"/>
+      <category term="沼田城" scheme="http://mf-post.github.io/source/tags/%E6%B2%BC%E7%94%B0%E5%9F%8E/"/>
     
   </entry>
   
