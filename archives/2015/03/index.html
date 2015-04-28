@@ -7,6 +7,24 @@
 
 <title>((title))</title>
 
+<script>
+var clickOnce = 0;
+var timeID = 0;
+function sleep(time, callback){
+	clearTimeout(timeID);
+	timeID = setTimeout(callback, time);
+}
+var timeID_2 = 0;
+function sleep_2(time, callback){
+	clearTimeout(timeID_2);
+	timeID_2 = setTimeout(callback, time);
+}
+
+window.onunload = function() {};
+clickOnce = 1;
+sleep(1500,function(){ clickOnce = 0; });
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 
 
@@ -82,7 +100,6 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 	}
 
 .cfooter-top ul {
-	/*float:right;*/
 	padding-right:15px;
 	padding-top:3px;
 	}
@@ -118,16 +135,33 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 	overflow:hidden;
 	background:#333;
 	color:#666;
-	/*padding:15px 0;*/
-	/*font-size:11px;*/
 	text-align:center;
 	text-shadow:-1px -1px 0 rgba(0,0,0,.4);
 	}
 
 .dfooter {
 	width:100%;
-	height:195px;
 	}
+
+.article-fix {
+	padding-left:30px;
+	padding-right:60px;
+	}
+
+.article-tags a {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	}
+
+.tagslist ul li a {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	}
+
+
+
 
  -->
 </style>
@@ -238,42 +272,51 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- archive EOF -->
 
 </div>
-<footer><!-- (p)footer.ejs -->
+<!-- (p)footer.ejs -->
 
 <div class="dfooter">
+<div style="height:215px;"></div>
 </div>
+
+<footer id="ftpos">
 
 <div class="cfooter">
 <div class="cfooter-top">
 <p> to bottom... </p>
 <ul>
-<li><i class="fa fa-arrow-circle-o-down"></i></li>
+<a class="tobottom" href="javascript:void(0)" title="to bottom"><li><i class="fa fa-arrow-circle-o-down"></i></li></a>
 </ul>
-<p style="line-height:25px;">　Home　Archives　RSS</p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://urx2.nu/hej9">Archives</a>&emsp;<a href="/atom.xml">RSS</a></p>
 </div>
 <div class="cfooter-bottom">
-<p class="txt">フッターの最下部です。</p>
-<p class="txt">フッターの最下部です。</p>
-<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015 
 
-	<a href="http://mf-post.github.io" target="_blank" title="MF">MF</a>
-
-<a href="/archives">.</a>
-</p>
+<p class="txt">フッターの最下部です。</p>
+<p class="txt">投稿以外です。</p>
+<p class="txt">フッターの最下部です。</p>
 
 <div id="btm">
+<p class="copyright">CMS Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
+
+<small class="copyright">
+gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF</a><a href="/archives">.</a>
+</small>
+
+</p>
 </div>
 
 </div>
 </div>
+
+</footer>
 
 <!-- (p)footer EOF -->
-</footer>
+
 <!-- (p)after_footer.ejs -->
 
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script type="text/javascript">
+$(window).unload(function(){});
 $(document).ready(function(){
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
@@ -298,11 +341,10 @@ var m = $('#main'),
     c = $('.closeaside'),
     o = $('.openaside');
 $(window).resize(function(){
-	getSize(); 
+	getSize();
 	if (myWidth >= 1024) {
 		$('header nav').removeClass('shownav');
-	}else
-	{
+	} else {
 		m.removeClass('moveMain');
 		a.css('display', 'block').removeClass('fadeOut');
 		o.css('display', 'none');
@@ -327,14 +369,20 @@ $(window).scroll(function(){
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top"),
     $content = $(".cfooter"),
-    $win = $(window);
+    $win = $(window),
+    $tob = $(".tobottom");
 var contentTop = 0;
-var sw = 0
+var footerLocked = 0;
+var clickOnce = 0;
+var lim = 0;
+var fth = $('#ftpos').height();
+var elh = $('.cfooter-top').height();
+var offsetBuf = 0;
+
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
 }
 function update(){
-	sw = 0;
 	if( $win.scrollTop() + $win.height() > contentTop ){
 		$elem.addClass("static");
 	}else if( $elem.hasClass("static") ){
@@ -344,25 +392,74 @@ function update(){
 function updateV(){
 	if( $win.scrollTop() + $win.height() > contentTop ){
 		$elem.addClass("static");
-		if( sw == 0 ){
-			$("html,body").animate({scrollTop:$('#btm').offset().top},5000,'swing');
-			sw = 1;
-			
+		if( clickOnce == 0 ){
+			clickOnce = 1;
+			sleep(1500,function(){ clickOnce = 0; });
+			if( footerLocked == 0 && lim == 0 ){
+				offsetBuf = $('#btm').offset().top;
+				$("html,body").animate({scrollTop:offsetBuf},4000,'swing');
+			}
 		}
 	}else if( $elem.hasClass("static") ){
-		$elem.removeClass("static");
+		if( footerLocked == 0 ){
+			$elem.removeClass("static");
+		}
 	}
+}
+$tob.click(function(){
+	if( clickOnce == 0 ){
+		clickOnce = 1;
+		sleep(1500,function(){ clickOnce = 0; });
+		lim = 1;
+		offsetBuf = $('.dfooter').offset().top + $('.dfooter').height();
+		$("html,body").animate({scrollTop:offsetBuf},1000,'swing');
+	}
+});
+function footerLock(){
+	var i = 0;
+	if( lim == 1 ){
+		var tid = setInterval(function(){
+			if($("html,body").is(':animated')){
+				/* Animate wait */
+			}else{
+				/* Animate done */
+				i++;
+				if( i == 2 ){
+					clearInterval(tid);
+					return;
+				}
+			}
+		},100);
+	}
+	$("html,body").clearQueue().stop();
+	$('#ftpos').css('position','fixed');
+	$('#ftpos').css('width','100%');
+	$('#ftpos').css('top',$win.height() - fth - elh + 30);
+	lim = 0;
 }
 $win
 .load(function(){
+	clickOnce = 1;
+	sleep(1500,function(){ clickOnce = 0; });
+	footerLocked = 0;
 	updatePosition();
 	update();
 })
 .resize(function(){
+	clickOnce = 1;
+	sleep(1500,function(){ clickOnce = 0; });
+	footerLocked = 0;
 	updatePosition();
 	update();
 })
 .scroll(function(){
+	var trig = $('#btm').offset().top - $(window).height();
+	if ($(window).scrollTop() > trig) {
+		if( footerLocked == 0 ){
+			footerLocked = 1;
+			footerLock();
+		}
+	}
 	updateV();
 });
 
@@ -389,9 +486,9 @@ if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') >
 		e.preventDefault();
 		var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
 		if (delta < 0){
-			scrSet =  $(document).scrollTop()+scrLength;
+			scrSet = $(document).scrollTop()+scrLength;
 		} else {
-			scrSet =  $(document).scrollTop()-scrLength;
+			scrSet = $(document).scrollTop()-scrLength;
 		}
 		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
 		return false;
@@ -403,6 +500,12 @@ if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') >
 
 
 </script>
+
+
+
+
+
+
 
 
 
