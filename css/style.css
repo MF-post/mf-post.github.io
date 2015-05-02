@@ -96,7 +96,7 @@ a img {
 }
 body {
   background: #ddd;
-  font-family: helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
   font-size: 100%;
   color: #817c7c;
   line-height: 1.5;
@@ -410,7 +410,7 @@ body >header a {
 }
 #textlogo h1.site-name {
   width: 100%;
-  font-family: helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
   font-size: 160%;
   line-height: 1.9;
   font-weight: normal;
@@ -933,7 +933,7 @@ article .article-content ol li>code,
 article .article-content p code,
 article .article-content strong code,
 article .article-content em code {
-  font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+  font-family: Monaco, Menlo, Consolas, monospace;
   background: #eee;
   color: #747070;
   border: 1px solid #d6d6d6;
@@ -1481,7 +1481,7 @@ section.comment {
   }
 }
 .asidetitle {
-  font-family: 'Philosopher', helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif;
+  font-family: "Meiryo UI", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
   font-size: 1.5em;
   color: #2ca6cb;
   padding: 0 0 0.3125em 0;
@@ -1770,7 +1770,7 @@ footer {
   }
 }
 .info {
-  font-family: helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
   line-height: 1.65;
   width: 90%;
   margin: 0 auto;
@@ -1843,7 +1843,7 @@ footer {
   content: "\f08c";
 }
 .copyright {
-  font-family: helvetica, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
   font-size: 0.6em;
   width: 100%;
   color: #fff;

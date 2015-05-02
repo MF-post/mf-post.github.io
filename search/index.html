@@ -10,6 +10,8 @@
 <script>
 var clickOnce = 0;
 var timeID = 0;
+var ua = navigator.userAgent;
+var bwtp = 0;
 function sleep(time, callback){
 	clearTimeout(timeID);
 	timeID = setTimeout(callback, time);
@@ -19,7 +21,16 @@ function sleep_2(time, callback){
 	clearTimeout(timeID_2);
 	timeID_2 = setTimeout(callback, time);
 }
-
+if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+	/* smapho */
+	bwtp = 1;
+}else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+	/* tablet */
+	bwtp = 2;
+}else{
+	/* other */
+	bwtp = 3;
+}
 window.onunload = function() {};
 clickOnce = 1;
 sleep(1500,function(){ clickOnce = 0; });
@@ -77,6 +88,14 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+
+p,h2,h3,i,small {
+	text-shadow:0 0 1px rgba(129,124,124,.3) !important;
+	}
+a,h1 {
+	text-shadow:0 0 2px rgba(44,166,203,.1) !important;
+	}
+
 .cfooter-top {
 	width:100%;
 	height:45px;
@@ -160,8 +179,34 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 	border-radius:10px;
 	}
 
+.fbox1{
+	border: 1px solid #000000;
+	float:left;
+	width:37%;
+	margin-left:100px;
+	margin-right:3px;
+	text-align:left;
+	padding:6px;
+	
+	}
+.fbox1 p {
+	line-height:11pt;
+	margin: 2px 2px;
+	}
 
-
+.fbox2{
+	border: 1px solid #000000;
+	float:right;
+	width:37%;
+	margin-left:3px;
+	margin-right:100px;
+	text-align:left;
+	padding:6px;
+	}
+.fbox2 p {
+	line-height:11pt;
+	margin: 2px 2px;
+	}
 
  -->
 </style>
@@ -193,7 +238,7 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 			
 				<li><a href="/">Home</a></li>
 			
-				<li><a href="http://urx2.nu/hej9">Archives</a></li>
+				<li><a href="http://u111u.info/kyqG">Archives</a></li>
 			
 				<li><a href="/atom.xml">RSS</a></li>
 			
@@ -242,8 +287,8 @@ function getSize(){
 		myWidth = window.innerWidth;
 	} else if( document.documentElement && document.documentElement.clientWidth) {
 		myWidth = document.documentElement.clientWidth;
-	};
-};
+	}
+}
 var m = $('#main'),
     a = $('#asidepart'),
     c = $('.closeaside'),
@@ -283,9 +328,11 @@ var contentTop = 0;
 var footerLocked = 0;
 var clickOnce = 0;
 var lim = 0;
-var fth = $('#ftpos').height();
-var elh = $('.cfooter-top').height();
 var offsetBuf = 0;
+var smallOpt = 0;
+
+var ISpost = 0;
+
 
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
@@ -306,6 +353,7 @@ function updateV(){
 			if( footerLocked == 0 && lim == 0 ){
 				offsetBuf = $('#btm').offset().top;
 				$("html,body").animate({scrollTop:offsetBuf},4000,'swing');
+				$(".cfooter-top").animate({height:'30px'},500,'swing');
 			}
 		}
 	}else if( $elem.hasClass("static") ){
@@ -321,16 +369,24 @@ $tob.click(function(){
 		lim = 1;
 		offsetBuf = $('.dfooter').offset().top + $('.dfooter').height();
 		$("html,body").animate({scrollTop:offsetBuf},1000,'swing');
+		if( ISpost == 1 ){
+			$(".cfooter-top").animate({height:'30px'},500,'swing');
+		}
 	}
 });
 function footerLock(){
+	if( ISpost == 0 ){
+		return;
+	}
 	var i = 0;
+	var fth = $('#ftpos').height();
+	var elh = $('.cfooter-top').height();
 	if( lim == 1 ){
 		var tid = setInterval(function(){
 			if($("html,body").is(':animated')){
 				/* Animate wait */
 			}else{
-				/* Animate done */
+				/* Animate finish */
 				i++;
 				if( i == 2 ){
 					clearInterval(tid);
@@ -341,26 +397,24 @@ function footerLock(){
 	}
 	$("html,body").clearQueue().stop();
 	$('#ftpos').css('position','fixed');
-	$('#ftpos').css('width','100%');
+	$('#ftpos').css('width','96%');
 	$('#ftpos').css('top',$win.height() - fth - elh + 30);
 	lim = 0;
 }
 $win
 .load(function(){
+	updatePosition();
 	clickOnce = 1;
 	sleep(1500,function(){ clickOnce = 0; });
 	footerLocked = 0;
-	updatePosition();
 	update();
 })
 .resize(function(){
-	clickOnce = 1;
-	sleep(1500,function(){ clickOnce = 0; });
-	footerLocked = 0;
-	updatePosition();
-	update();
+	subalert("　wait...");
+	location.reload();
 })
 .scroll(function(){
+	updatePosition();
 	var trig = $('#btm').offset().top - $(window).height();
 	if ($(window).scrollTop() > trig) {
 		if( footerLocked == 0 ){
@@ -368,27 +422,24 @@ $win
 			footerLock();
 		}
 	}
-	updateV();
+	if( ISpost == 0 ){
+		update();
+	} else {
+		updateV();
+	}
 });
 
 
 // --- smooth scrool ---
-var ua = navigator.userAgent;
-if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
-	bwtp = 'sp';
-}else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
-	bwtp = 'tab';
-}else{
-	bwtp = 'other';
-	
-	var uac = window.navigator.userAgent.toLowerCase();
+var uac = window.navigator.userAgent.toLowerCase();
+var scrLength = 150;
+var scrSpeed = 500;
+var scrEasing = 'easeOutCirc';
+var scrSet = 0;
+if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
 		subalert('　　※chrome推奨');
 	}
-	
-	scrLength = 150;
-	scrSpeed = 500;
-	scrEasing = 'easeOutCirc';
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){
 		e.preventDefault();
