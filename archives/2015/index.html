@@ -109,10 +109,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 	}
 
 p,h2,h3,i,small {
-	text-shadow:0 0 1px rgba(129,124,124,.3) !important;
+	text-shadow:0 0 1px rgba(129,124,124,.3);
 	}
 a,h1 {
-	text-shadow:0 0 2px rgba(44,166,203,.1) !important;
+	text-shadow:0 0 2px rgba(44,166,203,.1);
 	}
 
 .cfooter-top {
@@ -165,8 +165,9 @@ a,h1 {
 	}
 
 .cfooter {
+	height:260px;
+	
 	width:100%;
-	height:200px;
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -177,7 +178,14 @@ a,h1 {
 	text-shadow:-1px -1px 0 rgba(0,0,0,.4);
 	}
 
+.opt1 {
+	width:35px;
+	}
+.opt2 {
+	width:5px;
+	}
 .dfooter {
+	height:260px;
 	width:100%;
 	}
 
@@ -199,34 +207,47 @@ a,h1 {
 	}
 
 .fbox1{
-	border: 1px solid #000000;
-	float:left;
-	width:37%;
-	margin-left:100px;
-	margin-right:3px;
-	text-align:left;
-	padding:6px;
+	height:130px;
+	overflow:auto;
 	
-	}
-.fbox1 p {
-	line-height:11pt;
-	margin: 2px 2px;
-	}
-
-.fbox2{
-	border: 1px solid #000000;
-	float:right;
-	width:37%;
-	margin-left:3px;
-	margin-right:100px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:none;
+	background-color:#333333;
+	float:left;
+	width:55%;
+	margin-left:9%;
+	margin-right:1%;
 	text-align:left;
 	padding:6px;
 	}
-.fbox2 p {
-	line-height:11pt;
-	margin: 2px 2px;
+.fbox2{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:none;
+	background-color:#333333;
+	float:right;
+	width:20%;
+	margin-left:1%;
+	margin-right:9%;
+	text-align:left;
+	padding:6px;
 	}
-
+.fbox1 p, .fbox2 p {
+	text-shadow:none;
+	line-height:9pt;
+	margin: 2px 2px;
+	color:#333333 !important;
+	}
+.findcap {
+	text-shadow:none;
+	text-align:left;
+	position:relative;
+	left:4%;
+	color:#333333 !important;
+	}
  -->
 </style>
 
@@ -372,9 +393,9 @@ a,h1 {
 </div>
 <!-- (p)footer.ejs -->
 
-<div class="dfooter">
-<div style="height:215px;"></div>
-</div>
+<div class="opt1"></div>
+<div class="opt2"></div>
+<div class="dfooter"></div>
 
 <footer id="ftpos">
 
@@ -415,6 +436,7 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script src="http://mf-post.github.io/jquery.color.js"></script>
+
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
@@ -526,12 +548,20 @@ $tob.click(function(){
 	}
 });
 function footerLock(){
+	if( ISpost == 1 ){
+		$(".cfooter").animate({"backgroundColor":"#AABBCC"},1000);
+		$(".fbox1").animate({"backgroundColor":"#FFFFFF"},1000);
+		$(".fbox2").animate({"backgroundColor":"#FFFFFF"},1000);
+		$(".copyright").animate({"color":"#333333"},1000);
+		$(".copyright").find("a").animate({"color":"#333333"},1000);
+	}
 	if( ISpost == 0 ){
 		return;
 	}
 	var i = 0;
 	var fth = $('#ftpos').height();
 	var elh = $('.cfooter-top').height();
+	var ajs = $('.opt1').width() - $('.opt2').width();
 	if( lim == 1 ){
 		var tid = setInterval(function(){
 			if($("html,body").is(':animated')){
@@ -549,7 +579,7 @@ function footerLock(){
 	$("html,body").clearQueue().stop();
 	$('#ftpos').css('position','fixed');
 	$('#ftpos').css('width','96%');
-	$('#ftpos').css('top',$win.height() - fth - elh + 25);
+	$('#ftpos').css('top',$win.height() - fth - elh + ajs );
 	lim = 0;
 }
 $win
