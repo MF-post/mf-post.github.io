@@ -19,7 +19,6 @@ function sleep(time, callback){
 	clearTimeout(timeID);
 	timeID = setTimeout(callback, time);
 }
-var timeID_2 = 0;
 function sleep_2(time, callback){
 	clearTimeout(timeID_2);
 	timeID_2 = setTimeout(callback, time);
@@ -37,7 +36,11 @@ if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') >
 window.onunload = function() {};
 clickOnce = 1;
 sleep(1500,function(){ clickOnce = 0; });
+
+var ISarchives = 0;
+
 </script>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 
@@ -63,6 +66,7 @@ sleep(1500,function(){ clickOnce = 0; });
 <meta property="og:description" content="ブログやってます。" />
 
 
+<link type="text/css" href="/css/jquery.jscrollpane.css" rel="stylesheet" media="all">
 
 
 <link rel="alternate" href="/atom.xml" title="((title))" type="application/atom+xml">
@@ -102,6 +106,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+
+#textlogo{
+	font-size:90%;
+	}
 
 *.searchResult {
 	font-weight: bold;
@@ -208,12 +216,11 @@ a,h1 {
 
 .fbox1{
 	height:130px;
-	overflow:auto;
-	
+	overflow:hidden;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:none;
+	border:5px #333333 solid;
 	background-color:#333333;
 	float:left;
 	width:55%;
@@ -241,11 +248,20 @@ a,h1 {
 	margin: 2px 2px;
 	color:#333333 !important;
 	}
-.findcap {
+.fcap {
 	text-shadow:none;
 	text-align:left;
 	position:relative;
 	left:4%;
+	color:#333333 !important;
+	}
+.fcap2 {
+	text-shadow:none;
+	text-align:left;
+	position:relative;
+	left:4%;
+	top:-10px;
+	font-size:75%;
 	color:#333333 !important;
 	}
  -->
@@ -266,32 +282,34 @@ a,h1 {
 	<div id="imglogo">
 	<a href="/"><img src="/img/logo.svg" alt="((title))" title="((title))"/></a>
 	</div>
-	
-	<div id="textlogo">
-	<h1 class="site-name"><a href="/" title="((title))">((title))</a></h1>
+
+<div id="textlogo">
+<h1 class="site-name"><a href="/" title="((title))">((title))</a></h1>
+	<div id="wrdlogo">
 	<h3 class="blog-motto">MF-blog<span id="chalert"></span></h3>
 	</div>
-	<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu"></a>
-	</div>
-	<nav class="animated">
-		<ul>
-			
-				<li><a href="/">Home</a></li>
-			
-				<li><a href="http://u111u.info/kyqG">Archives</a></li>
-			
-				<li><a href="/atom.xml">RSS</a></li>
-			
-			<li>
-			
-			<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-				<label>Search</label>
-				<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
-			</form>
-			
-			</li>
-		</ul>
-	</nav>
+</div>
+<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu"></a>
+</div>
+<nav class="animated">
+<ul>
+
+	<li><a href="/">Home</a></li>
+
+	<li><a href="http://u111u.info/kyqG">Archives</a></li>
+
+	<li><a href="/atom.xml">RSS</a></li>
+
+<li>
+
+	<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+	<label>Search</label>
+	<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+	</form>
+
+</li>
+</ul>
+</nav>
 </div>
 
 <!-- (p)header EOF -->
@@ -305,6 +323,11 @@ a,h1 {
 
 <div class="archive-title">
 <h2 class="tag-icon">ああああ</h2>
+
+<script>
+ISarchives = 1;
+</script>
+
 
 </div>
 
@@ -372,9 +395,14 @@ a,h1 {
 </div>
 <div class="cfooter-bottom">
 
-<p class="txt">フッターの最下部です。</p>
-<p class="txt">投稿以外です。</p>
-<p class="txt">フッターの最下部です。</p>
+<div id="footbio">
+<span class="txt">
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+</span>
+</div>
 
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
@@ -399,6 +427,9 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script src="http://mf-post.github.io/jquery.color.js"></script>
+
+<script src="http://mf-post.github.io/jquery.mousewheel.js"></script>
+<script src="http://mf-post.github.io/jquery.jscrollpane.min.js"></script>
 
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
@@ -453,6 +484,24 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
+
+
+// --- archives over-ride ---
+if( ISarchives == 1 ) {
+	var ep = String.fromCharCode(0x25A0);
+	var w=''
+	w += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
+	w += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
+	w += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
+	$('#imglogo').css('width','128px');
+	$('#imglogo').css('height','128px');
+	$('#imglogo').css('position','relative');
+	$('#imglogo').css('top','25px');
+	$('#imglogo').css('left','10px');
+	document.getElementById('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" alt="((裏庭))" width="128px" height="128px">';
+	document.getElementById('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))</h3>';
+	document.getElementById('footbio').innerHTML = w;
+}
 
 
 // --- footer scroll-fix ---
@@ -517,6 +566,9 @@ function footerLock(){
 		$(".fbox2").animate({"backgroundColor":"#FFFFFF"},1000);
 		$(".copyright").animate({"color":"#333333"},1000);
 		$(".copyright").find("a").animate({"color":"#333333"},1000);
+		$(".fbox1").css('border-color','#FFFFFF');
+		$(".fbox1").css('overflow','auto');
+		$('.fbox1').jScrollPane();
 	}
 	if( ISpost == 0 ){
 		return;
@@ -643,6 +695,7 @@ google.setOnLoadCallback(function(){
 
 </body>
 </html>
+
 
 
 <!-- layout.ejs EOF -->

@@ -387,22 +387,23 @@ body >header a {
 }
 @media only screen and (min-width: 1070px) {
   #imglogo {
-    width: 6em;
+    width: 5.7em;
   }
 }
 #imglogo img {
   position: absolute;
-  top: -1em;
-  width: 5em;
+  top: -1.5em;
+  left: -0.5em;
+  width: 6em;
 }
 @media only screen and (min-width: 768px) {
   #imglogo img {
-    width: 6em;
+    width: 7em;
   }
 }
 @media only screen and (min-width: 1070px) {
   #imglogo img {
-    width: 6.5em;
+    width: 7.2em;
   }
 }
 #textlogo {
@@ -413,7 +414,7 @@ body >header a {
 #textlogo h1.site-name {
   width: 100%;
   font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
-  font-size: 160%;
+  font-size: 140%;
   line-height: 1.9;
   font-weight: normal;
 }
@@ -685,7 +686,7 @@ header nav ul li a:hover {
   content: "\f02c";
 }
 .archive-icon:before {
-  content: "\f187";
+  content: "\f0b1";
 }
 .archive-title {
   margin: 1em 0;
