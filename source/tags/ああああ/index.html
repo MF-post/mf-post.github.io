@@ -1,7 +1,9 @@
 
 <!DOCTYPE HTML>
 <html lang="ja">
-<head>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
 <meta charset="UTF-8">
 
 
@@ -10,6 +12,7 @@
 <script>
 var clickOnce = 0;
 var timeID = 0;
+var timeID_2 = 0;
 var ua = navigator.userAgent;
 var bwtp = 0;
 function sleep(time, callback){
@@ -38,7 +41,6 @@ sleep(1500,function(){ clickOnce = 0; });
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 
-
 <meta name="author" content="MF">
 
 
@@ -49,19 +51,31 @@ sleep(1500,function(){ clickOnce = 0; });
 
 
 
+<!-- custom OGP -->
+<meta property="fb:admins" content="---" />
+<meta property="fb:app_id" content="---" />
+<meta property="og:site_name" content="((title))" />
+<meta property="og:title" content="((title))" />
+<meta property="og:image" content="/img/((OGImage)).png" />
+<meta property="og:url" content="((Page-URL))" />
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="ブログやってます。" />
+
+
+
 
 <link rel="alternate" href="/atom.xml" title="((title))" type="application/atom+xml">
 
-
 <link rel="icon" href="/img/favicon.ico">
 
-
-	<link rel="apple-touch-icon" href="/img/catman.jpg">
-	<link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
+<link rel="apple-touch-icon" href="/img/catman.jpg">
+<link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
 
 
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 
 <!-- (p)analytics.ejs -->
@@ -88,6 +102,11 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+
+*.searchResult {
+	font-weight: bold;
+	background-color: yellow;
+	}
 
 p,h2,h3,i,small {
 	text-shadow:0 0 1px rgba(129,124,124,.3) !important;
@@ -358,6 +377,11 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
+<script src="http://mf-post.github.io/jquery.color.js"></script>
+<script src="http://mf-post.github.io/rangy-core.js"></script>
+<script src="http://mf-post.github.io/rangy-textrange.js"></script>
+<script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
+
 <script type="text/javascript">
 $(window).unload(function(){});
 $(document).ready(function(){
@@ -488,7 +512,7 @@ function footerLock(){
 	$("html,body").clearQueue().stop();
 	$('#ftpos').css('position','fixed');
 	$('#ftpos').css('width','96%');
-	$('#ftpos').css('top',$win.height() - fth - elh + 30);
+	$('#ftpos').css('top',$win.height() - fth - elh + 25);
 	lim = 0;
 }
 $win
