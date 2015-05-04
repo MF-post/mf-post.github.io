@@ -770,9 +770,12 @@ function footerLock(){
 }
 $win
 .load(function(){
-	$('html,body').animate({scrollTop:'0px'},1500,'swing');
+	clickOnce = 1;
+	footerLocked = 1;
+	sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 	updatePosition();
 	update();
+	sleep_2(100,function(){ $('html,body').animate({scrollTop:'0px'},500,'swing'); });
 
 })
 .resize(function(){
