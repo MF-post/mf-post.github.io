@@ -96,7 +96,7 @@ a img {
 }
 body {
   background: #ddd;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, "((font))";
   font-size: 100%;
   color: #817c7c;
   line-height: 1.5;
@@ -414,7 +414,7 @@ body >header a {
 }
 #textlogo h1.site-name {
   width: 100%;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, "((font))";
   font-size: 140%;
   line-height: 1.9;
   font-weight: normal;
@@ -1475,7 +1475,6 @@ section.comment {
   }
 }
 #asidepart {
-  z-index: 999;
   -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
   -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
   background: #fafada;
@@ -1491,7 +1490,7 @@ section.comment {
   }
 }
 .asidetitle {
-  font-family: "Meiryo UI", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
+  font-family: "Meiryo UI", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, "((font))";
   font-size: 1.5em;
   color: #2ca6cb;
   padding: 0 0 0.3125em 0;
@@ -1780,7 +1779,7 @@ footer {
   }
 }
 .info {
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, "((font))";
   line-height: 1.65;
   width: 90%;
   margin: 0 auto;
@@ -1853,7 +1852,7 @@ footer {
   content: "\f08c";
 }
 .copyright {
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, "((font))";
   font-size: 0.6em;
   width: 100%;
   color: #fff;

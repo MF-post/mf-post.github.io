@@ -646,7 +646,9 @@ $win
 	updatePosition();
 	update();
 	sleep_2(100,function(){ $('html,body').animate({scrollTop:'0px'},500,'swing'); });
-
+	if( ISpost == 1 ){
+		$('#asidepart').css('z-index','999');
+	}
 })
 .resize(function(){
 	subalert("　wait...");
