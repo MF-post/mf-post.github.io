@@ -2,10 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="ja">
 
+
+
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 
 <meta charset="UTF-8">
-
 
 <title>((title))</title>
 
@@ -106,10 +108,6 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
-
-#textlogo{
-	font-size:90%;
-	}
 
 *.searchResult {
 	font-weight: bold;
@@ -220,7 +218,8 @@ a,h1 {
 
 .fbox1{
 	height:130px;
-	overflow:hidden;
+	overflow-x:hidden;
+	overflow-y:hidden;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
@@ -266,7 +265,7 @@ a,h1 {
 	position:relative;
 	left:4%;
 	top:-10px;
-	font-size:70%;
+	font-size:60%;
 	color:#333333 !important;
 	}
  -->
@@ -289,7 +288,7 @@ a,h1 {
 	</div>
 
 <div id="textlogo">
-<h1 class="site-name"><a href="/" title="((title))">((title))</a></h1>
+<h1 class="site-name"><a href="http://mf-post.github.io/" title="((title))">((title))</a></h1>
 	<div id="wrdlogo">
 	<h3 class="blog-motto">MF-blog<span id="chalert"></span></h3>
 	</div>
@@ -302,8 +301,6 @@ a,h1 {
 	<li><a href="/">Home</a></li>
 
 	<li><a href="http://u111u.info/kyqG">Archives</a></li>
-
-	<li><a href="/atom.xml">RSS</a></li>
 
 <li>
 
@@ -329,12 +326,11 @@ a,h1 {
 <div class="archive-title">
 <h2 class="archive-icon">Archives</h2>
 
+
 <script>
 ISarchives = 1;
 </script>
-
-
-	<div class="archiveslist archive-float clearfix"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">4月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">3月 2015</a><span class="archive-list-count">2</span></li></ul></div>
+<div class="archiveslist archive-float clearfix"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">4月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">3月 2015</a><span class="archive-list-count">2</span></li></ul></div>
 
 </div>
 
@@ -431,9 +427,9 @@ ISarchives = 1;
 <div class="cfooter-top">
 <p> to bottom... </p>
 <ul>
-<a class="tobottom" href="javascript:void(0)" title="to bottom"><li><i class="fa fa-arrow-circle-o-down"></i></li></a>
+<a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
 </ul>
-<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://u111u.info/kyqG">Archives</a>&emsp;<a href="/atom.xml">RSS</a><span id="ftalert"></span></p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
 
@@ -487,6 +483,10 @@ $.fn.extend({
   }
 });
 
+function gEBI(id){
+  return document.getElementById(id);
+}
+
 $(window).unload(function(){});
 $(document).ready(function(){
   $('.navbar').click(function(){
@@ -494,8 +494,8 @@ $(document).ready(function(){
   });
 
 function subalert(w){
-	document.getElementById('chalert').innerHTML = w
-	/* document.getElementById('ftalert').innerHTML = w */
+	gEBI('chalert').innerHTML = w
+	/* gEBI('ftalert').innerHTML = w */
 }
 
 var myWidth = 0;
@@ -542,20 +542,24 @@ if( ISarchives == 1 ) {
 	var wd = ''
 	wd += '<p>&nbsp;</p>';
 	wd += '<p>&nbsp;</p>';
-	wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
-	wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
-	wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
 	if ( $(window).width() > 780 ) {
 		$('#imglogo').css('width','128px');
 		$('#imglogo').css('height','128px');
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		document.getElementById('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
+		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
+	} else {
+		wd += '<p>&nbsp;</p>';
 	}
-	document.getElementById('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
-	document.getElementById('footbio').innerHTML = wd;
+	gEBI('footbio').innerHTML = wd;
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
 }
+$("a[href='http://u111u.info/kyqG']").attr('title','FBログヘ移動します');
+$("a[href='http://u111u.info/kyqG']").html('記事一覧');
 
 
 // --- footer scroll-fix ---
@@ -607,23 +611,25 @@ $tob.click(function(){
 		sleep(1500,function(){ clickOnce = 0; });
 		lim = 1;
 		offsetBuf = $('.dfooter').offset().top + $('.dfooter').height();
-		$("html,body").animate({scrollTop:offsetBuf},1000,'swing');
+		$("html,body").animate({scrollTop:offsetBuf},1000,'easeInOutQuad');
 		if( ISpost == 1 ){
-			$(".cfooter-top").animate({height:'30px'},500,'swing');
+			$(".cfooter-top").animate({height:'30px'},1500,'easeInOutQuart');
 		}
 	}
 });
 function footerLock(){
 	if( ISpost == 1 ){
-		$(".cfooter").animate({"backgroundColor":"#AABBCC"},1000);
-		$(".fbox1").animate({"backgroundColor":"#FFFFFF"},1000);
-		$(".fbox2").animate({"backgroundColor":"#FFFFFF"},1000);
-		$(".copyright").animate({"color":"#333333"},1000);
-		$(".copyright").find("a").animate({"color":"#333333"},1000);
+		$(".cfooter").animate({"backgroundColor":"#AABBCC"},1000,'easeInOutQuad');
+		$(".fbox1").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$(".fbox2").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$(".copyright").animate({"color":"#333333"},1000,'easeInOutQuad');
+		$(".copyright").find("a").animate({"color":"#333333"},1000,'easeInOutQuad');
 		$(".fbox1").css('border-color','#FFFFFF');
-		$(".fbox1").css('overflow','auto');
+		$(".fbox1").css('overflow-x','hidden');
+		$(".fbox1").css('overflow-y','auto');
 		var ajsfc = 0;
 		if( bwtp != 3 || $(window).width() < 700){
+			$(".fbox1").css('overflow-x','auto');
 			$(".fbox1").css('width','45%');
 			$(".fbox2").css('width','15%');
 			ajsfc = 60;

@@ -96,7 +96,7 @@ a img {
 }
 body {
   background: #ddd;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
   font-size: 100%;
   color: #817c7c;
   line-height: 1.5;
@@ -409,11 +409,12 @@ body >header a {
 #textlogo {
   float: left;
   width: 203px;
+  font-size: 90%;
   margin-left: 0.5em;
 }
 #textlogo h1.site-name {
   width: 100%;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
   font-size: 140%;
   line-height: 1.9;
   font-weight: normal;
@@ -542,6 +543,7 @@ header nav ul li a:hover {
 }
 /* index layout */
 #container {
+  padding-bottom: 10px;
   width: 95%;
   margin: 0 auto;
   overflow: hidden;
@@ -578,7 +580,7 @@ header nav ul li a:hover {
   }
 }
 #main section.post {
-  background: #fafafa;
+  background: #fafada;
   margin-bottom: 1em;
 }
 #main section.post a {
@@ -616,7 +618,7 @@ header nav ul li a:hover {
   margin-left: 10% !important;
 }
 #page-nav {
-  background: #fafafa;
+  background: #fafada;
   text-align: center;
   overflow: hidden;
 }
@@ -692,7 +694,7 @@ header nav ul li a:hover {
   margin: 1em 0;
   width: 97%;
   padding: 2em 0 2em 3%;
-  background: #fafafa;
+  background: #fafada;
   border-left: 0.5em solid #ccc;
 }
 @media only screen and (min-width: 1010px) {
@@ -766,7 +768,9 @@ header nav ul li a:hover {
 }
 .post,
 .page {
-  background: #fafafa;
+  background: #fafada;
+  -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
 .post a,
 .page a {
@@ -898,7 +902,7 @@ article .article-content blockquote {
   font-size: 110%;
 }
 article .article-content blockquote footer {
-  background: #fafafa;
+  background: #fafada;
   padding: 0;
   margin: 0;
   font-size: 80%;
@@ -1027,7 +1031,7 @@ article .article-content .right {
   float: right;
 }
 footer.article-footer {
-  background: #fafafa;
+  background: #fafada;
   padding: 0 4%;
   margin: 0;
   border-top: 1px solid #dbdbdb;
@@ -1471,7 +1475,10 @@ section.comment {
   }
 }
 #asidepart {
-  background: #fafafa;
+  z-index: 999;
+  -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  background: #fafada;
   margin: 1em 0 0;
   padding: 0.5em 2% 1em;
 }
@@ -1479,12 +1486,12 @@ section.comment {
   #asidepart {
     position: relative;
     float: left;
-    width: 18%;
+    width: 17%;
     margin: 2em 0 0 3%;
   }
 }
 .asidetitle {
-  font-family: "Meiryo UI", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
+  font-family: "Meiryo UI", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
   font-size: 1.5em;
   color: #2ca6cb;
   padding: 0 0 0.3125em 0;
@@ -1584,7 +1591,7 @@ section.comment {
 }
 .rsspart a:hover {
   color: #80c999;
-  background: #fafafa;
+  background: #fafada;
 }
 .rsspart a::before {
   font-family: "FontAwesome";
@@ -1773,7 +1780,7 @@ footer {
   }
 }
 .info {
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
   line-height: 1.65;
   width: 90%;
   margin: 0 auto;
@@ -1846,7 +1853,7 @@ footer {
   content: "\f08c";
 }
 .copyright {
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica, font;
   font-size: 0.6em;
   width: 100%;
   color: #fff;
@@ -1864,7 +1871,7 @@ footer {
   color: #2ca6cb;
 }
 .article-gallery {
-  background: #fafafa;
+  background: #fafada;
   position: relative;
 }
 .article-gallery-photos {
