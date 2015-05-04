@@ -13,6 +13,7 @@
 
 <script>
 var clickOnce = 0;
+var footerLocked = 0;
 var timeID = 0;
 var timeID_2 = 0;
 var ua = navigator.userAgent;
@@ -37,7 +38,8 @@ if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') >
 }
 window.onunload = function() {};
 clickOnce = 1;
-sleep(1500,function(){ clickOnce = 0; });
+footerLocked = 1;
+sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 
 var ISarchives = 0;
 
@@ -561,6 +563,8 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 
 <script type="text/javascript">
 
+$(window).unload(function(){});
+
 $.fn.extend({
   viewportOffset: function(){
     $window = $(window);
@@ -573,16 +577,19 @@ function gEBI(id){
   return document.getElementById(id);
 }
 
-$(window).unload(function(){});
-$(document).ready(function(){
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-
 function subalert(w){
 	gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
+
+
+
+
+$(document).ready(function(){
+
+$('.navbar').click(function(){
+	$('header nav').toggleClass('shownav');
+});
 
 var myWidth = 0;
 function getSize(){
@@ -592,6 +599,35 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
+
+
+// --- archives over-ride ---
+$("a[href='http://u111u.info/kyqG']").attr('title','FBログヘ移動します');
+$("a[href='http://u111u.info/kyqG']").html('記事一覧');
+if( ISarchives == 1 ) {
+	var ep = String.fromCharCode(0x25A0);
+	var wd = ''
+	wd += '<p>&nbsp;</p>';
+	wd += '<p>&nbsp;</p>';
+	if ( $(window).width() > 780 ) {
+		$('#imglogo').css('width','128px');
+		$('#imglogo').css('height','128px');
+		$('#imglogo').css('position','relative');
+		$('#imglogo').css('top','25px');
+		$('#imglogo').css('left','10px');
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
+		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
+	} else {
+		wd += '<p>&nbsp;</p>';
+	}
+	gEBI('footbio').innerHTML = wd;
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
+}
+
+
+// Catman Routine
 var m = $('#main'),
     a = $('#asidepart'),
     c = $('.closeaside'),
@@ -624,39 +660,12 @@ $(window).scroll(function(){
 });
 
 
-// --- archives over-ride ---
-if( ISarchives == 1 ) {
-	var ep = String.fromCharCode(0x25A0);
-	var wd = ''
-	wd += '<p>&nbsp;</p>';
-	wd += '<p>&nbsp;</p>';
-	if ( $(window).width() > 780 ) {
-		$('#imglogo').css('width','128px');
-		$('#imglogo').css('height','128px');
-		$('#imglogo').css('position','relative');
-		$('#imglogo').css('top','25px');
-		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
-		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
-		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
-		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
-	} else {
-		wd += '<p>&nbsp;</p>';
-	}
-	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
-}
-$("a[href='http://u111u.info/kyqG']").attr('title','FBログヘ移動します');
-$("a[href='http://u111u.info/kyqG']").html('記事一覧');
-
-
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top"),
     $content = $(".cfooter"),
     $win = $(window),
     $tob = $(".tobottom");
 var contentTop = 0;
-var footerLocked = 0;
 var clickOnce = 0;
 var lim = 0;
 var offsetBuf = 0;
@@ -761,11 +770,10 @@ function footerLock(){
 }
 $win
 .load(function(){
+	$('html,body').animate({scrollTop:'0px'},500,'swing');
 	updatePosition();
-	clickOnce = 1;
-	sleep(1500,function(){ clickOnce = 0; });
-	footerLocked = 0;
 	update();
+
 })
 .resize(function(){
 	subalert("　wait...");
@@ -825,7 +833,11 @@ if( bwtp == 3 ){
 
 
 
+
+
 <script type="text/javascript">
+
+// Catman Routine
 $(document).ready(function(){
   var ai = $('.article-content>iframe'),
       ae = $('.article-content>embed'),
@@ -871,7 +883,12 @@ $(document).ready(function(){
 
 
 
+
+
+
 <script type="text/javascript">
+
+// Catman Routine
 $(document).ready(function(){ 
   var $this = $('.share'),
       url = $this.attr('data-url'),
@@ -898,6 +915,8 @@ $(document).ready(function(){
 </script>
 
 <script type="text/javascript">
+
+// Catman Routine
 (function($) {
   var upperLimit = 1000;
   var scrollElem = $('#top');
