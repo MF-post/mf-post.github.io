@@ -116,6 +116,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 	background-color: yellow;
 	}
 
+.toc-number {
+	display:none;
+	}
+
 p,h2,h3,i,small {
 	text-shadow:0 0 1px rgba(129,124,124,.3);
 	}
@@ -253,15 +257,16 @@ a,h1 {
 	text-align:left;
 	position:relative;
 	left:4%;
+	font-size:85%;
 	color:#333333 !important;
 	}
-.fcap2 {
+.fcap-bt {
 	text-shadow:none;
 	text-align:left;
 	position:relative;
 	left:4%;
 	top:-10px;
-	font-size:75%;
+	font-size:70%;
 	color:#333333 !important;
 	}
  -->
@@ -374,7 +379,7 @@ ISarchives = 1;
 <ul>
 <a class="tobottom" href="javascript:void(0)" title="to bottom"><li><i class="fa fa-arrow-circle-o-down"></i></li></a>
 </ul>
-<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://u111u.info/kyqG">Archives</a>&emsp;<a href="/atom.xml">RSS</a></p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://u111u.info/kyqG">Archives</a>&emsp;<a href="/atom.xml">RSS</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
 
@@ -419,6 +424,15 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
 
 <script type="text/javascript">
+
+$.fn.extend({
+  viewportOffset: function(){
+    $window = $(window);
+    p = this.offset();
+    return {left: p.left - $window.scrollLeft(), top: p.top - $window.scrollTop()};
+  }
+});
+
 $(window).unload(function(){});
 $(document).ready(function(){
   $('.navbar').click(function(){
@@ -426,9 +440,8 @@ $(document).ready(function(){
   });
 
 function subalert(w){
-	var chalert = document.getElementById('chalert');
-	var textNode = document.createTextNode(w);
-	chalert.appendChild(textNode);
+	document.getElementById('chalert').innerHTML = w
+	/* document.getElementById('ftalert').innerHTML = w */
 }
 
 var myWidth = 0;
@@ -472,18 +485,22 @@ $(window).scroll(function(){
 // --- archives over-ride ---
 if( ISarchives == 1 ) {
 	var ep = String.fromCharCode(0x25A0);
-	var w=''
-	w += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
-	w += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
-	w += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
-	$('#imglogo').css('width','128px');
-	$('#imglogo').css('height','128px');
-	$('#imglogo').css('position','relative');
-	$('#imglogo').css('top','25px');
-	$('#imglogo').css('left','10px');
-	document.getElementById('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" alt="((裏庭))" width="128px" height="128px">';
-	document.getElementById('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))</h3>';
-	document.getElementById('footbio').innerHTML = w;
+	var wd = ''
+	wd += '<p>&nbsp;</p>';
+	wd += '<p>&nbsp;</p>';
+	wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
+	wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
+	wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
+	if ( $(window).width() > 780 ) {
+		$('#imglogo').css('width','128px');
+		$('#imglogo').css('height','128px');
+		$('#imglogo').css('position','relative');
+		$('#imglogo').css('top','25px');
+		$('#imglogo').css('left','10px');
+		document.getElementById('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
+	}
+	document.getElementById('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
+	document.getElementById('footbio').innerHTML = wd;
 }
 
 
@@ -551,8 +568,20 @@ function footerLock(){
 		$(".copyright").find("a").animate({"color":"#333333"},1000);
 		$(".fbox1").css('border-color','#FFFFFF');
 		$(".fbox1").css('overflow','auto');
-		$('.fbox1').jScrollPane();
+		var ajsfc = 0;
+		if( bwtp != 3 || $(window).width() < 700){
+			$(".fbox1").css('width','45%');
+			$(".fbox2").css('width','15%');
+			ajsfc = 60;
+		} else {
+			ajsfc = $(window).width() * 0.2 + 10;
+		}
+		var fx1 = $(window).width() * 0.45 + $(".fcap").viewportOffset().left * 0.2;
+		var fx2 = $(".fbox2").viewportOffset().left;
+		$(".fcap").css('left', fx2 - fx1 - ajsfc);
+		$(".fcap-bt").css('left', fx2 - fx1 - ajsfc);
 	}
+	$('.fbox1').jScrollPane();
 	if( ISpost == 0 ){
 		return;
 	}
@@ -595,7 +624,12 @@ $win
 .scroll(function(){
 	updatePosition();
 	var trig = $('#btm').offset().top - $(window).height();
-	if ($(window).scrollTop() > trig) {
+	var sctp = $(window).scrollTop();
+	var fixpara = 0;
+	if ( $(window).width() < 710 ) {
+		fixpara = 10;
+	}
+	if (sctp > (trig - fixpara) ) {
 		if( footerLocked == 0 ){
 			footerLocked = 1;
 			footerLock();
