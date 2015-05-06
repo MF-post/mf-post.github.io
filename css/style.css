@@ -580,7 +580,7 @@ header nav ul li a:hover {
   }
 }
 #main section.post {
-  background: #fafada;
+  background: #feffeb;
   margin-bottom: 1em;
 }
 #main section.post a {
@@ -618,7 +618,7 @@ header nav ul li a:hover {
   margin-left: 10% !important;
 }
 #page-nav {
-  background: #fafada;
+  background: #feffeb;
   text-align: center;
   overflow: hidden;
 }
@@ -694,7 +694,7 @@ header nav ul li a:hover {
   margin: 1em 0;
   width: 97%;
   padding: 2em 0 2em 3%;
-  background: #fafada;
+  background: #feffeb;
   border-left: 0.5em solid #ccc;
 }
 @media only screen and (min-width: 1010px) {
@@ -768,7 +768,7 @@ header nav ul li a:hover {
 }
 .post,
 .page {
-  background: #fafada;
+  background: #feffeb;
   -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
   -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
@@ -902,7 +902,7 @@ article .article-content blockquote {
   font-size: 110%;
 }
 article .article-content blockquote footer {
-  background: #fafada;
+  background: #feffeb;
   padding: 0;
   margin: 0;
   font-size: 80%;
@@ -1031,7 +1031,7 @@ article .article-content .right {
   float: right;
 }
 footer.article-footer {
-  background: #fafada;
+  background: #feffeb;
   padding: 0 4%;
   margin: 0;
   border-top: 1px solid #dbdbdb;
@@ -1477,7 +1477,7 @@ section.comment {
 #asidepart {
   -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
   -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-  background: #fafada;
+  background: #feffeb;
   margin: 1em 0 0;
   padding: 0.5em 2% 1em;
 }
@@ -1590,7 +1590,7 @@ section.comment {
 }
 .rsspart a:hover {
   color: #80c999;
-  background: #fafada;
+  background: #feffeb;
 }
 .rsspart a::before {
   font-family: "FontAwesome";
@@ -1870,7 +1870,7 @@ footer {
   color: #2ca6cb;
 }
 .article-gallery {
-  background: #fafada;
+  background: #feffeb;
   position: relative;
 }
 .article-gallery-photos {

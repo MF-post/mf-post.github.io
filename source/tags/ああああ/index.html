@@ -5,7 +5,8 @@
 
 
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
 <meta charset="UTF-8">
 
@@ -66,11 +67,10 @@ var ISarchives = 0;
 <meta property="og:image" content="/img/((OGImage)).png" />
 <meta property="og:url" content="((Page-URL))" />
 
-<meta property="og:type" content="website" />
-<meta property="og:description" content="ブログやってます。" />
+<meta property="og:type" content="article" />
 
 
-<link type="text/css" href="/css/jquery.jscrollpane.css" rel="stylesheet" media="all">
+<link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
 
 
 <link rel="alternate" href="/atom.xml" title="((title))" type="application/atom+xml">
@@ -82,7 +82,7 @@ var ISarchives = 0;
 
 
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 
@@ -112,8 +112,8 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- 
 
 *.searchResult {
-	font-weight: bold;
-	background-color: yellow;
+	color: Black;
+	background-color: PaleGoldenRod;
 	}
 
 .toc-number {
@@ -178,7 +178,6 @@ a,h1 {
 
 .cfooter {
 	height:260px;
-	
 	width:100%;
 	position:absolute;
 	bottom:0;
@@ -187,7 +186,6 @@ a,h1 {
 	background:#333;
 	color:#666;
 	text-align:center;
-	text-shadow:-1px -1px 0 rgba(0,0,0,.4);
 	}
 
 .opt1 {
@@ -218,8 +216,8 @@ a,h1 {
 	border-radius:10px;
 	}
 
-.fbox1{
-	height:130px;
+#fbox1{
+	height:135px;
 	overflow-x:hidden;
 	overflow-y:hidden;
 	-moz-border-radius:10px;
@@ -234,7 +232,7 @@ a,h1 {
 	text-align:left;
 	padding:6px;
 	}
-.fbox2{
+#fbox2{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
@@ -247,29 +245,74 @@ a,h1 {
 	text-align:left;
 	padding:6px;
 	}
-.fbox1 p, .fbox2 p {
-	text-shadow:none;
-	line-height:9pt;
-	margin: 2px 2px;
+#fbox1 p, #fbox2 p {
+	font-size:95%;
+	line-height:13pt;
+	margin: 3px 3px;
+	text-shadow:none !important;
 	color:#333333 !important;
 	}
 .fcap {
-	text-shadow:none;
 	text-align:left;
 	position:relative;
 	left:4%;
+	top:10px;
+	line-height:0pt;
 	font-size:85%;
+	text-shadow:none !important;
 	color:#333333 !important;
 	}
+.fcap p {
+	text-shadow:none !important;
+	}
+.fcap a {
+	text-shadow:none !important;
+	}
+.fcap i {
+	text-shadow:none !important;
+	}
+.find-dn i {
+	position:relative;
+	top:11px;
+	left:26px;
+	font-size:20px;
+	color:#333333;
+}
+.find-up i {
+	position:relative;
+	top:11px;
+	left:37px;
+	font-size:20px;
+	color:#333333;
+	}
+.find-x i {
+	position:relative;
+	top:10px;
+	left:48px;
+	font-size:18px;
+	color:#333333;
+	}
+#shinput {
+	border:none;
+	font-size:15px;
+	color:#333333;
+	background-color:#333333;
+	
+	}
+
+
+
+
 .fcap-bt {
-	text-shadow:none;
 	text-align:left;
 	position:relative;
 	left:4%;
 	top:-10px;
 	font-size:60%;
+	text-shadow:none !important;
 	color:#333333 !important;
 	}
+
  -->
 </style>
 
@@ -387,11 +430,11 @@ a,h1 {
 
 <div class="cfooter">
 <div class="cfooter-top">
-<p> to bottom... </p>
+<p>&nbsp;to bottom...&nbsp;</p>
 <ul>
 <a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
 </ul>
-<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
 
@@ -429,11 +472,14 @@ gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF
 <script src="http://mf-post.github.io/jquery.color.js"></script>
 
 <script src="http://mf-post.github.io/jquery.mousewheel.js"></script>
-<script src="http://mf-post.github.io/jquery.jscrollpane.min.js"></script>
+<script src="http://mf-post.github.io/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
+
+
+
 
 <script type="text/javascript">
 
@@ -452,7 +498,7 @@ function gEBI(id){
 }
 
 function subalert(w){
-	gEBI('chalert').innerHTML = w
+	   gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
 
@@ -589,28 +635,51 @@ $tob.click(function(){
 function footerLock(){
 	if( ISpost == 1 ){
 		$(".cfooter").animate({"backgroundColor":"#AABBCC"},1000,'easeInOutQuad');
-		$(".fbox1").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
-		$(".fbox2").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$("#fbox1").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$("#fbox2").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
 		$(".copyright").animate({"color":"#333333"},1000,'easeInOutQuad');
 		$(".copyright").find("a").animate({"color":"#333333"},1000,'easeInOutQuad');
-		$(".fbox1").css('border-color','#FFFFFF');
-		$(".fbox1").css('overflow-x','hidden');
-		$(".fbox1").css('overflow-y','auto');
+		$(".fcap").find("i").animate({"color":"#2CA6CB"},1000,'easeInOutQuad');
+		$("#fbox1").css('border-color','#FFFFFF');
+		$("#fbox1").css('overflow-x','hidden');
+		$("#fbox1").css('overflow-y','auto');
+		$("#shinput").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$("#shinput").animate({"color":"#BBBBBB"},500,'swing');
 		var ajsfc = 0;
 		if( bwtp != 3 || $(window).width() < 700){
-			$(".fbox1").css('overflow-x','auto');
-			$(".fbox1").css('width','45%');
-			$(".fbox2").css('width','15%');
+			$("#fbox1").css('overflow-x','auto');
+			$("#fbox1").css('width','45%');
+			$("#fbox2").css('width','15%');
 			ajsfc = 60;
 		} else {
 			ajsfc = $(window).width() * 0.2 + 10;
 		}
 		var fx1 = $(window).width() * 0.45 + $(".fcap").viewportOffset().left * 0.2;
-		var fx2 = $(".fbox2").viewportOffset().left;
+		var fx2 = $("#fbox2").viewportOffset().left;
 		$(".fcap").css('left', fx2 - fx1 - ajsfc);
 		$(".fcap-bt").css('left', fx2 - fx1 - ajsfc);
 	}
-	$('.fbox1').jScrollPane();
+	if( bwtp == 3 ){
+		$("#fbox1").mCustomScrollbar({
+			scrollInertia: 0,
+			mouseWheelPixels: 35,
+			autoDraggerLength: true,
+			autoHideScrollbar: false,
+			scrollButtons:{
+				enable: true,
+				scrollType: "continuous",
+				scrollSpeed: 50,
+				scrollAmount: 50
+			},
+			advanced:{
+				updateOnContentResize: true,
+				autoScrollOnFocus: true,
+				normalizeMouseWheelDelta: true
+			},
+			theme: "dark-thick"
+		});
+
+	}
 	if( ISpost == 0 ){
 		return;
 	}
@@ -651,8 +720,8 @@ $win
 	}
 })
 .resize(function(){
-	subalert("　wait...");
-	location.reload();
+/*	subalert("　wait..."); */
+/*	location.reload(); */
 })
 .scroll(function(){
 	updatePosition();
@@ -698,6 +767,178 @@ if( bwtp == 3 ){
 		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
 		return false;
 	});
+}
+
+
+// --- text search ---
+var initval = '(検索文字を入力...)';
+var updn = 1;
+var fw = '';
+var dw = '';
+var fmax = 0;
+var enableRangy = 0;
+var lg = 0;
+var tid = 0;
+var tsw = 0;
+var ajsy = parseInt(($(window).height() - 250) / 2) - 10;
+
+var searchResultApplier;
+rangy.init();
+var cssClassApplierModule = rangy.modules.ClassApplier;
+if (rangy.supported && cssClassApplierModule && cssClassApplierModule.supported) {
+	enableRangy = 1;
+	searchResultApplier = rangy.createClassApplier("searchResult");
+}else{
+	alert('Rangy Error');
+}
+$('#shinput').attr('value',initval);
+$('#shinput').focus(function() {
+	if ($(this).val() == initval) {
+		$(this).val('');
+		$(this).css('color', '#000000');
+		$(this).blur(function() {
+			if ($.trim($(this).val()) == '') {
+				$(this).val(initval);
+				$(this).css('color', '#BBBBBB');
+			}
+		});
+	}
+});
+function wget(){
+	var w = $('#shinput').val();
+	if( w == initval ){
+		w = '';
+	}
+	w = $.trim(w);
+	return w;
+}
+function colReset(){
+	$('*.searchResult').css('color','Black');
+	$('*.searchResult').css('background-color','PaleGoldenRod');
+}
+$('.find-dn').click(function(){
+	if( wget() == '' || enableRangy == 0 ){
+		coldel();
+		return false;
+	}
+	colReset();
+	dw = fw;
+	fw = wget();
+	if( dw != fw ){
+		coldel();
+		tsw = 1;
+		doSearch();
+	}else{
+		updn++;
+		if( updn > fmax ){
+			updn = fmax;
+		}
+		fmoveMark(updn);
+	}
+	return false;
+});
+$('.find-up').click(function(){
+	if( wget() == '' || enableRangy == 0 ){
+		coldel();
+		return false;
+	}
+	colReset();
+	dw = fw;
+	fw = wget();
+	if( dw != fw ){
+		coldel();
+		tsw = 0;
+		doSearch();
+	}else{
+		updn--;
+		if( updn < 1 ){
+			updn = 1;
+		}
+		 fmoveMark(updn);
+	}
+	return false;
+});
+$('.find-x').click(function(){
+	dw = '';
+	fw = '';
+	coldel();
+	return false;
+});
+function fmoveMark(t){
+	var flms = $(".searchResult");
+	flms.eq(t-1).css('background-color','Gold');
+	var cy = flms.eq(t-1).offset().top - ajsy;
+	$("html,body").animate({scrollTop:cy},300,'easeInOutQuad');
+}
+function doSearch(){
+	if( lg > 0 ){
+		setTimeout(doSearch,100);
+		return;
+	}
+	srhproc()
+	if( fmax > 0 ){
+		if( tsw == 1 ){
+			updn = fmax;
+		}else{
+			updn = 1;
+		}
+		fmoveMark(updn);
+	}
+}
+function srhproc(){
+	var searchTerm = fw;
+	var referenceNode = gEBI('contentMain');
+	var range = rangy.createRange();
+	var searchScopeRange = rangy.createRange();
+	
+	/* searchScopeRange.selectNodeContents(document.body); */
+	   searchScopeRange.selectNodeContents(referenceNode);
+	
+	var options = {
+		caseSensitive: false,
+		wholeWordsOnly: false,
+		withinRange: searchScopeRange,
+		direction: "forward"
+	};
+	
+	/* range.selectNodeContents(document.body); */
+	   range.selectNodeContents(referenceNode);
+	
+	/* searchResultApplier.undoToRange(range); */
+	
+	fmax = 0;
+	if (searchTerm !== "") {
+		while (range.findText(searchTerm, options)) {
+			fmax++;
+			searchResultApplier.applyToRange(range);
+			range.collapse(false);
+		}
+	}
+}
+function coldel(){
+	updn = 1;
+	fmax = 0;
+	lg = 1;
+	tid = setInterval(delproc,100);
+}
+function delproc(){
+	var df;
+	var range = document.createRange();
+	var spanNode = [];
+	spanNode = document.getElementsByClassName('searchResult');
+	lg = spanNode.length;
+	for (var i = 0; i < lg; i++) {
+		range.selectNodeContents(spanNode[i]);
+		df = range.extractContents();
+		range.setStartBefore(spanNode[i]);
+		range.insertNode(df);
+		range.selectNode(spanNode[i]);
+		range.deleteContents();
+	}
+	range.detach();
+	if (lg < 1) {
+		clearInterval(tid);
+	}
 }
 
 
