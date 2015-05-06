@@ -437,7 +437,7 @@ a,h1 {
 
 <div class="article-share" id="share">
 <small class="share clearfix">
-<a href="http://mf-post.github.io/2015/04/12/" target="_self">[permalink]</a>
+<a href="http://mf-post.github.io/2015/04/12/index.html" target="_self">[permalink]</a>
 </small>
 </div>
 </div>
@@ -449,6 +449,13 @@ a,h1 {
 
 
 <nav class="article-nav clearfix">
+
+<div class="prev">
+<a href="/2015/05/06/" title="GWで完成、とはいかなかった・・・">
+<strong style="font-size:85%;">次の投稿:</strong><br/>
+<span>GWで完成、とはいかなかった・・・</span>
+</a>
+</div>
 
 
 <div class="next">
@@ -941,12 +948,6 @@ var enableRangy = 0;
 var lg = 0;
 var tid = 0;
 var tsw = 0;
-var ox = 0;
-var oy = 0;
-var mx = 0;
-var my = 0;
-var dx = 0;
-var dy = 0;
 var ajsy = parseInt(($(window).height() - 250) / 2) - 10;
 
 var searchResultApplier;
@@ -971,10 +972,6 @@ $('#shinput').focus(function() {
 		});
 	}
 });
-$("body").mousemove(function(e){
-	ox = e.pageX;
-	oy = e.pageY;
-});
 function wget(){
 	var w = $('#shinput').val();
 	if( w == initval ){
@@ -989,33 +986,29 @@ function colReset(){
 }
 function avoidRush(){
 	var ret = 0;
-	window.getSelection().collapse(document.body,0);
-	dx = mx;
-	dy = my;
-	mx = ox;
-	my = oy;
-	if( dx != mx || dy != my ){
-		if( clickOnce == 0 && roolOnce == 0 ){
-			clickOnce = 1;
-			sleep(350,function(){ clickOnce = 0; });
-		} else {
-			ret = 1;
-		}
+	if( clickOnce == 0 && roolOnce == 0 ){
+		clickOnce = 1;
+		sleep(300,function(){ clickOnce = 0; });
+	} else {
+		ret = 1;
 	}
 	return ret;
 }
 $('.find-dn').click(function(){
-	if ( avoidRush() == 1 ){
-		return false;
-	}
+	window.getSelection().collapse(document.body,0);
 	if( wget() == '' || enableRangy == 0 ){
 		coldel();
 		return false;
 	}
 	colReset();
+	var bk = dw;
 	dw = fw;
-	fw = wget();
-	if( dw != fw ){
+	if( dw != wget() ){
+		if ( avoidRush() == 1 ){
+			dw = bk;
+			return false;
+		}
+		fw = wget();
 		coldel();
 		tsw = 1;
 		doSearch();
@@ -1029,17 +1022,20 @@ $('.find-dn').click(function(){
 	return false;
 });
 $('.find-up').click(function(){
-	if ( avoidRush() == 1 ){
-		return false;
-	}
+	window.getSelection().collapse(document.body,0);
 	if( wget() == '' || enableRangy == 0 ){
 		coldel();
 		return false;
 	}
 	colReset();
+	var bk = dw;
 	dw = fw;
-	fw = wget();
-	if( dw != fw ){
+	if( dw != wget() ){
+		if ( avoidRush() == 1 ){
+			dw = bk;
+			return false;
+		}
+		fw = wget();
 		coldel();
 		tsw = 0;
 		doSearch();
@@ -1053,6 +1049,7 @@ $('.find-up').click(function(){
 	return false;
 });
 $('.find-x').click(function(){
+	window.getSelection().collapse(document.body,0);
 	if ( avoidRush() == 1 ){
 		return false;
 	}
