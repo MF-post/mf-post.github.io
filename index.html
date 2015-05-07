@@ -341,9 +341,15 @@ a,h1 {
 <div id="textlogo">
 <h1 class="site-name"><a href="http://mf-post.github.io/" title="((title))">((title))</a></h1>
 	<div id="wrdlogo">
-	<h3 class="blog-motto">MF-blog<span id="chalert"></span></h3>
+	<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
 	</div>
 </div>
+
+<noscript>
+<p>&nbsp;</p>
+<p>Now Loading...</p>
+</noscript>
+
 <div class="navbar"><a class="navbutton navmobile" href="#" title="Menu"></a>
 </div>
 <nav class="animated">
@@ -646,7 +652,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc.png" alt="((裏庭))" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="((裏庭))" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -656,6 +662,8 @@ if( ISarchives == 1 ) {
 	gEBI('footbio').innerHTML = wd;
 	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
 }
+gEBI('nldg').innerHTML = '';
+
 
 
 // Catman Routine
