@@ -8,12 +8,52 @@
 
 
 
+
+
+
+
+
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+
 
 
 <title>GWで完成、とはいかなかった・・・ | ((title))</title>
 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+
+<meta name="author" content="MF">
+
+
+<meta name="description" content="今年のGWは、結局5日間ずーっとhtmlやjsいじってた。うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)　まあそれでも、検索機能までは何とか行き着いた。　【使い方】ホイールぐりぐりしたり「to bottom」の右にある矢印クリックで、ページ一番下ま">
+
+
+
+
+
+
+<!-- custom OGP -->
+<meta property="fb:admins" content="---" />
+<meta property="fb:app_id" content="---" />
+<meta property="og:url" content="http://mf-post.github.io/2015/05/06/index.html" />
+<meta property="og:site_name" content="((title))" />
+<meta property="og:title" content="GWで完成、とはいかなかった・・・ | ((title))" />
+<meta property="og:image" content="/img/((OGImage)).png" />
+
+<meta property="og:type" content="article" />
+
+
+
+
+
 <script>
+
+// --- Head Run ---
+window.onunload = function() {};
+var oURL = 'http://mf-post.github.io/2015/05/06/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -38,7 +78,7 @@ if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') >
 	/* other */
 	bwtp = 3;
 }
-window.onunload = function() {};
+
 clickOnce = 1;
 footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
@@ -48,31 +88,6 @@ var ISarchives = 0;
 </script>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-
-<meta name="author" content="MF">
-
-
-<meta name="description" content="今年のGWは、結局5日間ずーっとhtmlやjsいじってた。うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)　まあそれでも、検索機能までは何とか行き着いた。　【使い方】ホイールぐりぐりしたり「to bottom」の右にある矢印クリックで、ページ一番下ま">
-
-
-
-
-
-
-
-
-
-
-<!-- custom OGP -->
-<meta property="fb:admins" content="---" />
-<meta property="fb:app_id" content="---" />
-<meta property="og:url" content="((Page-URL))" />
-<meta property="og:site_name" content="((title))" />
-<meta property="og:title" content="GWで完成、とはいかなかった・・・ | ((title))" />
-<meta property="og:image" content="/img/((OGImage)).png" />
-
-<meta property="og:type" content="article" />
 
 
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
@@ -219,6 +234,7 @@ a,h1 {
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
+	font-size:80%;
 	}
 
 #fbox1{
@@ -574,7 +590,7 @@ a,h1 {
 <div id="fbox2">
 <span class="txt">
 <p>&nbsp;</p>
-<input type="text" size="30" id="shinput">
+<input type="text" autocomplete="off" size="30" id="shinput">
 </span>
 </div>
 
@@ -584,10 +600,10 @@ a,h1 {
 
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
-<p class="copyright">CMS Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
+<p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
 
 <small class="copyright">
-gdgd coading by <a href="http://mf-post.github.io" target="_blank" title="MF">MF</a><a href="/archives">.</a>
+gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF</a><a href="/archives" target="_self">.</a>
 </small>
 
 </p>
@@ -684,7 +700,6 @@ if( ISarchives == 1 ) {
 	gEBI('footbio').innerHTML = wd;
 	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">((裏庭))<span id="chalert"></span></h3>';
 }
-gEBI('nldg').innerHTML = '';
 
 
 
@@ -866,6 +881,7 @@ function footerLock(){
 }
 $win
 .load(function(){
+	gEBI('nldg').innerHTML = '';
 	clickOnce = 1;
 	footerLocked = 1;
 	sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
@@ -1226,7 +1242,7 @@ $(document).ready(function(){
 (function($) {
   var upperLimit = 1000;
   var scrollElem = $('#top');
-  var scrollSpeed = 500;
+  var scrollSpeed = 700;
 	
 	var ftpos = $('#ftpos').position();
 	upperLimit = parseInt(ftpos.top * 0.4);
@@ -1247,7 +1263,7 @@ $(document).ready(function(){
     }
   });
   $(scrollElem).click(function(){
-    $('html, body').animate({scrollTop:0}, scrollSpeed);
+    $('html, body').animate({scrollTop:0}, scrollSpeed, 'easeInOutQuad');
     return false;
   });
 })(jQuery);
