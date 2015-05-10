@@ -50,7 +50,7 @@
     <link href="http://mf-post.github.io/2015/04/11/"/>
     <id>http://mf-post.github.io/2015/04/11/</id>
     <published>2015-04-11T08:50:49.000Z</published>
-    <updated>2015-04-18T11:49:54.707Z</updated>
+    <updated>2015-05-10T09:04:41.557Z</updated>
     <content type="html"><![CDATA[<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
 ]]></content>
     <summary type="html">
@@ -58,9 +58,9 @@
 ]]>
     </summary>
     
-      <category term="あ" scheme="http://mf-post.github.io/source/tags/%E3%81%82/"/>
-    
       <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
+    
+      <category term="あ阿" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E9%98%BF/"/>
     
   </entry>
   
