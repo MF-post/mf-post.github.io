@@ -408,39 +408,39 @@ body >header a {
 }
 #textlogo {
   float: left;
-  width: 203px;
-  font-size: 90%;
+  width: 275px;
+  font-size: 110%;
   margin-left: 0.5em;
 }
 #textlogo h1.site-name {
   width: 100%;
   font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Open Sans", sans-serif, helvetica;
-  font-size: 130%;
   line-height: 1.9;
   font-weight: normal;
+  font-size: font-size-10;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    font-size: 100%;
+    font-size: font-size-20;
   }
 }
 @media only screen and (min-width: 1010px) {
   #textlogo h1.site-name {
-    font-size: 110%;
+    font-size: font-size-30;
   }
 }
-#textlogo h2.blog-motto {
-  font-size: 0.7em;
+#textlogo h3.blog-motto {
   font-weight: normal;
+  font-size: font-size-30;
 }
 @media only screen and (min-width: 768px) {
-  #textlogo h2.blog-motto {
-    font-size: 100%;
+  #textlogo h3.blog-motto {
+    font-size: font-size-50;
   }
 }
 @media only screen and (min-width: 1010px) {
-  #textlogo h2.blog-motto {
-    font-size: 110%;
+  #textlogo h3.blog-motto {
+    font-size: font-size-60;
   }
 }
 .navbar {
