@@ -2,7 +2,7 @@
 <html lang="ja">
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 <title>群れの笠と風刻</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
@@ -10,15 +10,16 @@
 <!-- custom OGP -->
 <meta property="fb:admins" content="((FBadm))" />
 <meta property="fb:app_id" content="((FBapp))" />
-<meta property="og:url" content="http://mf-post.github.io/source/tags/あ阿/index.html" />
+<meta property="og:url" content="http://mf-post.github.io/index.html" />
 <meta property="og:site_name" content="群れの笠と風刻" />
 <meta property="og:title" content="群れの笠と風刻" />
 <meta property="og:image" content="/img/((OGImage)).png" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="ブログやってます。" />
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/source/tags/あ阿/index.html';
+var oURL = 'http://mf-post.github.io/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -297,25 +298,92 @@ a,h1 {
 <!-- (p)header EOF -->
 </header>
 <div id="container">
-<!-- tag.ejs -->
-<!-- (p)archive.ejs -->
-<div class="archive-title">
-<h2 class="tag-icon">あ阿</h2>
-</div>
-<div id="main" class="archive-part clearfix">
-<div id="archive-page">
-	<!-- (p)article.ejs -->
+<!-- index.ejs -->
+<div id="main">
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/05/06/" title="GWで完成、とはいかなかった・・・" itemprop="url">
+<h1 itemprop="name">GWで完成、とはいかなかった・・・</h1>
+	
+		<p itemprop="description" >今年のGWは、結局5日間ずーっとhtmlやjsいじってた。うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)　ま ... </p>
+	
+<time datetime="2015-05-06T11:24:54.000Z" itemprop="datePublished">2015-05-06</time>
+</a>
+</section>
+<!-- (p)article EOF -->
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/04/12/" title="タグ付き投稿のテスト2" itemprop="url">
+<h1 itemprop="name">タグ付き投稿のテスト2</h1>
+	
+		<p itemprop="description" >タグによってOGimage変える・・・？記事アーカイブがFBログだから、やってみる価値はある。 ... </p>
+	
+<time datetime="2015-04-12T08:51:25.000Z" itemprop="datePublished">2015-04-12</time>
+</a>
+</section>
+<!-- (p)article EOF -->
+<!-- (p)article.ejs -->
 <section class="post" itemscope itemprop="blogPost">
 	<a href="/2015/04/11/" title="タグ付き投稿のテスト1" itemprop="url">
 <h1 itemprop="name">タグ付き投稿のテスト1</h1>
+	
+		<p itemprop="description" >CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。 ... </p>
+	
 <time datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
 </a>
 </section>
 <!-- (p)article EOF -->
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/03/25/" title="日本語での動作チェック" itemprop="url">
+<h1 itemprop="name">日本語での動作チェック</h1>
+	
+		<p itemprop="description" >さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多 ... </p>
+	
+<time datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
+</a>
+</section>
+<!-- (p)article EOF -->
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/03/23/" title="Hello World" itemprop="url">
+<h1 itemprop="name">Hello World</h1>
+	
+		<p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info ... </p>
+	
+<time datetime="2015-03-23T13:32:10.987Z" itemprop="datePublished">2015-03-23</time>
+</a>
+</section>
+<!-- (p)article EOF -->
 </div>
+<!-- index EOF -->
+<!-- (p)sidebar.ejs -->
+<div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<!-- (w)tag.ejs -->
+<div class="tagslist">
+<p class="asidetitle">All Tags</p>
+<ul class="clearfix">
+<li><a href="/source/tags/ああああ/" title="ああああ">ああああ<sup>2</sup></a></li>
+<li><a href="/source/tags/あ阿/" title="あ阿">あ阿<sup>1</sup></a></li>
+</ul>
 </div>
-<!-- (p)archive EOF -->
-<!-- tag EOF -->
+<!-- (w)tag EOF -->
+<!-- (w)links.ejs -->
+<div class="linkslist">
+<p class="asidetitle">Links</p>
+<ul>
+<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebook個人ページ">Facebook</a></li>
+<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="※作曲は大昔に挫折、個人的にはあくまでリスナー。&lt;(_ _)&gt;">SoundCloud</a></li>
+<li><a href="/atom.xml">RSS</a></li>
+</ul>
+</div>
+<!-- (w)links EOF -->
+</aside>
+</div>
+<!-- (p)sidebar EOF -->
 </div>
 <!-- (p)footer.ejs -->
 <div class="opt1"></div>
@@ -403,7 +471,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-H" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-F" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -411,7 +479,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-N<span id="chalert"></span></h3>';
 }
 // Catman Routine
 var m = $('#main'),
