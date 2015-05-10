@@ -2,37 +2,23 @@
 <html lang="ja">
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
-
-
-
-
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-
-
-<title>search | Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª</title>
-
+<title>åQÇÍÇÃä}Ç∆ïóçè</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
-
 <meta name="description" content="MF-blog">
-
-
-
 <!-- custom OGP -->
 <meta property="fb:admins" content="((FBadm))" />
 <meta property="fb:app_id" content="((FBapp))" />
-<meta property="og:url" content="http://mf-post.github.io/search/index.html" />
-<meta property="og:site_name" content="Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª" />
-<meta property="og:title" content="search | Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª" />
+<meta property="og:url" content="http://mf-post.github.io/source/tags/Ç†à¢/index.html" />
+<meta property="og:site_name" content="åQÇÍÇÃä}Ç∆ïóçè" />
+<meta property="og:title" content="åQÇÍÇÃä}Ç∆ïóçè" />
 <meta property="og:image" content="/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
-
-
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/search/index.html';
+var oURL = 'http://mf-post.github.io/source/tags/Ç†à¢/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -62,20 +48,15 @@ footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
 </script>
-
-
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-
-<link rel="alternate" href="/atom.xml" title="Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="åQÇÍÇÃä}Ç∆ïóçè" type="application/atom+xml">
 <link rel="icon" href="/img/favicon.ico">
 <link rel="apple-touch-icon" href="/img/catman.jpg">
 <link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
-
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 <!-- (p)analytics.ejs -->
-
 <!-- (p)analytics EOF -->
 <!-- (p)webfonts.ejs -->
 <!-- 
@@ -86,14 +67,15 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 //
 -->
 <!-- (p)webfonts EOF -->
-
-
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
+	}
+#textlogo {
+	width:270px;
 	}
 .toc-number {
 	display:none;
@@ -276,9 +258,8 @@ a,h1 {
 	text-shadow:none !important;
 	color:#333333 !important;
 	}
- -->
+-->
 </style>
-
 </head>
 <!-- (p)head.ejs EOF -->
 <body>
@@ -286,12 +267,12 @@ a,h1 {
 <!-- (p)header.ejs -->
 <div>
 	<div id="imglogo">
-	<a href="/"><img src="/img/logo.svg" alt="Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª" title="Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª"/></a>
+	<a href="/"><img src="/img/logo.svg" alt="åQÇÍÇÃä}Ç∆ïóçè" title="åQÇÍÇÃä}Ç∆ïóçè"/></a>
 	</div>
 <div id="textlogo">
-<h1 class="site-name"><a href="http://mf-post.github.io/" title="Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª">Áæ§„Çå„ÅÆÁ¨†„Å®È¢®Âàª</a></h1>
+	<h1 class="site-name"><a href="http://mf-post.github.io/" title="åQÇÍÇÃä}Ç∆ïóçè">åQÇÍÇÃä}Ç∆ïóçè</a></h1>
 	<div id="wrdlogo">
-	<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
+		<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
 	</div>
 </div>
 <noscript>
@@ -316,10 +297,60 @@ a,h1 {
 <!-- (p)header EOF -->
 </header>
 <div id="container">
-<div id="main">
-<div id='cse' style='width:100%;text-align:center'>search</div>:
+<!-- tag.ejs -->
+<!-- (p)archive.ejs -->
+<div class="archive-title">
+<h2 class="tag-icon">Ç†à¢</h2>
+</div>
+<div id="main" class="archive-part clearfix">
+<div id="archive-page">
+	<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/04/11/" title="É^ÉOïtÇ´ìäçeÇÃÉeÉXÉg1" itemprop="url">
+<h1 itemprop="name">É^ÉOïtÇ´ìäçeÇÃÉeÉXÉg1</h1>
+<time datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
+</a>
+</section>
+<!-- (p)article EOF -->
 </div>
 </div>
+<!-- (p)archive EOF -->
+<!-- tag EOF -->
+</div>
+<!-- (p)footer.ejs -->
+<div class="opt1"></div>
+<div class="opt2"></div>
+<div class="dfooter"></div>
+<footer id="ftpos">
+<div class="cfooter">
+<div class="cfooter-top">
+<p>&nbsp;to bottom...&nbsp;</p>
+<ul>
+<a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
+</ul>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
+</div>
+<div class="cfooter-bottom">
+<div id="footbio">
+<span class="txt">
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+</span>
+</div>
+<div style="clear:both; height:10px;"></div>
+<div id="btm">
+<p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
+<small class="copyright">
+gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF</a><a href="/archives" target="_self">.</a>
+</small>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- (p)footer EOF -->
 <!-- (p)after_footer.ejs -->
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
@@ -329,8 +360,6 @@ a,h1 {
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
-
-
 <script type="text/javascript">
 $(window).unload(function(){});
 $.fn.extend({
@@ -348,8 +377,6 @@ function subalert(w){
 	   gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
-
-
 $(document).ready(function(){
 $('.navbar').click(function(){
 	$('header nav').toggleClass('shownav');
@@ -362,10 +389,9 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
-
 // --- archives over-ride ---
-$("a[href='http://u111u.info/kyqG']").attr('title','FB„É≠„Ç∞„ÉòÁßªÂãï„Åó„Åæ„Åô');
-$("a[href='http://u111u.info/kyqG']").html('Ë®ò‰∫ã‰∏ÄË¶ß');
+$("a[href='http://u111u.info/kyqG']").attr('title','FBÉçÉOÉwà⁄ìÆÇµÇ‹Ç∑');
+$("a[href='http://u111u.info/kyqG']").html('ãLéñàÍóó');
 if( ISarchives == 1 ) {
 	var ep = String.fromCharCode(0x25A0);
 	var wd = ''
@@ -377,7 +403,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-H" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -385,9 +411,8 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-J<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
 }
-
 // Catman Routine
 var m = $('#main'),
 a = $('#asidepart'),
@@ -417,7 +442,6 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
-
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top"),
 $content = $(".cfooter"),
@@ -430,7 +454,6 @@ var lim = 0;
 var offsetBuf = 0;
 var smallOpt = 0;
 var ISpost = 0;
-
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
 }
@@ -570,7 +593,7 @@ $win
 	}
 })
 .resize(function(){
-	subalert("„ÄÄwait...");
+	subalert("Å@wait...");
 	location.reload();
 })
 .scroll(function(){
@@ -597,7 +620,6 @@ $win
 		updateV();
 	}
 });
-
 // --- smooth scrool ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -606,7 +628,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('„ÄÄ„ÄÄ‚ÄªchromeÊé®Â•®');
+		subalert('Å@Å@Å¶chromeêÑèß');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){
@@ -624,9 +646,8 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
-
 // --- text search ---
-var initval = '(Ê§úÁ¥¢ÊñáÂ≠ó„ÇíÂÖ•Âäõ...)';
+var initval = '(åüçıï∂éöÇì¸óÕ...)';
 var updn = 1;
 var fw = '';
 var dw = '';
@@ -820,20 +841,9 @@ function delproc(){
 		clearInterval(tid);
 	}
 }
-
 });
-
 </script>
-
-
-
-
-
-
-
-
 <!-- (p)search.ejs -->
-
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
 google.load('search', '1', {language : 'ja',style: google.loader.themes.MINIMALIST});
@@ -850,11 +860,8 @@ customSearchControl.execute(search);
 }
 },true);
 </script>
-
 <!-- (p)search EOF -->
-
 <!-- (p)after_footer EOF -->
 </body>
 </html>
-
 <!-- layout.ejs EOF -->

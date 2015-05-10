@@ -2,37 +2,23 @@
 <html lang="ja">
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
-
-
-
-
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-
-
-<title>Hello World | ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»</title>
-
+<title>ŒQ‚ê‚ÌŠ}‚Æ•—</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
-
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
-
-
-
+<meta name="description" content="MF-blog">
 <!-- custom OGP -->
 <meta property="fb:admins" content="((FBadm))" />
 <meta property="fb:app_id" content="((FBapp))" />
-<meta property="og:url" content="http://mf-post.github.io/2015/03/23/index.html" />
-<meta property="og:site_name" content="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" />
-<meta property="og:title" content="Hello World | ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" />
+<meta property="og:url" content="http://mf-post.github.io/source/tags/‚ ‚ ‚ ‚ /index.html" />
+<meta property="og:site_name" content="ŒQ‚ê‚ÌŠ}‚Æ•—" />
+<meta property="og:title" content="ŒQ‚ê‚ÌŠ}‚Æ•—" />
 <meta property="og:image" content="/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
-
-
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/2015/03/23/index.html';
+var oURL = 'http://mf-post.github.io/source/tags/‚ ‚ ‚ ‚ /index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -62,20 +48,15 @@ footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
 </script>
-
-
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-
-<link rel="alternate" href="/atom.xml" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="ŒQ‚ê‚ÌŠ}‚Æ•—" type="application/atom+xml">
 <link rel="icon" href="/img/favicon.ico">
 <link rel="apple-touch-icon" href="/img/catman.jpg">
 <link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
-
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 <!-- (p)analytics.ejs -->
-
 <!-- (p)analytics EOF -->
 <!-- (p)webfonts.ejs -->
 <!-- 
@@ -86,14 +67,15 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 //
 -->
 <!-- (p)webfonts EOF -->
-
-
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
+	}
+#textlogo {
+	width:270px;
 	}
 .toc-number {
 	display:none;
@@ -276,9 +258,8 @@ a,h1 {
 	text-shadow:none !important;
 	color:#333333 !important;
 	}
- -->
+-->
 </style>
-
 </head>
 <!-- (p)head.ejs EOF -->
 <body>
@@ -286,12 +267,12 @@ a,h1 {
 <!-- (p)header.ejs -->
 <div>
 	<div id="imglogo">
-	<a href="/"><img src="/img/logo.svg" alt="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»"/></a>
+	<a href="/"><img src="/img/logo.svg" alt="ŒQ‚ê‚ÌŠ}‚Æ•—" title="ŒQ‚ê‚ÌŠ}‚Æ•—"/></a>
 	</div>
 <div id="textlogo">
-<h1 class="site-name"><a href="http://mf-post.github.io/" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»">ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»</a></h1>
+	<h1 class="site-name"><a href="http://mf-post.github.io/" title="ŒQ‚ê‚ÌŠ}‚Æ•—">ŒQ‚ê‚ÌŠ}‚Æ•—</a></h1>
 	<div id="wrdlogo">
-	<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
+		<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
 	</div>
 </div>
 <noscript>
@@ -316,118 +297,33 @@ a,h1 {
 <!-- (p)header EOF -->
 </header>
 <div id="container">
-<!-- post.ejs -->
-<!-- (pp)article.ejs -->
-<div id="main" class="post" itemscope itemprop="blogPost">
-<article itemprop="articleBody"> 
-<!-- (pp)header.ejs -->
-<header class="article-info clearfix">
-<h1 itemprop="name">
-	<a href="/2015/03/23/" title="Hello World" itemprop="url">Hello World</a>
-</h1>
-<p class="article-author">By
-<small>&nbsp;MF</small>
-</p>
-<p class="article-time">
-<time datetime="2015-03-23T13:32:10.987Z" itemprop="datePublished">2015-03-23</time>
-	Updated:<time datetime="2015-03-23T13:32:10.987Z" itemprop="dateModified">2015-03-23</time>
-</p>
-</header>
-<!-- (pp)header EOF -->
-<div class="article-content">
-<!-- (pp)gallery.ejs -->
-
-<!-- (pp)gallery EOF -->
-
-	<div id="toc" class="toc-article">
-	<strong class="toc-title">Contents</strong>
-	<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-	</div>
-<div id="contentMain">
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<!-- tag.ejs -->
+<!-- (p)archive.ejs -->
+<div class="archive-title">
+<h2 class="tag-icon">‚ ‚ ‚ ‚ </h2>
 </div>
-</div>
-<!-- partial('footer') -->
-<!-- Pull-UP Code -->
-<hr align="center" style="width:95%;">
-<div class="article-footer clearfix">
-<div class="article-fix">
-<!-- (pp)catetags.ejs -->
-
-
-<!-- (pp)catetags EOF -->
-<div class="article-share" id="share">
-<small class="share clearfix">
-<a href="http://mf-post.github.io/2015/03/23/index.html" target="_self">[permalink]</a>
-</small>
-</div>
-</div>
-</div>
-</article>
-<!-- (pp)pagination.ejs -->
-
-<nav class="article-nav clearfix">
-<div class="prev">
-<a href="/2015/03/25/" title="æ—¥æœ¬èªã§ã®å‹•ä½œãƒã‚§ãƒƒã‚¯">
-<strong style="font-size:85%;">æ¬¡ã®æŠ•ç¨¿:</strong><br/>
-<span>æ—¥æœ¬èªã§ã®å‹•ä½œãƒã‚§ãƒƒã‚¯</span>
+<div id="main" class="archive-part clearfix">
+<div id="archive-page">
+	<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/04/12/" title="ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg2" itemprop="url">
+<h1 itemprop="name">ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg2</h1>
+<time datetime="2015-04-12T08:51:25.000Z" itemprop="datePublished">2015-04-12</time>
 </a>
+</section>
+<!-- (p)article EOF -->
+	<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+	<a href="/2015/04/11/" title="ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg1" itemprop="url">
+<h1 itemprop="name">ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg1</h1>
+<time datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
+</a>
+</section>
+<!-- (p)article EOF -->
 </div>
-
-</nav>
-
-<!-- (pp)pagination EOF -->
-<!-- (pp)comment.ejs -->
-
-<!-- (pp)comment EOF -->
-
 </div>
-<!-- (pp)article EOF -->
-<!-- post EOF -->
-<!-- (p)sidebar.ejs -->
-<div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-<div id="toc" class="toc-aside">
-<strong style="font-size:70%; line-height:130%;">
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-</strong>
-</div>
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-<!-- (w)tag.ejs -->
-
-<div class="tagslist">
-<p class="asidetitle">All Tags</p>
-<ul class="clearfix">
-<li><a href="/source/tags/ã‚ã‚ã‚ã‚/" title="ã‚ã‚ã‚ã‚">ã‚ã‚ã‚ã‚<sup>2</sup></a></li>
-<li><a href="/source/tags/ã‚é˜¿/" title="ã‚é˜¿">ã‚é˜¿<sup>1</sup></a></li>
-</ul>
-</div>
-
-<!-- (w)tag EOF -->
-
-<!-- (w)links.ejs -->
-<div class="linkslist">
-<p class="asidetitle">Links</p>
-<ul>
-<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebookå€‹äººãƒšãƒ¼ã‚¸">Facebook</a></li>
-<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="â€»ä½œæ›²ã¯å¤§æ˜”ã«æŒ«æŠ˜ã€å€‹äººçš„ã«ã¯ã‚ãã¾ã§ãƒªã‚¹ãƒŠãƒ¼ã€‚&lt;(_ _)&gt;">SoundCloud</a></li>
-<li><a href="/atom.xml">RSS</a></li>
-</ul>
-</div>
-<!-- (w)links EOF -->
-
-</aside>
-</div>
-<!-- (p)sidebar EOF -->
+<!-- (p)archive EOF -->
+<!-- tag EOF -->
 </div>
 <!-- (p)footer.ejs -->
 <div class="opt1"></div>
@@ -443,37 +339,14 @@ a,h1 {
 <p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
-<div id="fbox1">
+<div id="footbio">
 <span class="txt">
-<p>Facebookã‚³ãƒ¡ãƒ³ãƒˆæ¬„å…¥ã‚‹äºˆå®šã ãŒãƒ»ãƒ»ãƒ»</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
+<p class="txt">prof</p>
 </span>
 </div>
-<div class="fcap">
-<p><label for="shinput">è¨˜äº‹å†…æ¤œç´¢:</label>&nbsp;<span id="kens"></span>&nbsp;</p>
-<ul>
-<a class="find-dn" title="ä¸‹ã¸æ¤œç´¢"><i class="fa fa-angle-double-down" style="cursor: pointer;"></i></a>
-<a class="find-up" title="ä¸Šã¸æ¤œç´¢"><i class="fa fa-angle-double-up" style="cursor: pointer;"></i></a>
-<a class="find-x" title="ãƒãƒ¼ã‚«ãƒ¼å‰Šé™¤"><i class="fa fa-times" style="cursor: pointer;"></i></a>
-</ul>
-</div>
-<label for="shinput">
-<div id="fbox2">
-<span class="txt">
-<p>&nbsp;</p>
-<input type="text" autocomplete="off" size="30" id="shinput">
-</span>
-</div>
-</label>
-<div style="width:1px; height:75px;"></div>
-<p class="fcap-bt">ãƒ•ãƒƒã‚¿ãƒ¼ã‚’æˆ»ã—ãŸã„æ™‚ã¯ã€<br>ãƒšãƒ¼ã‚¸å†èª­è¾¼(F5)ã—ã¦ä¸‹ã•ã„ã€‚</p>
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
 <p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
@@ -486,9 +359,6 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 </div>
 </footer>
 <!-- (p)footer EOF -->
-<div id="top" style="position:fixed;bottom:90px;right:30px;cursor: pointer;">
-<a title="to top"><img src="/img/top.png"/ width="50px"></a>
-</div>
 <!-- (p)after_footer.ejs -->
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
@@ -498,8 +368,6 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
-
-
 <script type="text/javascript">
 $(window).unload(function(){});
 $.fn.extend({
@@ -517,8 +385,6 @@ function subalert(w){
 	   gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
-
-
 $(document).ready(function(){
 $('.navbar').click(function(){
 	$('header nav').toggleClass('shownav');
@@ -531,10 +397,9 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
-
 // --- archives over-ride ---
-$("a[href='http://u111u.info/kyqG']").attr('title','FBãƒ­ã‚°ãƒ˜ç§»å‹•ã—ã¾ã™');
-$("a[href='http://u111u.info/kyqG']").html('è¨˜äº‹ä¸€è¦§');
+$("a[href='http://u111u.info/kyqG']").attr('title','FBƒƒOƒwˆÚ“®‚µ‚Ü‚·');
+$("a[href='http://u111u.info/kyqG']").html('‹L–ˆê——');
 if( ISarchives == 1 ) {
 	var ep = String.fromCharCode(0x25A0);
 	var wd = ''
@@ -546,7 +411,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-Z" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-E" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -554,9 +419,8 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-X<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
 }
-
 // Catman Routine
 var m = $('#main'),
 a = $('#asidepart'),
@@ -570,8 +434,6 @@ $(window).resize(function(){
 		m.removeClass('moveMain');
 		a.css('display', 'block').removeClass('fadeOut');
 		o.css('display', 'none');
-		
-			$('#toc.toc-aside').css('display', 'none');
 		
 	}
 });
@@ -588,7 +450,6 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
-
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top"),
 $content = $(".cfooter"),
@@ -601,8 +462,6 @@ var lim = 0;
 var offsetBuf = 0;
 var smallOpt = 0;
 var ISpost = 0;
-    ISpost = 1;
-
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
 }
@@ -742,7 +601,7 @@ $win
 	}
 })
 .resize(function(){
-	subalert("ã€€wait...");
+	subalert("@wait...");
 	location.reload();
 })
 .scroll(function(){
@@ -769,7 +628,6 @@ $win
 		updateV();
 	}
 });
-
 // --- smooth scrool ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -778,7 +636,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('ã€€ã€€â€»chromeæ¨å¥¨');
+		subalert('@@¦chrome„§');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){
@@ -796,9 +654,8 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
-
 // --- text search ---
-var initval = '(æ¤œç´¢æ–‡å­—ã‚’å…¥åŠ›...)';
+var initval = '(ŒŸõ•¶š‚ğ“ü—Í...)';
 var updn = 1;
 var fw = '';
 var dw = '';
@@ -992,122 +849,9 @@ function delproc(){
 		clearInterval(tid);
 	}
 }
-
-});
-
-</script>
-
-
-<script type="text/javascript">
-// Catman Routine
-$(document).ready(function(){
-var ai = $('.article-content>iframe'),
-ae = $('.article-content>embed'),
-m  = $('#main'),
-a  = $('#asidepart'),
-t  = $('#toc'),
-h  = $('article h2'),
-ah = $('article h2'),
-ta = $('#toc.toc-aside'),
-o  = $('.openaside'),
-c  = $('.closeaside'),
-w  = $(window).width(),
-limit = 1010;
-if ( w > limit ) {
-m.addClass('moveMain');
-a.css('display', 'none').addClass('fadeIn');
-o.css('display', 'block');
-};
-if(ai.length>0){
-ai.wrap('<div class="video-container" />');
-};
-if(ae.length>0){
-ae.wrap('<div class="video-container" />');
-};
-if(ah.length==0){
-t.css('display','none');
-}else{
-if ( w > limit ) {
-ta.css('display', 'block').addClass('fadeIn');
-};
-c.click(function(){
-ta.css('display', 'block').addClass('fadeIn');
-});
-o.click(function(){
-ta.css('display', 'none');
-});
-$(window).scroll(function(){
-ta.css("top",Math.max(140,250-$(this).scrollTop()));
-});
-};
 });
 </script>
-
-
-
-<script type="text/javascript">
-// Catman Routine
-$(document).ready(function(){ 
-var $this = $('.share'),
-url = $this.attr('data-url'),
-encodedUrl = encodeURIComponent(url),
-title = $this.attr('data-title');
-var html = [
-'<a href="#" class="overlay" id="qrcode"></a>',
-'<div class="qrcode clearfix"><span>share</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong>',
-'<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-'<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-'<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
-'<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-'<span title="Share to"></span>'
-].join('');
-$this.append(html);
-$('.article-share-qrcode').click(function(){
-var imgSrc = $('#qrcode-pic').attr('data-src');
-$('#qrcode-pic').attr('src', imgSrc);
-$('#qrcode-pic').load(function(){
-$('.qrcode strong').text(' ');
-});
-});
-});
-</script>
-<script type="text/javascript">
-// Catman Routine
-(function($) {
-var upperLimit = 1000;
-var scrollElem = $('#top');
-var scrollSpeed = 700;
-	
-	var ftpos = $('#ftpos').position();
-	upperLimit = parseInt(ftpos.top * 0.4);
-	
-scrollElem.hide();
-$(window).scroll(function(){
-var scrollTop = $(document).scrollTop();
-if ( scrollTop > upperLimit ) {
-		
-		if( bwtp != 3 || $(window).width() < 700){
-			$('#top').css('bottom','50px');
-		}
-		
-$('#top').css('display','block')
-$('#top').stop().fadeTo(300, 1);
-} else {
-$('#top').stop().fadeTo(300, 0, function(){ $('#top').css('display','none'); });
-}
-});
-$(scrollElem).click(function(){
-$('html, body').animate({scrollTop:0}, scrollSpeed, 'easeInOutQuad');
-return false;
-});
-})(jQuery);
-</script>
-
-
-
-
 <!-- (p)search.ejs -->
-
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
 google.load('search', '1', {language : 'ja',style: google.loader.themes.MINIMALIST});
@@ -1124,11 +868,8 @@ customSearchControl.execute(search);
 }
 },true);
 </script>
-
 <!-- (p)search EOF -->
-
 <!-- (p)after_footer EOF -->
 </body>
 </html>
-
 <!-- layout.ejs EOF -->

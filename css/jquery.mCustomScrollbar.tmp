@@ -2,7 +2,6 @@
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
 */
-
 /*
 CONTENTS: 
 	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
@@ -13,7 +12,6 @@ CONTENTS:
 	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
 		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
 */
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 1. BASIC STYLE  
@@ -35,7 +33,6 @@ CONTENTS:
 		width: auto;
 		height: auto;
 	}
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 2. VERTICAL SCROLLBAR 
@@ -115,7 +112,6 @@ y-axis
 		cursor: pointer;
 	}
 	.mCSB_scrollTools .mCSB_buttonDown{ bottom: 0; }
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 3. HORIZONTAL SCROLLBAR 
@@ -180,7 +176,6 @@ x-axis
 	
 	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft{ left: 0; }
 	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{ right: 0; }
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 4. VERTICAL AND HORIZONTAL SCROLLBARS 
@@ -244,7 +239,6 @@ yx-axis
 	
 	/* non-visible horizontal scrollbar */
 	.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; }
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 5. TRANSITIONS  
@@ -283,7 +277,6 @@ yx-axis
 					margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
 					opacity .2s ease-in-out, background-color .2s ease-in-out; 
 	}
-
 /* 
 ------------------------------------------------------------------------------------------------------------------------
 6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
@@ -386,7 +379,6 @@ yx-axis
 	
 	/* ---------------------------------------- */
 	
-
 	/* theme: "light-2", "dark-2" */
 	.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail{
@@ -436,7 +428,6 @@ yx-axis
 	
 	/* ---------------------------------------- */
 	
-
 	/* theme: "light-thick", "dark-thick" */
 	.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
@@ -469,7 +460,6 @@ yx-axis
 	.mCS-light-thick.mCSB_scrollTools .mCSB_buttonDown{	background-position: -16px -20px; }
 	.mCS-light-thick.mCSB_scrollTools .mCSB_buttonLeft{	background-position: -20px -40px; }
 	.mCS-light-thick.mCSB_scrollTools .mCSB_buttonRight{ background-position: -20px -56px; }
-
 	/* theme: "dark-thick" */
 	
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
@@ -490,7 +480,6 @@ yx-axis
 	
 	/* ---------------------------------------- */
 	
-
 	/* theme: "light-thin", "dark-thin" */
 	
 	.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail{ background-color: #fff; background-color: rgba(255,255,255,0.1); }
@@ -504,7 +493,6 @@ yx-axis
 		height: 2px;
 		margin: 7px auto;
 	}
-
 	/* theme "dark-thin" */
 	
 	.mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail{ background-color: #000; background-color: rgba(0,0,0,0.15); }

@@ -2,37 +2,24 @@
 <html lang="ja">
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
-
-
-
-
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-
-
-<title>GWã§å®Œæˆã€ã¨ã¯ã„ã‹ãªã‹ã£ãŸãƒ»ãƒ»ãƒ» | ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»</title>
-
+<title>“ú–{Œê‚Å‚Ì“®ìƒ`ƒFƒbƒN | ŒQ‚ê‚ÌŠ}‚Æ•—</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
-
-<meta name="description" content="ä»Šå¹´ã®GWã¯ã€çµå±€5æ—¥é–“ãšãƒ¼ã£ã¨htmlã‚„jsã„ã˜ã£ã¦ãŸã€‚ã†ã¾ãã„ã£ã¦ã‚Œã°ã€æœ€çµ‚æ—¥ã«ã©ã“ã‹å‡ºæ›ã‘ã¦ä½•ã‹æŠ•ç¨¿ã€ã¨ã„ããŸã‹ã£ãŸãŒãƒ»ãƒ»ãƒ»ã‚„ã£ã±ã§ã‘ã¸ã‚“ã€‚(T_T)ã€€ã¾ã‚ãã‚Œã§ã‚‚ã€æ¤œç´¢æ©Ÿèƒ½ã¾ã§ã¯ä½•ã¨ã‹è¡Œãç€ã„ãŸã€‚ã€€ã€ä½¿ã„æ–¹ã€‘ãƒ›ã‚¤ãƒ¼ãƒ«ãã‚Šãã‚Šã—ãŸã‚Šã€Œto bottomã€ã®å³ã«ã‚ã‚‹çŸ¢å°ã‚¯ãƒªãƒƒã‚¯ã§ã€ãƒšãƒ¼ã‚¸ä¸€ç•ªä¸‹ã¾">
-
-
-
+<meta name="description" content="‚³‚ÄA‚Ç‚¤‚â‚çHexo‚ğÅ’áŒÀ‰^—p‚Å‚«‚éŠ‚Ü‚Å‚Í‘†‚¬’…‚¯‚½‚æ‚¤‚Å‚ ‚éBHexo‚Æ‚»‚ÌƒuƒƒOƒXƒL[ƒ€ŠÜ‚ß‚ÄŠJ”­Œ³’†‘‚ç‚µ‚­EEE“ú–{Œê‘Î‰‚É‚Ä‚±‚¸‚Á‚½EEE‚ªA‘½•ªA‘åä•v‚È‚Í‚¸B
+’†‘‚Æ‚¢‚¤‚Æ‹C‚É‚È‚éuî•ñƒŠ[ƒNv‚àAGitHubƒx[ƒX‚Å“®‚­•¨‚È‚Ì‚Å–â‘è‚È‚³‚»‚¤‚Å‚ ‚éBŠ‘Fƒlƒbƒgã‚Éƒf[ƒ^•ú‚èo‚·‚Ì">
 <!-- custom OGP -->
 <meta property="fb:admins" content="((FBadm))" />
 <meta property="fb:app_id" content="((FBapp))" />
-<meta property="og:url" content="http://mf-post.github.io/2015/05/06/index.html" />
-<meta property="og:site_name" content="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" />
-<meta property="og:title" content="GWã§å®Œæˆã€ã¨ã¯ã„ã‹ãªã‹ã£ãŸãƒ»ãƒ»ãƒ» | ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" />
+<meta property="og:url" content="http://mf-post.github.io/2015/03/25/index.html" />
+<meta property="og:site_name" content="ŒQ‚ê‚ÌŠ}‚Æ•—" />
+<meta property="og:title" content="“ú–{Œê‚Å‚Ì“®ìƒ`ƒFƒbƒN | ŒQ‚ê‚ÌŠ}‚Æ•—" />
 <meta property="og:image" content="/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
-
-
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/2015/05/06/index.html';
+var oURL = 'http://mf-post.github.io/2015/03/25/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -62,20 +49,15 @@ footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
 </script>
-
-
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-
-<link rel="alternate" href="/atom.xml" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="ŒQ‚ê‚ÌŠ}‚Æ•—" type="application/atom+xml">
 <link rel="icon" href="/img/favicon.ico">
 <link rel="apple-touch-icon" href="/img/catman.jpg">
 <link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
-
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/css/style.css" type="text/css">
 <!-- (p)analytics.ejs -->
-
 <!-- (p)analytics EOF -->
 <!-- (p)webfonts.ejs -->
 <!-- 
@@ -86,14 +68,15 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 //
 -->
 <!-- (p)webfonts EOF -->
-
-
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
+	}
+#textlogo {
+	width:270px;
 	}
 .toc-number {
 	display:none;
@@ -276,9 +259,8 @@ a,h1 {
 	text-shadow:none !important;
 	color:#333333 !important;
 	}
- -->
+-->
 </style>
-
 </head>
 <!-- (p)head.ejs EOF -->
 <body>
@@ -286,12 +268,12 @@ a,h1 {
 <!-- (p)header.ejs -->
 <div>
 	<div id="imglogo">
-	<a href="/"><img src="/img/logo.svg" alt="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»"/></a>
+	<a href="/"><img src="/img/logo.svg" alt="ŒQ‚ê‚ÌŠ}‚Æ•—" title="ŒQ‚ê‚ÌŠ}‚Æ•—"/></a>
 	</div>
 <div id="textlogo">
-<h1 class="site-name"><a href="http://mf-post.github.io/" title="ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»">ç¾¤ã‚Œã®ç¬ ã¨é¢¨åˆ»</a></h1>
+	<h1 class="site-name"><a href="http://mf-post.github.io/" title="ŒQ‚ê‚ÌŠ}‚Æ•—">ŒQ‚ê‚ÌŠ}‚Æ•—</a></h1>
 	<div id="wrdlogo">
-	<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
+		<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
 	</div>
 </div>
 <noscript>
@@ -323,28 +305,38 @@ a,h1 {
 <!-- (pp)header.ejs -->
 <header class="article-info clearfix">
 <h1 itemprop="name">
-	<a href="/2015/05/06/" title="GWã§å®Œæˆã€ã¨ã¯ã„ã‹ãªã‹ã£ãŸãƒ»ãƒ»ãƒ»" itemprop="url">GWã§å®Œæˆã€ã¨ã¯ã„ã‹ãªã‹ã£ãŸãƒ»ãƒ»ãƒ»</a>
+	<a href="/2015/03/25/" title="“ú–{Œê‚Å‚Ì“®ìƒ`ƒFƒbƒN" itemprop="url">“ú–{Œê‚Å‚Ì“®ìƒ`ƒFƒbƒN</a>
 </h1>
 <p class="article-author">By
 <small>&nbsp;MF</small>
 </p>
 <p class="article-time">
-<time datetime="2015-05-06T11:24:54.000Z" itemprop="datePublished">2015-05-06</time>
-	Updated:<time datetime="2015-05-06T12:42:23.603Z" itemprop="dateModified">2015-05-06</time>
+<time datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
+	Updated:<time datetime="2015-03-28T22:07:22.409Z" itemprop="dateModified">2015-03-29</time>
 </p>
 </header>
 <!-- (pp)header EOF -->
 <div class="article-content">
 <!-- (pp)gallery.ejs -->
-
 <!-- (pp)gallery EOF -->
-
 	<div id="toc" class="toc-article">
 	<strong class="toc-title">Contents</strong>
 	
 	</div>
 <div id="contentMain">
-<p>ä»Šå¹´ã®GWã¯ã€çµå±€5æ—¥é–“ãšãƒ¼ã£ã¨htmlã‚„jsã„ã˜ã£ã¦ãŸã€‚<br>ã†ã¾ãã„ã£ã¦ã‚Œã°ã€æœ€çµ‚æ—¥ã«ã©ã“ã‹å‡ºæ›ã‘ã¦ä½•ã‹æŠ•ç¨¿ã€ã¨ã„ããŸã‹ã£ãŸãŒãƒ»ãƒ»ãƒ»ã‚„ã£ã±ã§ã‘ã¸ã‚“ã€‚(T_T)<br>ã€€<br>ã¾ã‚ãã‚Œã§ã‚‚ã€æ¤œç´¢æ©Ÿèƒ½ã¾ã§ã¯ä½•ã¨ã‹è¡Œãç€ã„ãŸã€‚<br>ã€€<br>ã€ä½¿ã„æ–¹ã€‘<br>ãƒ›ã‚¤ãƒ¼ãƒ«ãã‚Šãã‚Šã—ãŸã‚Šã€Œto bottomã€ã®å³ã«ã‚ã‚‹çŸ¢å°ã‚¯ãƒªãƒƒã‚¯ã§ã€ãƒšãƒ¼ã‚¸ä¸€ç•ªä¸‹ã¾ã§ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚<br>ã™ã‚‹ã¨ãƒ•ãƒƒã‚¿ãƒ¼ãŒå‹•ã„ã¦æ©Ÿèƒ½ãƒ‘ãƒãƒ«ãŒå‡ºã¦ãã¾ã™ã€‚<br>å³å´ã€Œè¨˜äº‹å†…æ¤œç´¢ã€ãŒãã‚Œã§ã™ã€‚ã„ã‚ã„ã‚ã„ã˜ã£ã¦éŠã‚“ã§ã¿ã¦ä¸‹ã•ã„ã€‚<br>ã€€<br>æ‰‹ã£å–ã‚Šæ—©ã„ã®ãŒã€Œã€ã€ã€Œã€‚ã€ã®å¥èª­ç‚¹ã§ã™ã€‚<br>ã€€<br>ã€€<br>ã§ã€ã“ã“ã‹ã‚‰ã®å•é¡ŒãŒã€å·¦ã®ç©ºæ¬„ãƒ»ãƒ»ãƒ»Facebookç³»ã®ç®±ã ã‘ã©ã€OG:urlã®ç”ŸæˆãŒã€å°å…¥ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®hexoã§ã¯ä½œã‚Šå‡ºã›ãªã„ã€‚<br>ã“ã‚ŒãŒç„¡ã„ã¨ã‚³ãƒ¡ãƒ³ãƒˆã‚„ã€Œã„ã„ã­ã€ã®å¯¾è±¡ãƒšãƒ¼ã‚¸ã¨ç´ä»˜ã‘ã§ããªã„ã€‚<br>ï¼ˆç¢ºã‹Facebookã®ãƒ‡ãƒãƒƒã‚¬ã§ã‚¨ãƒ©ãƒ¼ã«ãªã‚‹ã¯ãšï¼‰<br>ã€€<br>head.ejsã®å…ˆé ­éƒ¨åˆ†ãªã©ã€CMSç”Ÿæˆã‚³ãƒ¼ãƒ‰ã®ä¸€éƒ¨ã‚‚æ©Ÿèƒ½ä¸å…¨ã€‚hexoãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚¢ãƒƒãƒ—ã™ã‚Œã°ã„ã„ã®ã ãŒã€ãã‚Œã§ã‚‚æ ¹æœ¬çš„å•é¡Œã¨ã—ã¦æ®‹ã‚‹ã®ãŒã€ã‚·ã‚¹ãƒ†ãƒ ã®æ·±ã„æ‰€ã§ã®æ—¥æœ¬èªãŒæ–‡å­—åŒ–ã‘ã€‚ï¼ˆãƒ•ã‚©ãƒ³ãƒˆæŒ‡å®šæ–‡ã€Œãƒ¡ã‚¤ãƒªã‚ªã€ãªã©ï¼‰<br>ãã‚‚ãã‚‚æ™®é€šã«ä½¿ãŠã†ã¨ã—ãŸå ´åˆã€ã“ã‚Œã¯è‡´å‘½çš„ã ã­ãƒ»ãƒ»ãƒ»<br>ã€€<br>ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚¢ãƒƒãƒ—ã‚‚å«Œãªäºˆæ„ŸãŒã™ã‚‹ã®ã§ã€ã‚„ã£ã±ã‚Šuwscã«ã‚„ã£ã¤ã‘ã•ã›ã‚ˆã†ã€‚<br>ãƒ‡ãƒ—ãƒ­ã‚¤ç›´å‰ç½®æ›ã™ã‚Œã°ã„ã„ã‘ã©ã€ãã‚Œå®Ÿè£…ã—ãªã„ã¨FBç³»ã«é€²ã‚ãªã„ã€ã†ãƒ¼ã‚“ãƒ»ãƒ»ãƒ»<br>ã€€<br>ãƒ»ãƒ»ãƒ»ã¨ã€ã“ã“ã¾ã§ãŒã€GWå…¨å¼¾æŠ•ä¸‹ã—ã¦ã®é€²æ—ã§ãƒ¼ã™ï¼ˆç¬‘ï¼‰</p>
+<p>‚³‚ÄA‚Ç‚¤‚â‚çHexo‚ğÅ’áŒÀ‰^—p‚Å‚«‚éŠ‚Ü‚Å‚Í‘†‚¬’…‚¯‚½‚æ‚¤‚Å‚ ‚éB<br>Hexo‚Æ‚»‚ÌƒuƒƒOƒXƒL[ƒ€ŠÜ‚ß‚ÄŠJ”­Œ³’†‘‚ç‚µ‚­EEE“ú–{Œê‘Î‰‚É‚Ä‚±‚¸‚Á‚½EEE‚ªA‘½•ªA‘åä•v‚È‚Í‚¸B</p>
+<p>’†‘‚Æ‚¢‚¤‚Æ‹C‚É‚È‚éuî•ñƒŠ[ƒNv‚àAGitHubƒx[ƒX‚Å“®‚­•¨‚È‚Ì‚Å–â‘è‚È‚³‚»‚¤‚Å‚ ‚éB<br>Š‘Fƒlƒbƒgã‚Éƒf[ƒ^•ú‚èo‚·‚Ì‚¾‚©‚çAƒKƒ^ƒKƒ^Œ¾‚Á‚½Š‚Å‚Ç‚¤‚µ‚æ‚¤‚à‚È‚¢‚µB</p>
+<p>‚Ş‚µ‚ë‘“àŒü‚¯‚É‘½í‚ÌƒXƒL[ƒ€‚ğF‚ñ‚Èl‚ªì‚Á‚Ä’ñ‹Ÿ‚µ‚Ä‚¢‚é‚Æ‚¢‚¤–‚ÍAŒ»’n‚Ìƒ†[ƒU[—˜—p—¦‚Í‚‚¢‚ÆŒ¾‚¦‚éB<br>Šë‚È‚Á‚©‚µ‚¢•¨‚¾‚Æ‚µ‚½‚çA‚»‚¤‚¢‚¤‚Ì‚Í•qŠ´‚É‚í‚©‚é–ó‚ÅA‚±‚±‚Ü‚Å”­“W‚·‚é‚Æ‚Íl‚¦‚É‚­‚¢B<br>GitHubƒx[ƒX‚È‚Ì‚ÅA‚Ç‚±‚¼‚ÌŠ±Â‚ğ–h‚®‚Á‚ÄŒø‰Ê‚à‚ ‚é‚Ì‚©‚à’m‚ê‚È‚¢‚µB<br>‚Æ‚±‚ë‚Å“Œ•ûƒlƒ^‚ÌƒXƒL[ƒ€‚ª‚ ‚é‚ªAŒü‚±‚¤‚Å‚àl‹C‚È‚Ì‚¾‚ë‚¤‚©HHH</p>
+<p>‚ÅA‚±‚ê‚É‰½‚ğ’Ç‰Á‚·‚é‚©F</p>
+<p>Econfig.yml‚ªA‚Ç‚¤‚µ‚Ä‚à“ú–{Œê‚ğ‚Ü‚Æ‚à‚Éˆ—‚µ‚È‚¢‚Ì‚ÅAƒfƒvƒƒC’¼‘O‚ÉŒQ‚ê‚ÌŠ}‚Æ•—‚ğ‘‚«‘Ö‚¦‚éUWSCƒ}ƒNƒ<br>EEvernote‚ÌƒuƒƒO—pƒm[ƒg‚©‚ç•K—v‹L–‹zo‚µ,Šù‘¶“Še‚Æ‚Ìsync,‹L–“à‰æ‘œsync,ƒ^ƒO“]‘—,iframe‚Ü‚í‚èEEE<br>GitHub§Œä‚àŠÜ‚ß‚ÄA‚±‚±‚ç‚Ö‚ñ‚àUWSCƒ}ƒNƒ‚ÅA‚Ç‚¤‚É‚©‚È‚ç‚È‚¢‚¾‚ë‚¤‚©EEE<br>Evernote‚Ì“Á’è“Še‚ğ‹N“®ƒgƒŠƒK[‚Æ‚·‚é‚Ì‚àŠÜ‚ß‚ÄA‚Ç‚±‚Ü‚Å‰Â”\‚©ŒŸ“¢’†B</p>
+<p>ˆÈ‰ºJavaScript‚É‚æ‚é<br>EƒXƒ€[ƒYƒXƒNƒ[ƒ‹i100“ï–¡AÎj<br>EƒXƒNƒ[ƒ‹‰º’[“’B‚Éƒtƒbƒ^[‚¹‚èo‚µ<br>Eƒtƒbƒ^[“à‚É‹L–“àŒŸõAƒnƒCƒ‰ƒCƒgiEvernote‚ÌŠOŠs“I‚Èƒf[ƒ^ƒJƒeƒSƒŠ‚Æ‚µ‚ÄŒÂl‚Å‚àŒ©‰ñ‚è‚½‚¢‚Ì‚ÅA‚Ç‚¤‚µ‚Ä‚à—~‚µ‚¢j<br>Eƒtƒbƒ^[“à‚ÉFacebookƒRƒƒ“ƒg<br>i‚±‚ê‚ç‚ªÅ‰‚©‚ç•\¦‚³‚ê‚Ä‚¢‚é‚ÆAƒuƒƒO–{•¶“Ç‚Ş‚Ì‚É‹C‚ªU‚éB‚ÅA‰º’[‚¹‚èo‚µ‚É‚µ‚½‚¢–ój</p>
+<p>‚â‚ç‚È‚¢–F<br>EGA‚â‚ç‚È‚¢BSEO‚à“Á‚É‹C‚É‚µ‚È‚¢BIE‚àl‚¦‚È‚¢B—v‚·‚é‚É‚»‚Á‚¿•û–Ê‚Í‚ß‚ñ‚Ç‚­‚³‚¢B˜J—ÍŠ„‚­‚È‚çƒRƒ“ƒeƒ“ƒciÎj<br>‚¾‚Á‚½‚ç‰½‚Å‚±‚ñ‚È–Ê“|‚ÈƒVƒXƒeƒ€‚Éè‚¥“Ë‚Á‚ñ‚Å‚é‚Ì‚©H‚Á‚ÄA‚»‚è‚áEvernote˜AŒg{ƒ¿‚È–‚ªo—ˆ‚ê‚ÎAÅI“I‚É¦‚­•Ö—˜‚¾‚©‚çB<br>‚Ü‚ ‚Æ‚è‚ ‚¦‚¸EEE¡‚ğ‚ß‚­HTML5‚È‚Ì‚ÅuChromeˆÈŠO‚Å‚Ìƒuƒ‰ƒEƒWƒ“ƒO‚Í”ñ‘Î‰v‚Æ‚³‚¹‚Ä’¸‚«‚Ü‚·B</p>
+<p>Šy‹È‚ÌŠ´‘z‚â‚ç‰½‚â‚ç‚ğï–¡‚Å‘‚¢‚Ä‚¢‚­‚¾‚¯‚Ì‘ã•¨‚È‚Ì‚ÅEEE‚»‚¤A‚ ‚­‚Ü‚Åuï–¡vB<br>ˆê’i—‚µ‚½‚çGoogleAPI‚ÌÀŒ±ê‚Æ‚µ‚Ä‚àg‚¦‚é‚©‚È[A‚ÆB</p>
+<p>Ql‚É‚È‚Á‚½î•ñ</p>
+<p><a href="http://liginc.co.jp/web/programming/server/104594?" target="_blank">Š—vŠÔ3•ª!- Github Pages‚ÆHEXO‚Å”š‘¬ƒuƒƒO\’z‚µ‚Ä‚İ‚æ‚¤I - Š”®‰ïĞLIG</a></p>
+<p><a href="http://qiita.com/kouh/items/30e7cbb673472c43b66f" target="_blank">Windows‚Énode.js‚ğ“±“ü‚·‚é•û–@ - Qiita</a></p>
+<p><a href="http://www.aoki.ecei.tohoku.ac.jp/~ito/python_windows.html" target="_blank">Python for Windows ƒCƒ“ƒXƒg[ƒ‹ƒƒ‚</a></p>
+<p><a href="http://pagent.github.io/2014/12/05/hexo-vs-octopress/" target="_blank">Hexo‚ÆOctopress‚Ì”äŠr - Pagent</a></p>
 </div>
 </div>
 <!-- partial('footer') -->
@@ -353,34 +345,33 @@ a,h1 {
 <div class="article-footer clearfix">
 <div class="article-fix">
 <!-- (pp)catetags.ejs -->
-
-
 <!-- (pp)catetags EOF -->
 <div class="article-share" id="share">
 <small class="share clearfix">
-<a href="http://mf-post.github.io/2015/05/06/index.html" target="_self">[permalink]</a>
+<a href="http://mf-post.github.io/2015/03/25/index.html" target="_self">[permalink]</a>
 </small>
 </div>
 </div>
 </div>
 </article>
 <!-- (pp)pagination.ejs -->
-
 <nav class="article-nav clearfix">
-
+<div class="prev">
+<a href="/2015/04/11/" title="ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg1">
+<strong style="font-size:85%;">Ÿ‚Ì“Še:</strong><br/>
+<span>ƒ^ƒO•t‚«“Še‚ÌƒeƒXƒg1</span>
+</a>
+</div>
 <div class="next">
-<a href="/2015/04/12/"  title="ã‚¿ã‚°ä»˜ãæŠ•ç¨¿ã®ãƒ†ã‚¹ãƒˆ2">
-<strong style="font-size:85%;">å‰ã®æŠ•ç¨¿:</strong><br/> 
-<span>ã‚¿ã‚°ä»˜ãæŠ•ç¨¿ã®ãƒ†ã‚¹ãƒˆ2</span>
+<a href="/2015/03/23/"  title="Hello World">
+<strong style="font-size:85%;">‘O‚Ì“Še:</strong><br/> 
+<span>Hello World</span>
 </a>
 </div>
 </nav>
-
 <!-- (pp)pagination EOF -->
 <!-- (pp)comment.ejs -->
-
 <!-- (pp)comment EOF -->
-
 </div>
 <!-- (pp)article EOF -->
 <!-- post EOF -->
@@ -394,28 +385,24 @@ a,h1 {
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 <!-- (w)tag.ejs -->
-
 <div class="tagslist">
 <p class="asidetitle">All Tags</p>
 <ul class="clearfix">
-<li><a href="/source/tags/ã‚ã‚ã‚ã‚/" title="ã‚ã‚ã‚ã‚">ã‚ã‚ã‚ã‚<sup>2</sup></a></li>
-<li><a href="/source/tags/ã‚é˜¿/" title="ã‚é˜¿">ã‚é˜¿<sup>1</sup></a></li>
+<li><a href="/source/tags/‚ ‚ ‚ ‚ /" title="‚ ‚ ‚ ‚ ">‚ ‚ ‚ ‚ <sup>2</sup></a></li>
+<li><a href="/source/tags/‚ ˆ¢/" title="‚ ˆ¢">‚ ˆ¢<sup>1</sup></a></li>
 </ul>
 </div>
-
 <!-- (w)tag EOF -->
-
 <!-- (w)links.ejs -->
 <div class="linkslist">
 <p class="asidetitle">Links</p>
 <ul>
-<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebookå€‹äººãƒšãƒ¼ã‚¸">Facebook</a></li>
-<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="â€»ä½œæ›²ã¯å¤§æ˜”ã«æŒ«æŠ˜ã€å€‹äººçš„ã«ã¯ã‚ãã¾ã§ãƒªã‚¹ãƒŠãƒ¼ã€‚&lt;(_ _)&gt;">SoundCloud</a></li>
+<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="FacebookŒÂlƒy[ƒW">Facebook</a></li>
+<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="¦ì‹È‚Í‘åÌ‚ÉÁÜAŒÂl“I‚É‚Í‚ ‚­‚Ü‚ÅƒŠƒXƒi[B&lt;(_ _)&gt;">SoundCloud</a></li>
 <li><a href="/atom.xml">RSS</a></li>
 </ul>
 </div>
 <!-- (w)links EOF -->
-
 </aside>
 </div>
 <!-- (p)sidebar EOF -->
@@ -436,7 +423,7 @@ a,h1 {
 <div class="cfooter-bottom">
 <div id="fbox1">
 <span class="txt">
-<p>Facebookã‚³ãƒ¡ãƒ³ãƒˆæ¬„å…¥ã‚‹äºˆå®šã ãŒãƒ»ãƒ»ãƒ»</p>
+<p>FacebookƒRƒƒ“ƒg—““ü‚é—\’è‚¾‚ªEEE</p>
 <p>1</p>
 <p>1</p>
 <p>1</p>
@@ -448,11 +435,11 @@ a,h1 {
 </span>
 </div>
 <div class="fcap">
-<p><label for="shinput">è¨˜äº‹å†…æ¤œç´¢:</label>&nbsp;<span id="kens"></span>&nbsp;</p>
+<p><label for="shinput">‹L–“àŒŸõ:</label>&nbsp;<span id="kens"></span>&nbsp;</p>
 <ul>
-<a class="find-dn" title="ä¸‹ã¸æ¤œç´¢"><i class="fa fa-angle-double-down" style="cursor: pointer;"></i></a>
-<a class="find-up" title="ä¸Šã¸æ¤œç´¢"><i class="fa fa-angle-double-up" style="cursor: pointer;"></i></a>
-<a class="find-x" title="ãƒãƒ¼ã‚«ãƒ¼å‰Šé™¤"><i class="fa fa-times" style="cursor: pointer;"></i></a>
+<a class="find-dn" title="‰º‚ÖŒŸõ"><i class="fa fa-angle-double-down" style="cursor: pointer;"></i></a>
+<a class="find-up" title="ã‚ÖŒŸõ"><i class="fa fa-angle-double-up" style="cursor: pointer;"></i></a>
+<a class="find-x" title="ƒ}[ƒJ[íœ"><i class="fa fa-times" style="cursor: pointer;"></i></a>
 </ul>
 </div>
 <label for="shinput">
@@ -464,7 +451,7 @@ a,h1 {
 </div>
 </label>
 <div style="width:1px; height:75px;"></div>
-<p class="fcap-bt">ãƒ•ãƒƒã‚¿ãƒ¼ã‚’æˆ»ã—ãŸã„æ™‚ã¯ã€<br>ãƒšãƒ¼ã‚¸å†èª­è¾¼(F5)ã—ã¦ä¸‹ã•ã„ã€‚</p>
+<p class="fcap-bt">ƒtƒbƒ^[‚ğ–ß‚µ‚½‚¢‚ÍA<br>ƒy[ƒWÄ“Ç(F5)‚µ‚Ä‰º‚³‚¢B</p>
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
 <p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
@@ -489,8 +476,6 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
-
-
 <script type="text/javascript">
 $(window).unload(function(){});
 $.fn.extend({
@@ -508,8 +493,6 @@ function subalert(w){
 	   gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
-
-
 $(document).ready(function(){
 $('.navbar').click(function(){
 	$('header nav').toggleClass('shownav');
@@ -522,10 +505,9 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
-
 // --- archives over-ride ---
-$("a[href='http://u111u.info/kyqG']").attr('title','FBãƒ­ã‚°ãƒ˜ç§»å‹•ã—ã¾ã™');
-$("a[href='http://u111u.info/kyqG']").html('è¨˜äº‹ä¸€è¦§');
+$("a[href='http://u111u.info/kyqG']").attr('title','FBƒƒOƒwˆÚ“®‚µ‚Ü‚·');
+$("a[href='http://u111u.info/kyqG']").html('‹L–ˆê——');
 if( ISarchives == 1 ) {
 	var ep = String.fromCharCode(0x25A0);
 	var wd = ''
@@ -537,7 +519,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-N" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -545,9 +527,8 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-R<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-Q<span id="chalert"></span></h3>';
 }
-
 // Catman Routine
 var m = $('#main'),
 a = $('#asidepart'),
@@ -579,7 +560,6 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
-
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top"),
 $content = $(".cfooter"),
@@ -592,8 +572,7 @@ var lim = 0;
 var offsetBuf = 0;
 var smallOpt = 0;
 var ISpost = 0;
-    ISpost = 1;
-
+ISpost = 1;
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
 }
@@ -733,7 +712,7 @@ $win
 	}
 })
 .resize(function(){
-	subalert("ã€€wait...");
+	subalert("@wait...");
 	location.reload();
 })
 .scroll(function(){
@@ -760,7 +739,6 @@ $win
 		updateV();
 	}
 });
-
 // --- smooth scrool ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -769,7 +747,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('ã€€ã€€â€»chromeæ¨å¥¨');
+		subalert('@@¦chrome„§');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){
@@ -787,9 +765,8 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
-
 // --- text search ---
-var initval = '(æ¤œç´¢æ–‡å­—ã‚’å…¥åŠ›...)';
+var initval = '(ŒŸõ•¶š‚ğ“ü—Í...)';
 var updn = 1;
 var fw = '';
 var dw = '';
@@ -983,12 +960,8 @@ function delproc(){
 		clearInterval(tid);
 	}
 }
-
 });
-
 </script>
-
-
 <script type="text/javascript">
 // Catman Routine
 $(document).ready(function(){
@@ -1033,9 +1006,6 @@ ta.css("top",Math.max(140,250-$(this).scrollTop()));
 };
 });
 </script>
-
-
-
 <script type="text/javascript">
 // Catman Routine
 $(document).ready(function(){ 
@@ -1093,12 +1063,7 @@ return false;
 });
 })(jQuery);
 </script>
-
-
-
-
 <!-- (p)search.ejs -->
-
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
 google.load('search', '1', {language : 'ja',style: google.loader.themes.MINIMALIST});
@@ -1115,11 +1080,8 @@ customSearchControl.execute(search);
 }
 },true);
 </script>
-
 <!-- (p)search EOF -->
-
 <!-- (p)after_footer EOF -->
 </body>
 </html>
-
 <!-- layout.ejs EOF -->
