@@ -331,10 +331,9 @@ a,h1 {
 <div class="article-content">
 <!-- (pp)gallery.ejs -->
 <!-- (pp)gallery EOF -->
-	<div id="toc" class="toc-article">
-	<strong class="toc-title">Contents</strong>
-
-	</div>
+<div id="toc" class="toc-article">
+<strong class="toc-title">Contents</strong>
+</div>
 <div id="contentMain">
 <p>今年のGWは、結局5日間ずーっとhtmlやjsいじってた。<br>うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)<br>　<br>まあそれでも、検索機能までは何とか行き着いた。<br>　<br>【使い方】<br>ホイールぐりぐりしたり「to bottom」の右にある矢印クリックで、ページ一番下までスクロールします。<br>するとフッターが動いて機能パネルが出てきます。<br>右側「記事内検索」がそれです。いろいろいじって遊んでみて下さい。<br>　<br>手っ取り早いのが「、」「。」の句読点です。<br>　<br>　<br>で、ここからの問題が、左の空欄・・・Facebook系の箱だけど、OG:urlの生成が、導入バージョンのhexoでは作り出せない。<br>これが無いとコメントや「いいね」の対象ページと紐付けできない。<br>（確かFacebookのデバッガでエラーになるはず）<br>　<br>head.ejsの先頭部分など、CMS生成コードの一部も機能不全。hexoバージョンアップすればいいのだが、それでも根本的問題として残るのが、システムの深い所での日本語が文字化け。（フォント指定文「メイリオ」など）<br>そもそも普通に使おうとした場合、これは致命的だね・・・<br>　<br>バージョンアップも嫌な予感がするので、やっぱりuwscにやっつけさせよう。<br>デプロイ直前置換すればいいけど、それ実装しないとFB系に進めない、うーん・・・<br>　<br>・・・と、ここまでが、GW全弾投下しての進捗でーす（笑）</p>
 </div>
@@ -398,6 +397,7 @@ a,h1 {
 </ul>
 </div>
 <!-- (w)tag EOF -->
+
 	<!-- (w)links.ejs -->
 
 <div class="linkslist">
@@ -432,7 +432,7 @@ a,h1 {
 <ul>
 <a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
 </ul>
-<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">記事一覧</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
 <div id="fbox1">
@@ -557,7 +557,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-H" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-V" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -565,7 +565,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-X<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-W<span id="chalert"></span></h3>';
 }
 
 

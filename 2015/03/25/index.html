@@ -332,10 +332,9 @@ a,h1 {
 <div class="article-content">
 <!-- (pp)gallery.ejs -->
 <!-- (pp)gallery EOF -->
-	<div id="toc" class="toc-article">
-	<strong class="toc-title">Contents</strong>
-
-	</div>
+<div id="toc" class="toc-article">
+<strong class="toc-title">Contents</strong>
+</div>
 <div id="contentMain">
 <p>さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。<br>Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。</p>
 <p>中国というと気になる「情報リーク」も、GitHubベースで動く物なので問題なさそうである。<br>所詮ネット上にデータ放り出すのだから、ガタガタ言った所でどうしようもないし。</p>
@@ -417,6 +416,7 @@ a,h1 {
 </ul>
 </div>
 <!-- (w)tag EOF -->
+
 	<!-- (w)links.ejs -->
 
 <div class="linkslist">
@@ -451,7 +451,7 @@ a,h1 {
 <ul>
 <a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
 </ul>
-<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">Archives</a><span id="ftalert"></span></p>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">記事一覧</a><span id="ftalert"></span></p>
 </div>
 <div class="cfooter-bottom">
 <div id="fbox1">
@@ -576,7 +576,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-P" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -584,7 +584,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-Q<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-B<span id="chalert"></span></h3>';
 }
 
 
