@@ -2,15 +2,15 @@
 <html lang="ja">
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
-	
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-	
+
 <title>search | 群れの笠と風刻</title>
-	
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
 <meta name="description" content="MF-blog">
-	
+
 <!-- custom OGP -->
 <meta property="fb:admins" content="((FBadm))" />
 <meta property="fb:app_id" content="((FBapp))" />
@@ -19,7 +19,7 @@
 <meta property="og:title" content="search | 群れの笠と風刻" />
 <meta property="og:image" content="/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
-	
+
 <script>
 // --- Head Run ---
 window.onunload = function() {};
@@ -53,7 +53,7 @@ footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
 </script>
-	
+
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
 <link rel="alternate" href="/atom.xml" title="群れの笠と風刻" type="application/atom+xml">
 <link rel="icon" href="/img/favicon.ico">
@@ -73,7 +73,7 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 //
 -->
 <!-- (p)webfonts EOF -->
-	
+
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
@@ -251,7 +251,7 @@ a,h1 {
 	font-size:15px;
 	color:#333333;
 	background-color:#333333;
-	
+
 	}
 .fcap-bt {
 	text-align:left;
@@ -265,13 +265,13 @@ a,h1 {
 -->
 </style>
 </head>
-	
+
 	<!-- (p)head.ejs EOF -->
-	
+
 <body>
 <header>
 	<!-- (p)header.ejs -->
-	
+
 <div>
 	<div id="imglogo">
 	<a href="/"><img src="/img/logo.svg" alt="群れの笠と風刻" title="群れの笠と風刻"/></a>
@@ -282,17 +282,17 @@ a,h1 {
 		<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
 	</div>
 </div>
-	
+
 <noscript>
 <p>&nbsp;</p>
 <p>Now Loading...</p>
 </noscript>
-	
+
 <div class="navbar"><a class="navbutton navmobile" href="#" title="Menu"></a></div>
 <nav class="animated">
 <ul>
 	<li><a href="/">Home</a></li>
-	<li><a href="http://u111u.info/kyqG">Archives</a></li>
+	<li><a href="http://u111u.info/kyqG">記事一覧</a></li>
 <li>
 	<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
 	<label>Search</label>
@@ -302,9 +302,9 @@ a,h1 {
 </ul>
 </nav>
 </div>
-	
+
 	<!-- (p)header EOF -->
-	
+
 </header>
 <div id="container">
 <div id="main">
@@ -312,25 +312,25 @@ a,h1 {
 </div>
 </div>
 	<!-- (p)after_footer.ejs -->
-	
+
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
 <script src="http://mf-post.github.io/jquery.color.js"></script>
-	
+
 <script src="http://mf-post.github.io/jquery.mousewheel.js"></script>
 <script src="http://mf-post.github.io/jquery.mCustomScrollbar.concat.min.js"></script>
-	
+
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
-	
-	
-	
-	
+
+
+
+
 <script type="text/javascript">
-	
+
 $(window).unload(function(){});
-	
+
 $.fn.extend({
 viewportOffset: function(){
 $window = $(window);
@@ -338,22 +338,22 @@ p = this.offset();
 return {left: p.left - $window.scrollLeft(), top: p.top - $window.scrollTop()};
 }
 });
-	
+
 function gEBI(id){
 return document.getElementById(id);
 }
-	
+
 var debug = 0;
 function subalert(w){
 	   gEBI('chalert').innerHTML = w
 	/* gEBI('ftalert').innerHTML = w */
 }
-	
-	
-	
-	
+
+
+
+
 $(document).ready(function(){
-	
+
 $('.navbar').click(function(){
 	$('header nav').toggleClass('shownav');
 });
@@ -365,8 +365,8 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
-	
-	
+
+
 // --- archives over-ride ---
 $("a[href='http://u111u.info/kyqG']").attr('title','FBログヘ移動します');
 $("a[href='http://u111u.info/kyqG']").html('記事一覧');
@@ -381,7 +381,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-T" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-H" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -389,11 +389,11 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-J<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-Y<span id="chalert"></span></h3>';
 }
-	
-	
-	
+
+
+
 // - Catman Routine -
 var m = $('#main'),
 a = $('#asidepart'),
@@ -423,8 +423,8 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
-	
-	
+
+
 // --- footer scroll-fix ---
 var $elem = $(".cfooter-top");
 var $content = $(".cfooter");
@@ -436,9 +436,9 @@ var roolOnce = 0;
 var lim = 0;
 var offsetBuf = 0;
 var smallOpt = 0;
-	
+
 var ISpost = 0;
-	
+
 function updatePosition(){
 	contentTop = $content.offset().top + $elem.outerHeight();
 }
@@ -564,7 +564,7 @@ function footerLock(){
 	$('#ftpos').css('top',$win.height() - fth - elh + ajs );
 	lim = 0;
 }
-	
+
 $win
 .load(function(){
 	gEBI('nldg').innerHTML = '';
@@ -606,8 +606,8 @@ $win
 		updateV();
 	}
 });
-	
-	
+
+
 // --- smooth scrool ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -634,8 +634,8 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
-	
-	
+
+
 // --- text search ---
 var initval = '(検索文字を入力...)';
 var updn = 1;
@@ -647,7 +647,7 @@ var lg = 0;
 var tid = 0;
 var tsw = 0;
 var ajsy = parseInt(($(window).height() - 250) / 2) - 10;
-	
+
 var searchResultApplier;
 rangy.init();
 var cssClassApplierModule = rangy.modules.ClassApplier;
@@ -782,22 +782,22 @@ function srhproc(){
 	var referenceNode = gEBI('contentMain');
 	var range = rangy.createRange();
 	var searchScopeRange = rangy.createRange();
-	
+
 	/* searchScopeRange.selectNodeContents(document.body); */
 	   searchScopeRange.selectNodeContents(referenceNode);
-	
+
 	var options = {
 		caseSensitive: false,
 		wholeWordsOnly: false,
 		withinRange: searchScopeRange,
 		direction: "forward"
 	};
-	
+
 	/* range.selectNodeContents(document.body); */
 	   range.selectNodeContents(referenceNode);
-	
+
 	/* searchResultApplier.undoToRange(range); */
-	
+
 	fmax = 0;
 	if (searchTerm !== "") {
 		while (range.findText(searchTerm, options)) {
@@ -832,23 +832,23 @@ function delproc(){
 		clearInterval(tid);
 	}
 }
-	
-	
+
+
 });
-	
-	
+
+
 </script>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 <!-- (p)search.ejs -->
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
@@ -867,10 +867,10 @@ customSearchControl.execute(search);
 },true);
 </script>
 <!-- (p)search EOF -->
-	
+
 	<!-- (p)after_footer EOF -->
-	
+
 </body>
 </html>
-	
+
 	<!-- layout.ejs EOF -->
