@@ -323,7 +323,7 @@ a,h1 {
 </p>
 <p class="article-time">
 <time datetime="2015-05-06T11:24:54.000Z" itemprop="datePublished">2015-05-06</time>
-	Updated:<time datetime="2015-05-16T07:52:10.597Z" itemprop="dateModified">2015-05-16</time>
+	Updated:<time datetime="2015-05-16T08:12:12.555Z" itemprop="dateModified">2015-05-16</time>
 </p>
 </header>
 <!-- (pp)header EOF -->
@@ -334,7 +334,7 @@ a,h1 {
 <strong class="toc-title">Contents</strong>
 </div>
 <div id="contentMain">
-<p>今年のGWは、結局5日間ずーっとhtmlやjsいじってた。<br>うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)<br>　<br>まあそれでも、検索機能までは何とか行き着いた。<br><br>【使い方】<br>ホイールぐりぐりしたり「to bottom」の右にある矢印クリックで、ページ一番下までスクロールします。<br>するとフッターが動いて機能パネルが出てきます。<br>右側「記事内検索」がそれです。いろいろいじって遊んでみて下さい。<br><br>手っ取り早いのが「、」「。」の句読点です。<br><a href="http://abc.com" target="_blank" rel="external">http://abc.com</a><br><br>で、ここからの問題が、左の空欄・・・Facebook系の箱だけど、OG:urlの生成が、導入バージョンのhexoでは作り出せない。<br>これが無いとコメントや「いいね」の対象ページと紐付けできない。<br>（確かFacebookのデバッガでエラーになるはず）<br>　<br>head.ejsの先頭部分など、CMS生成コードの一部も機能不全。hexoバージョンアップすればいいのだが、それでも根本的問題として残るのが、システムの深い所での日本語が文字化け。（フォント指定文「メイリオ」など）<br>そもそも普通に使おうとした場合、これは致命的だね・・・<br>　<br>バージョンアップも嫌な予感がするので、やっぱりuwscにやっつけさせよう。<br>デプロイ直前置換すればいいけど、それ実装しないとFB系に進めない、うーん・・・<br>　<br>・・・と、ここまでが、GW全弾投下しての進捗でーす（笑）</p>
+<p>今年のGWは、結局5日間ずーっとhtmlやjsいじってた。<br>うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)<br>　<br>まあそれでも、検索機能までは何とか行き着いた。<br><br>【使い方】<br>ホイールぐりぐりしたり「to bottom」の右にある矢印クリックで、ページ一番下までスクロールします。<br>するとフッターが動いて機能パネルが出てきます。<br>右側「記事内検索」がそれです。いろいろいじって遊んでみて下さい。<br><br>手っ取り早いのが「、」「。」の句読点です。<br><br><br>で、ここからの問題が、左の空欄・・・Facebook系の箱だけど、OG:urlの生成が、導入バージョンのhexoでは作り出せない。<br>これが無いとコメントや「いいね」の対象ページと紐付けできない。<br>（確かFacebookのデバッガでエラーになるはず）<br>　<br>head.ejsの先頭部分など、CMS生成コードの一部も機能不全。hexoバージョンアップすればいいのだが、それでも根本的問題として残るのが、システムの深い所での日本語が文字化け。（フォント指定文「メイリオ」など）<br>そもそも普通に使おうとした場合、これは致命的だね・・・<br>　<br>バージョンアップも嫌な予感がするので、やっぱりuwscにやっつけさせよう。<br>デプロイ直前置換すればいいけど、それ実装しないとFB系に進めない、うーん・・・<br>　<br>・・・と、ここまでが、GW全弾投下しての進捗でーす（笑）</p>
 </div>
 </div>
 
@@ -403,8 +403,8 @@ a,h1 {
 <p class="asidetitle">Links</p>
 <ul>
 <li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebook個人ページ">Facebook</a></li>
-<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="※作曲は大昔に挫折、個人的にはあくまでリスナーです。&lt;(_ _)&gt;">SoundCloud</a></li>
-<li><a href="/atom.xml">RSS</a></li>
+<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="作曲は大昔に挫折、個人的にはあくまでリスナーです。&lt;(_ _)&gt;">SoundCloud</a></li>
+<li><a href="/atom.xml" target="_blank">RSS</a></li>
 </ul>
 </div>
 
@@ -556,7 +556,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-Z" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -564,7 +564,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-L<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-K<span id="chalert"></span></h3>';
 }
 
 
