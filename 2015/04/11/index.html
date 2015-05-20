@@ -12,8 +12,8 @@
 <meta name="description" content="CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。">
 
 <!-- custom OGP -->
-<meta property="fb:admins" content="((FBadm))" />
-<meta property="fb:app_id" content="((FBapp))" />
+<meta property="fb:admins" content="100003715157063" />
+<meta property="fb:app_id" content="1018136558197616" />
 <meta property="og:url" content="http://mf-post.github.io/2015/04/11/index.html" />
 <meta property="og:site_name" content="群れの笠と風刻" />
 <meta property="og:title" content="タグ付き投稿のテスト1 | 群れの笠と風刻" />
@@ -273,6 +273,18 @@ a,h1 {
 	<!-- (p)head.ejs EOF -->
 
 <body>
+
+<!-- Facebook Service init -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=1018136558197616";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <header>
 	<!-- (p)header.ejs -->
 
@@ -452,15 +464,14 @@ a,h1 {
 <div class="cfooter-bottom">
 <div id="fbox1">
 <span class="txt">
-<p>Facebookコメント欄入る予定だが・・・</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+
+<!-- Facebook Like -->
+<div style="float:left;" class="fb-like" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="100" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+<!-- Facebook Comment -->
+<div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="600" data-numposts="10" data-colorscheme="light"></div>
+
+<div style="clear:both;"></div>
 </span>
 </div>
 <div class="fcap">
@@ -572,7 +583,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-W" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-O" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -580,7 +591,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-W<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
 }
 
 
