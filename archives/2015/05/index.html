@@ -455,8 +455,8 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		$('.fb-comments').attr('data-width','375');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-Q" width="128px" height="128px">';
+		$('.fb-comments').attr('data-width','300');
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-T" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -464,7 +464,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-Q<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-T<span id="chalert"></span></h3>';
 }
 
 
@@ -478,6 +478,7 @@ $(window).resize(function(){
 	getSize();
 	if (myWidth >= 1024) {
 		$('header nav').removeClass('shownav');
+		$('.fb-comments').attr('data-width','350');
 	} else {
 		m.removeClass('moveMain');
 		a.css('display', 'block').removeClass('fadeOut');
@@ -567,6 +568,8 @@ function footerLock(){
 		$("#fbox1").css('border-color','#FFFFFF');
 		$("#fbox1").css('overflow-x','hidden');
 		$("#fbox1").css('overflow-y','auto');
+		$("a[href^='/descending/']").html('');
+		$("a[href^='/descending/']").attr('href','#');
 		var ajsfc = 0;
 		var ajsfz = 0;
 		if( bwtp != 3 || $(window).width() < 700){
@@ -579,7 +582,7 @@ function footerLock(){
 			$("#fbox2").css('height','40px');
 			$("#fbox2").css('margin-left','5%');
 			$("#fbox2").css('margin-right','5%');
-			$('.fb-comments').attr('data-width',$(window).width() * 0.5)-25;
+			$('.fb-comments').attr('data-width',$(window).width() * 0.3)-35;
 			$(".fcap-bt").css('display','none');
 			ajsfc = 60;
 			ajsfz = 7;
