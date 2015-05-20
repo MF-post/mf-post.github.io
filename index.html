@@ -509,7 +509,8 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('position','relative');
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-O" width="128px" height="128px">';
+		$('.fb-comments').attr('data-width','375');
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-Q" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -517,7 +518,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-Q<span id="chalert"></span></h3>';
 }
 
 
@@ -632,6 +633,7 @@ function footerLock(){
 			$("#fbox2").css('height','40px');
 			$("#fbox2").css('margin-left','5%');
 			$("#fbox2").css('margin-right','5%');
+			$('.fb-comments').attr('data-width',$(window).width() * 0.5)-25;
 			$(".fcap-bt").css('display','none');
 			ajsfc = 60;
 			ajsfz = 7;
