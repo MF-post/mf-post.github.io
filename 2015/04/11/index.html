@@ -1,0 +1,1191 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+<title>タグ付き投稿のテスト1 | 群れの笠と風刻</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+<meta name="author" content="MF">
+<meta name="description" content="CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。">
+
+<!-- custom OGP -->
+<meta property="fb:admins" content="100003715157063"/>
+<meta property="fb:app_id" content="1018136558197616"/>
+<meta property="og:url" content="http://mf-post.github.io/2015/04/11/index.html" />
+<meta property="og:site_name" content="群れの笠と風刻" />
+<meta property="og:title" content="タグ付き投稿のテスト1 | 群れの笠と風刻" />
+<meta property="og:image" content="http://mf-post.github.io/img/((OGImage)).png" />
+<meta property="og:type" content="article" />
+
+<script>
+// --- Head Run ---
+window.onunload = function() {};
+var oURL = 'http://mf-post.github.io/2015/04/11/index.html';
+var clickOnce = 0;
+var footerLocked = 0;
+var timeID = 0;
+var timeID_2 = 0;
+var ua = navigator.userAgent;
+var bwtp = 0;
+function sleep(time, callback){
+	clearTimeout(timeID);
+	timeID = setTimeout(callback, time);
+}
+function sleep_2(time, callback){
+	clearTimeout(timeID_2);
+	timeID_2 = setTimeout(callback, time);
+}
+if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+	/* smapho */
+	bwtp = 1;
+}else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+	/* tablet */
+	bwtp = 2;
+}else{
+	/* other */
+	bwtp = 3;
+}
+clickOnce = 1;
+footerLocked = 1;
+sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
+var ISarchives = 0;
+</script>
+
+<link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<link rel="alternate" href="/atom.xml" title="群れの笠と風刻" type="application/atom+xml">
+<link rel="icon" href="/img/favicon.ico">
+<link rel="apple-touch-icon" href="/img/catman.jpg">
+<link rel="apple-touch-icon-precomposed" href="/img/catman.jpg">
+<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<!-- (p)analytics.ejs -->
+<!-- (p)analytics EOF -->
+<!-- (p)webfonts.ejs -->
+<!-- 
+//
+link href='http://fonts.useso.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'
+link href='http://fonts.useso.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'
+link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type='text/css'
+//
+-->
+<!-- (p)webfonts EOF -->
+
+<!-- custom over-ride CSS -->
+<style type="text/css">
+<!-- 
+*.searchResult {
+	color: Black;
+	background-color: PaleGoldenRod;
+	}
+.toc-number {
+	display:none;
+	}
+p,h2,h3,i,small {
+	text-shadow:0 0 1px rgba(129,124,124,.3);
+	}
+a,h1 {
+	text-shadow:0 0 2px rgba(44,166,203,.1);
+	}
+.cfooter-top {
+	width:100%;
+	height:45px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	background:#333;
+	border-bottom:1px solid #555;
+	}
+.cfooter-top.static {
+	position:static;
+	}
+.cfooter-top p {
+	float:left;
+	padding-left:15px;
+	line-height:30px;
+	font-size:18px;
+	}
+.cfooter-top ul {
+	padding-right:15px;
+	padding-top:3px;
+	}
+.cfooter-top li {
+	float:left;
+	}
+.cfooter-top li + li {
+	margin-left:15px;
+	}
+.cfooter-top li i {
+	font-size:25px;
+	}
+.cfooter-bottom {
+	padding:15px 0;
+	}
+.cfooter-bottom .txt {
+	font-size:14px;
+	margin-bottom:10px;
+	color:#999;
+	}
+.cfooter {
+	height:270px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	background:#333;
+	color:#666;
+	text-align:center;
+	}
+.opt1 {
+	width:35px;
+	}
+.opt2 {
+	width:5px;
+	}
+.dfooter {
+	height:270px;
+	width:100%;
+	}
+.article-fix {
+	padding-left:30px;
+	padding-right:60px;
+	}
+.article-tags a {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	}
+.tagslist ul li a {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	font-size:80%;
+	}
+#contentMain{
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+	}
+#fbox1{
+	height:135px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px #333333 solid;
+	background-color:#333333;
+	float:left;
+	width:55%;
+	margin-left:9%;
+	margin-right:1%;
+	text-align:left;
+	padding:6px;
+	}
+#fbox2{
+	height:40px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:none;
+	background-color:#333333;
+	float:right;
+	width:20%;
+	margin-left:1%;
+	margin-right:9%;
+	text-align:left;
+	padding:6px;
+	}
+#fbox1 p, #fbox2 p {
+	font-size:95%;
+	line-height:13pt;
+	margin: 3px 3px;
+	text-shadow:none !important;
+	color:#333333 !important;
+	}
+.fcap {
+	text-align:left;
+	position:relative;
+	left:4%;
+	top:10px;
+	line-height:0pt;
+	font-size:85%;
+	text-shadow:none !important;
+	color:#333333 !important;
+	}
+.fcap p {
+	text-shadow:none !important;
+	}
+.fcap a {
+	text-shadow:none !important;
+	}
+.fcap i {
+	text-shadow:none !important;
+	}
+.find-dn i {
+	position:relative;
+	top:11px;
+	left:26px;
+	font-size:20px;
+	color:#333333;
+}
+.find-up i {
+	position:relative;
+	top:11px;
+	left:37px;
+	font-size:20px;
+	color:#333333;
+	}
+.find-x i {
+	position:relative;
+	top:10px;
+	left:48px;
+	font-size:18px;
+	color:#333333;
+	}
+#shinput {
+	position:relative;
+	left:2%;
+	top:-8px;
+	border:none;
+	font-size:15px;
+	color:#333333;
+	background-color:#333333;
+
+	}
+.fcap-bt {
+	text-align:left;
+	position:relative;
+	left:4%;
+	top:-15px;
+	font-size:60%;
+	text-shadow:none !important;
+	color:#333333 !important;
+	}
+-->
+</style>
+</head>
+
+	<!-- (p)head.ejs EOF -->
+
+<body>
+
+<!-- Facebook Service init -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=1018136558197616";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header>
+	<!-- (p)header.ejs -->
+
+<div>
+	<div id="imglogo">
+	<a href="/"><img src="/img/logo.svg" alt="群れの笠と風刻" title="群れの笠と風刻"/></a>
+	</div>
+<div id="textlogo">
+	<h1 class="site-name"><a href="http://mf-post.github.io/" title="群れの笠と風刻">群れの笠と風刻</a></h1>
+	<div id="wrdlogo">
+		<h3 class="blog-motto">MF-blog<span id="chalert"></span><span id="nldg">&emsp;Now Loading...</span></h3>
+	</div>
+</div>
+
+<noscript>
+<p>&nbsp;</p>
+<p>Now Loading...</p>
+</noscript>
+
+<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu"></a></div>
+<nav class="animated">
+<ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="http://u111u.info/kyqG">記事一覧</a></li>
+<li>
+	<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+	<label>Search</label>
+	<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+	</form>
+</li>
+</ul>
+</nav>
+</div>
+
+	<!-- (p)header EOF -->
+
+</header>
+<div id="container">
+<!-- post.ejs -->
+
+	<!-- (pp)article.ejs -->
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+
+<article itemprop="articleBody"> 
+<!-- (pp)header.ejs -->
+<header class="article-info clearfix">
+<h1 itemprop="name">
+	<a href="/2015/04/11/" title="タグ付き投稿のテスト1" itemprop="url">タグ付き投稿のテスト1</a>
+</h1>
+<p class="article-author">By
+<small>&nbsp;MF</small>
+</p>
+<p class="article-time">
+<time id="pub-time" datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
+<data id="upd-xmltime" value="2015-05-10T09:04:41.557Z" itemprop="dateModified">
+<abbr id="upd-time" title="upd:2015-05-10">.</abbr>
+</data>
+</p>
+</header>
+<!-- (pp)header EOF -->
+<div class="article-content">
+<!-- (pp)gallery.ejs -->
+<!-- (pp)gallery EOF -->
+<div id="toc" class="toc-article">
+<strong class="toc-title">Contents</strong>
+</div>
+<div id="contentMain">
+<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
+</div>
+</div>
+
+<!-- partial('footer') -->
+<!-- Pull-UP Code -->
+<hr align="center" style="width:95%;">
+<div class="article-footer clearfix">
+<div class="article-fix">
+<!-- (pp)catetags.ejs -->
+<div class="article-tags">
+<span></span> <a href="/source/tags/ああああ/">ああああ</a><a href="/source/tags/あ阿/">あ阿</a>
+</div>
+<!-- (pp)catetags EOF -->
+<div class="article-share" id="share">
+<small class="share clearfix">
+<a href="http://mf-post.github.io/2015/04/11/index.html" target="_self">[permalink]</a>
+</small>
+</div>
+</div>
+</div>
+
+</article>
+
+	<!-- (pp)pagination.ejs -->
+
+<nav class="article-nav clearfix">
+<div class="prev">
+<a href="/2015/04/12/" title="タグ付き投稿のテスト2">
+<strong style="font-size:85%;">次の投稿:</strong><br/>
+<span>タグ付き投稿のテスト2</span>
+</a>
+</div>
+<div class="next">
+<a href="/2015/03/25/"  title="日本語での動作チェック">
+<strong style="font-size:85%;">前の投稿:</strong><br/> 
+<span>日本語での動作チェック</span>
+</a>
+</div>
+</nav>
+
+	<!-- (pp)pagination EOF -->
+
+<!-- (pp)comment.ejs -->
+<!-- (pp)comment EOF -->
+
+</div>
+
+	<!-- (pp)article EOF -->
+
+<!-- post EOF -->
+
+	<!-- (p)sidebar.ejs -->
+
+<div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+<div id="toc" class="toc-aside">
+<strong style="font-size:70%; line-height:130%;">
+</strong>
+</div>
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<!-- (w)tag.ejs -->
+<div class="tagslist">
+<p class="asidetitle">All Tags</p>
+<ul class="clearfix">
+<li><a href="/source/tags/ああああ/" title="ああああ">ああああ<sup>2</sup></a></li>
+<li><a href="/source/tags/あ阿/" title="あ阿">あ阿<sup>1</sup></a></li>
+</ul>
+</div>
+<!-- (w)tag EOF -->
+
+	<!-- (w)links.ejs -->
+
+<div class="linkslist">
+<p class="asidetitle">Links</p>
+<ul>
+<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebook個人ページ">Facebook</a></li>
+<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="作曲は大昔に挫折、個人的にはあくまでリスナーです。&lt;(_ _)&gt;">SoundCloud</a></li>
+<li><a href="/atom.xml" target="_blank">RSS</a></li>
+</ul>
+</div>
+
+	<!-- (w)links EOF -->
+
+</aside>
+</div>
+
+	<!-- (p)sidebar EOF -->
+
+</div>
+	<!-- (p)footer.ejs -->
+
+<div class="opt1"></div>
+<div class="opt2"></div>
+<div class="dfooter"></div>
+
+<footer id="ftpos">
+
+<div class="cfooter">
+<div class="cfooter-top">
+
+<p>&nbsp;to bottom...&nbsp;</p>
+<ul>
+<a class="tobottom" title="to bottom"><li><i class="fa fa-arrow-circle-o-down" style="cursor: pointer;"></i></li></a>
+</ul>
+<p style="line-height:25px;">&emsp;<a href="/">Home</a>&emsp;&emsp;<a href="http://u111u.info/kyqG">記事一覧</a><span id="ftalert"></span></p>
+</div>
+<div class="cfooter-bottom">
+<div id="fbox1">
+<span class="txt">
+
+<!-- Facebook Like -->
+<div style="float:left; margin-right:15px;" class="fb-like" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="85" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+<!-- Facebook Comment -->
+<div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="600" data-numposts="10" data-colorscheme="light"></div>
+
+<div style="clear:both;"></div>
+</span>
+</div>
+<div class="fcap">
+<p><label for="shinput">記事内検索:</label>&nbsp;<span id="kens"></span>&nbsp;</p>
+<ul>
+<a class="find-dn" title="下へ検索"><i class="fa fa-angle-double-down" style="cursor: pointer;"></i></a>
+<a class="find-up" title="上へ検索"><i class="fa fa-angle-double-up" style="cursor: pointer;"></i></a>
+<a class="find-x" title="マーカー削除"><i class="fa fa-times" style="cursor: pointer;"></i></a>
+</ul>
+</div>
+<label for="shinput">
+
+<div id="fbox2">
+<span class="txt">
+<p>&nbsp;</p>
+<input type="text" autocomplete="off" size="30" id="shinput">
+</span>
+</div>
+
+</label>
+<div style="width:1px; height:75px;"></div>
+<p class="fcap-bt">フッターを戻したい時は、<br>ページ再読込(F5)して下さい。</p>
+<div style="clear:both; height:10px;"></div>
+<div id="btm">
+<p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
+<small class="copyright">
+gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF</a><a href="/archives" target="_self">.</a>
+</small>
+</p>
+</div>
+
+</div>
+</div>
+
+</footer>
+
+	<!-- (p)footer EOF -->
+
+<div id="top" style="position:fixed;bottom:90px;right:30px;cursor: pointer;">
+<a title="to top"><img src="/img/top.png"/ width="50px"></a>
+</div>
+	<!-- (p)after_footer.ejs -->
+
+<script src="http://mf-post.github.io/jquery_213min.js"></script>
+<script src="http://mf-post.github.io/jquery.easing.js"></script>
+<script src="http://mf-post.github.io/jquery.color.js"></script>
+
+<script src="http://mf-post.github.io/jquery.mousewheel.js"></script>
+<script src="http://mf-post.github.io/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="http://mf-post.github.io/rangy-core.js"></script>
+<script src="http://mf-post.github.io/rangy-textrange.js"></script>
+<script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+$(window).unload(function(){});
+
+$.fn.extend({
+viewportOffset: function(){
+$window = $(window);
+p = this.offset();
+return {left: p.left - $window.scrollLeft(), top: p.top - $window.scrollTop()};
+}
+});
+
+function gEBI(id){
+return document.getElementById(id);
+}
+
+var debug = 0;
+function subalert(w){
+	   gEBI('chalert').innerHTML = w
+	/* gEBI('ftalert').innerHTML = w */
+}
+
+
+
+
+$(document).ready(function(){
+
+$('.navbar').click(function(){
+	$('header nav').toggleClass('shownav');
+});
+var myWidth = 0;
+function getSize(){
+	if( typeof( window.innerWidth ) == 'number' ) {
+		myWidth = window.innerWidth;
+	} else if( document.documentElement && document.documentElement.clientWidth) {
+		myWidth = document.documentElement.clientWidth;
+	}
+}
+
+
+// --- archives over-ride ---
+$("a[href='http://u111u.info/kyqG']").attr('title','FBログヘ移動します');
+$("a[href='http://u111u.info/kyqG']").html('記事一覧');
+if( ISarchives == 1 ) {
+	var ep = String.fromCharCode(0x25A0);
+	var wd = ''
+	wd += '<p>&nbsp;</p>';
+	wd += '<p>&nbsp;</p>';
+	if ( $(window).width() > 780 ) {
+		$('#imglogo').css('width','128px');
+		$('#imglogo').css('height','128px');
+		$('#imglogo').css('position','relative');
+		$('#imglogo').css('top','25px');
+		$('#imglogo').css('left','10px');
+		$('.fb-comments').attr('data-width','300');
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-L" width="128px" height="128px">';
+		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
+		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
+	} else {
+		wd += '<p>&nbsp;</p>';
+	}
+	gEBI('footbio').innerHTML = wd;
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-L<span id="chalert"></span></h3>';
+}
+
+
+
+// - Catman Routine -
+var m = $('#main'),
+a = $('#asidepart'),
+c = $('.closeaside'),
+o = $('.openaside');
+$(window).resize(function(){
+	getSize();
+	if (myWidth >= 1024) {
+		$('header nav').removeClass('shownav');
+		$('.fb-comments').attr('data-width','350');
+	} else {
+		m.removeClass('moveMain');
+		a.css('display', 'block').removeClass('fadeOut');
+		o.css('display', 'none');
+		
+			$('#toc.toc-aside').css('display', 'none');
+		
+	}
+});
+c.click(function(){
+	a.addClass('fadeOut').css('display', 'none');
+	o.css('display', 'block').addClass('fadeIn');
+	m.addClass('moveMain');
+});
+o.click(function(){
+	o.css('display', 'none').removeClass('beforeFadeIn');
+	a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');
+	m.removeClass('moveMain');
+});
+$(window).scroll(function(){
+	o.css("top",Math.max(80,208-$(this).scrollTop()));
+});
+
+
+// --- footer scroll-fix ---
+var $elem = $(".cfooter-top");
+var $content = $(".cfooter");
+var $win = $(window);
+var $tob = $(".tobottom");
+var contentTop = 0;
+var clickOnce = 0;
+var roolOnce = 0;
+var lim = 0;
+var offsetBuf = 0;
+var smallOpt = 0;
+
+var ISpost = 0;
+ISpost = 1;
+
+function updatePosition(){
+	contentTop = $content.offset().top + $elem.outerHeight();
+}
+function update(){
+	if( $win.scrollTop() + $win.height() > contentTop ){
+		$elem.addClass("static");
+	}else if( $elem.hasClass("static") ){
+		$elem.removeClass("static");
+	}
+}
+function updateV(){
+	if( $win.scrollTop() + $win.height() > contentTop ){
+		$elem.addClass("static");
+		if( clickOnce == 0 ){
+			clickOnce = 1;
+			sleep(1500,function(){ clickOnce = 0; });
+			if( footerLocked == 0 && lim == 0 ){
+				offsetBuf = $('#btm').offset().top;
+				$("html,body").animate({scrollTop:offsetBuf},4000,'swing');
+				$(".cfooter-top").animate({height:'30px'},500,'swing');
+			}
+		}
+	}else if( $elem.hasClass("static") ){
+		if( footerLocked == 0 ){
+			$elem.removeClass("static");
+		}
+	}
+}
+$tob.click(function(){
+	if( clickOnce == 0 && roolOnce == 0){
+		clickOnce = 1;
+		sleep(1500,function(){ clickOnce = 0; });
+		lim = 1;
+		offsetBuf = $('.dfooter').offset().top + $('.dfooter').height();
+		$("html,body").animate({scrollTop:offsetBuf},1000,'easeInOutQuad');
+		if( ISpost == 1 ){
+			$(".cfooter-top").animate({height:'30px'},1500,'easeInOutQuart');
+		}
+	}
+});
+function footerLock(){
+	if( ISpost == 1 ){
+		$("#shinput").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$("#shinput").animate({"color":"#BBBBBB"},500,'easeInOutQuad');
+		$(".fcap").find("i").animate({"color":"#2CA6CB"},1000,'easeInOutQuad');
+		$(".cfooter").animate({"backgroundColor":"#AABBCC"},1000,'easeInOutQuad');
+		$("#fbox1").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$("#fbox2").animate({"backgroundColor":"#FFFFFF"},1000,'easeInOutQuad');
+		$(".copyright").animate({"color":"#333333"},1000,'easeInOutQuad');
+		$(".copyright").find("a").animate({"color":"#333333"},1000,'easeInOutQuad');
+		$("#fbox1").css('border-color','#FFFFFF');
+		$("#fbox1").css('overflow-x','hidden');
+		$("#fbox1").css('overflow-y','auto');
+		$("a[href^='/descending/']").html('');
+		$("a[href^='/descending/']").attr('href','#');
+		var ajsfc = 0;
+		var ajsfz = 0;
+		if( bwtp != 3 || $(window).width() < 700){
+			$("#fbox1").css('overflow-x','auto');
+			$("#fbox1").css('width','40%');
+			$("#fbox1").css('margin-left','10%');
+			$("#fbox1").css('margin-right','5%');
+			$("#fbox2").css('overflow','hidden');
+			$("#fbox2").css('width','25%');
+			$("#fbox2").css('height','40px');
+			$("#fbox2").css('margin-left','5%');
+			$("#fbox2").css('margin-right','5%');
+			$('.fb-comments').attr('data-width',$(window).width() * 0.3)-35;
+			$(".fcap-bt").css('display','none');
+			ajsfc = 60;
+			ajsfz = 7;
+		} else {
+			ajsfc = parseInt($(window).width() * 0.2) + 10;
+			ajsfz = parseInt($(window).width() * 0.02) + 1;
+		}
+		var fx1 = $(window).width() * 0.45 + $(".fcap").viewportOffset().left * 0.2;
+		var fx2 = $("#fbox2").viewportOffset().left;
+		$(".fcap").css('left', fx2 - fx1 - ajsfc);
+		$(".fcap-bt").css('left', fx2 - fx1 - ajsfc);
+		$("#shinput").attr('size',ajsfz);
+	}
+	if( bwtp == 3 ){
+		$("#fbox1").mCustomScrollbar({
+			scrollInertia: 0,
+			mouseWheelPixels: 35,
+			autoDraggerLength: true,
+			autoHideScrollbar: false,
+			scrollButtons:{
+				enable: false,
+				scrollType: "continuous",
+				scrollSpeed: 50,
+				scrollAmount: 50
+			},
+			advanced:{
+				updateOnContentResize: true,
+				autoScrollOnFocus: true,
+				normalizeMouseWheelDelta: true
+			},
+			theme: "dark-thick"
+		});
+	}
+	if( ISpost == 0 ){
+		return;
+	}
+	var i = 0;
+	var fth = $('#ftpos').height();
+	var elh = $('.cfooter-top').height();
+	var ajs = $('.opt1').width() - $('.opt2').width();
+	if( lim == 1 ){
+		var tid = setInterval(function(){
+			if($("html,body").is(':animated')){
+				/* Animate wait */
+			}else{
+				/* Animate finish */
+				i++;
+				if( i == 2 ){
+					clearInterval(tid);
+					return;
+				}
+			}
+		},100);
+	}
+	$("html,body").clearQueue().stop();
+	$('#ftpos').css('position','fixed');
+	$('#ftpos').css('width','96%');
+	$('#ftpos').css('top',$win.height() - fth - elh + ajs );
+	lim = 0;
+}
+
+$win
+.load(function(){
+	gEBI('nldg').innerHTML = '';
+	clickOnce = 1;
+	footerLocked = 1;
+	sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
+	updatePosition();
+	update();
+	sleep_2(100,function(){ $('html,body').animate({scrollTop:'0px'},500,'swing'); });
+	if( ISpost == 1 ){
+		$('#asidepart').css('z-index','999');
+	}
+})
+.resize(function(){
+	subalert("　wait...");
+	location.reload();
+})
+.scroll(function(){
+	updatePosition();
+	var trig = $('#btm').offset().top - $(window).height();
+	var sctp = $(window).scrollTop();
+	var fixpara = 0;
+	if ( $(window).width() < 610 ) {
+		fixpara = 100;
+		debug = sctp - trig;
+	} else if ( $(window).width() < 710 ) {
+		fixpara = 50;
+		debug = sctp - trig;
+	}
+	if (sctp > (trig - fixpara) ) {
+		if( footerLocked == 0 ){
+			footerLocked = 1;
+			footerLock();
+		}
+	}
+	if( ISpost == 0 ){
+		update();
+	} else {
+		updateV();
+	}
+});
+
+
+// --- smooth scrool ---
+var uac = window.navigator.userAgent.toLowerCase();
+var scrLength = 150;
+var scrSpeed = 500;
+var scrEasing = 'easeOutCirc';
+var scrSet = 0;
+if( bwtp == 3 ){
+	if (uac.indexOf('chrome') == -1) {
+		subalert('　　※chrome推奨');
+	}
+	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+	$(document).on(mousewheelevent,function(e){
+		window.getSelection().collapse(document.body,0);
+		e.preventDefault();
+		var delta = e.originalEvent.deltaY ? -(e.originalEvent.deltaY) : e.originalEvent.wheelDelta ? e.originalEvent.wheelDelta : -(e.originalEvent.detail);
+		if (delta < 0){
+			scrSet = $(document).scrollTop()+scrLength;
+		} else {
+			scrSet = $(document).scrollTop()-scrLength;
+		}
+		roolOnce = 1;
+		sleep_2(1000,function(){ roolOnce = 0; });
+		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
+		return false;
+	});
+}
+
+
+// --- text search ---
+var initval = '(検索文字を入力...)';
+var updn = 1;
+var fw = '';
+var dw = '';
+var fmax = 0;
+var enableRangy = 0;
+var lg = 0;
+var tid = 0;
+var tsw = 0;
+var ajsy = parseInt(($(window).height() - 250) / 2) - 10;
+
+var searchResultApplier;
+rangy.init();
+var cssClassApplierModule = rangy.modules.ClassApplier;
+if (rangy.supported && cssClassApplierModule && cssClassApplierModule.supported) {
+	enableRangy = 1;
+	searchResultApplier = rangy.createClassApplier("searchResult");
+}else{
+	alert('Rangy Error');
+}
+$('#shinput').attr('value',initval);
+$('#shinput').focus(function() {
+	if ($(this).val() == initval) {
+		$(this).val('');
+		$(this).css('color', '#000000');
+		$(this).blur(function() {
+			if ($.trim($(this).val()) == '') {
+				$(this).val(initval);
+				$(this).css('color', '#BBBBBB');
+			}
+		});
+	}
+});
+function wget(){
+	var w = $('#shinput').val();
+	if( w == initval ){
+		w = '';
+	}
+	w = $.trim(w);
+	return w;
+}
+function colReset(){
+	$('*.searchResult').css('color','Black');
+	$('*.searchResult').css('background-color','PaleGoldenRod');
+}
+function avoidRush(){
+	var ret = 0;
+	if( clickOnce == 0 && roolOnce == 0 ){
+		clickOnce = 1;
+		sleep(300,function(){ clickOnce = 0; });
+	} else {
+		ret = 1;
+	}
+	return ret;
+}
+$('.find-dn').click(function(){
+	window.getSelection().collapse(document.body,0);
+	if( wget() == '' || enableRangy == 0 ){
+		coldel();
+		return false;
+	}
+	colReset();
+	var bk = dw;
+	dw = fw;
+	if( dw != wget() ){
+		if ( avoidRush() == 1 ){
+			dw = bk;
+			return false;
+		}
+		fw = wget();
+		coldel();
+		tsw = 1;
+		doSearch();
+	}else{
+		updn++;
+		if( updn > fmax ){
+			updn = fmax;
+		}
+		fmoveMark(updn);
+	}
+	return false;
+});
+$('.find-up').click(function(){
+	window.getSelection().collapse(document.body,0);
+	if( wget() == '' || enableRangy == 0 ){
+		coldel();
+		return false;
+	}
+	colReset();
+	var bk = dw;
+	dw = fw;
+	if( dw != wget() ){
+		if ( avoidRush() == 1 ){
+			dw = bk;
+			return false;
+		}
+		fw = wget();
+		coldel();
+		tsw = 0;
+		doSearch();
+	}else{
+		updn--;
+		if( updn < 1 ){
+			updn = 1;
+		}
+		 fmoveMark(updn);
+	}
+	return false;
+});
+$('.find-x').click(function(){
+	window.getSelection().collapse(document.body,0);
+	if ( avoidRush() == 1 ){
+		return false;
+	}
+	dw = '';
+	fw = '';
+	coldel();
+	return false;
+});
+function fmoveMark(t){
+	var flms = $(".searchResult");
+	flms.eq(t-1).css('background-color','Gold');
+	var cy = flms.eq(t-1).offset().top - ajsy;
+	$("html,body").animate({scrollTop:cy},300,'easeInOutQuad');
+}
+function doSearch(){
+	if( lg > 0 ){
+		setTimeout(doSearch,100);
+		return;
+	}
+	srhproc()
+	if( fmax > 0 ){
+		if( tsw == 1 ){
+			updn = fmax;
+		}else{
+			updn = 1;
+		}
+		fmoveMark(updn);
+	}
+}
+function srhproc(){
+	var searchTerm = fw;
+	var referenceNode = gEBI('contentMain');
+	var range = rangy.createRange();
+	var searchScopeRange = rangy.createRange();
+
+	/* searchScopeRange.selectNodeContents(document.body); */
+	   searchScopeRange.selectNodeContents(referenceNode);
+
+	var options = {
+		caseSensitive: false,
+		wholeWordsOnly: false,
+		withinRange: searchScopeRange,
+		direction: "forward"
+	};
+
+	/* range.selectNodeContents(document.body); */
+	   range.selectNodeContents(referenceNode);
+
+	/* searchResultApplier.undoToRange(range); */
+
+	fmax = 0;
+	if (searchTerm !== "") {
+		while (range.findText(searchTerm, options)) {
+			fmax++;
+			searchResultApplier.applyToRange(range);
+			range.collapse(false);
+		}
+	}
+}
+function coldel(){
+	updn = 1;
+	fmax = 0;
+	lg = 1;
+	tid = setInterval(delproc,100);
+}
+function delproc(){
+	var df;
+	var range = document.createRange();
+	var spanNode = [];
+	spanNode = document.getElementsByClassName('searchResult');
+	lg = spanNode.length;
+	for (var i = 0; i < lg; i++) {
+		range.selectNodeContents(spanNode[i]);
+		df = range.extractContents();
+		range.setStartBefore(spanNode[i]);
+		range.insertNode(df);
+		range.selectNode(spanNode[i]);
+		range.deleteContents();
+	}
+	range.detach();
+	if (lg < 1) {
+		clearInterval(tid);
+	}
+}
+
+
+});
+
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+// - Catman Routine -
+$(document).ready(function(){
+var ai = $('.article-content>iframe'),
+ae = $('.article-content>embed'),
+m  = $('#main'),
+a  = $('#asidepart'),
+t  = $('#toc'),
+h  = $('article h2'),
+ah = $('article h2'),
+ta = $('#toc.toc-aside'),
+o  = $('.openaside'),
+c  = $('.closeaside'),
+w  = $(window).width(),
+limit = 1010;
+if ( w > limit ) {
+m.addClass('moveMain');
+a.css('display', 'none').addClass('fadeIn');
+o.css('display', 'block');
+};
+if(ai.length>0){
+ai.wrap('<div class="video-container" />');
+};
+if(ae.length>0){
+ae.wrap('<div class="video-container" />');
+};
+if(ah.length==0){
+t.css('display','none');
+}else{
+if ( w > limit ) {
+ta.css('display', 'block').addClass('fadeIn');
+};
+c.click(function(){
+ta.css('display', 'block').addClass('fadeIn');
+});
+o.click(function(){
+ta.css('display', 'none');
+});
+$(window).scroll(function(){
+ta.css("top",Math.max(140,250-$(this).scrollTop()));
+});
+};
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+// - Catman Routine -
+$(document).ready(function(){ 
+var $this = $('.share'),
+url = $this.attr('data-url'),
+encodedUrl = encodeURIComponent(url),
+title = $this.attr('data-title');
+var html = [
+'<a href="#" class="overlay" id="qrcode"></a>',
+'<div class="qrcode clearfix"><span>share</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong>',
+'<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+'<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+'<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+'<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+'<span title="Share to"></span>'
+].join('');
+$this.append(html);
+$('.article-share-qrcode').click(function(){
+var imgSrc = $('#qrcode-pic').attr('data-src');
+$('#qrcode-pic').attr('src', imgSrc);
+$('#qrcode-pic').load(function(){
+$('.qrcode strong').text(' ');
+});
+});
+});
+</script>
+
+<script type="text/javascript">
+
+// - Catman Routine -
+(function($) {
+var upperLimit = 1000;
+var scrollElem = $('#top');
+var scrollSpeed = 700;
+
+	var ftpos = $('#ftpos').position();
+	upperLimit = parseInt(ftpos.top * 0.4);
+
+scrollElem.hide();
+$(window).scroll(function(){
+var scrollTop = $(document).scrollTop();
+if ( scrollTop > upperLimit ) {
+		
+		if( bwtp != 3 || $(window).width() < 700){
+			$('#top').css('bottom','50px');
+		}
+		
+$('#top').css('display','block')
+$('#top').stop().fadeTo(300, 1);
+} else {
+$('#top').stop().fadeTo(300, 0, function(){ $('#top').css('display','none'); });
+}
+});
+$(scrollElem).click(function(){
+$('html, body').animate({scrollTop:0}, scrollSpeed, 'easeInOutQuad');
+return false;
+});
+})(jQuery);
+</script>
+
+
+
+<!-- (p)search.ejs -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'ja',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+var customSearchControl = new google.search.CustomSearchControl('009872468919514037611:0x2-l3h67qe');
+customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+var options = new google.search.DrawOptions();
+options.setAutoComplete(true);
+customSearchControl.draw('cse', options);
+var match = location.search.match(/q=([^&]*)(&|$)/);
+if(match && match[1]){
+var search = decodeURIComponent(match[1]);
+customSearchControl.execute(search);
+}
+},true);
+</script>
+<!-- (p)search EOF -->
+
+	<!-- (p)after_footer EOF -->
+
+</body>
+</html>
+
+	<!-- layout.ejs EOF -->
