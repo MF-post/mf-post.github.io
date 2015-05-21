@@ -5,25 +5,26 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
-<title>タグ付き投稿のテスト1 | 群れの笠と風刻</title>
+<title>日本語での動作チェック | 群れの笠と風刻</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
-<meta name="description" content="CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。">
+<meta name="description" content="さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。
+中国というと気になる「情報リーク」も、GitHubベースで動く物なので問題なさそうである。所詮ネット上にデータ放り出すの">
 
 <!-- custom OGP -->
 <meta property="fb:admins" content="100003715157063"/>
 <meta property="fb:app_id" content="1018136558197616"/>
-<meta property="og:url" content="http://mf-post.github.io/2015/04/11/index.html" />
+<meta property="og:url" content="http://mf-post.github.io/2015/03/25/index.html" />
 <meta property="og:site_name" content="群れの笠と風刻" />
-<meta property="og:title" content="タグ付き投稿のテスト1 | 群れの笠と風刻" />
+<meta property="og:title" content="日本語での動作チェック | 群れの笠と風刻" />
 <meta property="og:image" content="http://mf-post.github.io/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
 
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/2015/04/11/index.html';
+var oURL = 'http://mf-post.github.io/2015/03/25/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var timeID = 0;
@@ -333,15 +334,15 @@ fjs.parentNode.insertBefore(js, fjs);
 <!-- (pp)header.ejs -->
 <header class="article-info clearfix">
 <h1 itemprop="name">
-	<a href="/2015/04/11/" title="タグ付き投稿のテスト1" itemprop="url">タグ付き投稿のテスト1</a>
+	<a href="/2015/03/25/" title="日本語での動作チェック" itemprop="url">日本語での動作チェック</a>
 </h1>
 <p class="article-author">By
 <small>&nbsp;MF</small>
 </p>
 <p class="article-time">
-<time id="pub-time" datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
-<data id="upd-xmltime" value="2015-05-10T09:04:41.557Z" itemprop="dateModified">
-<abbr id="upd-time" title="upd:2015-05-10">.</abbr>
+<time id="pub-time" datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
+<data id="upd-xmltime" value="2015-03-28T22:07:22.409Z" itemprop="dateModified">
+<abbr id="upd-time" title="upd:2015-03-29">.</abbr>
 </data>
 </p>
 </header>
@@ -353,7 +354,19 @@ fjs.parentNode.insertBefore(js, fjs);
 <strong class="toc-title">Contents</strong>
 </div>
 <div id="contentMain">
-<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
+<p>さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。<br>Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。</p>
+<p>中国というと気になる「情報リーク」も、GitHubベースで動く物なので問題なさそうである。<br>所詮ネット上にデータ放り出すのだから、ガタガタ言った所でどうしようもないし。</p>
+<p>むしろ国内向けに多種のスキームを色んな人が作って提供しているという事は、現地のユーザー利用率は高いと言える。<br>危なっかしい物だとしたら、そういうのは敏感にわかる訳で、ここまで発展するとは考えにくい。<br>GitHubベースなので、どこぞの干渉を防ぐって効果もあるのかも知れないし。<br>ところで東方ネタのスキームがあるが、向こうでも人気なのだろうか？？？</p>
+<p>で、これに何を追加するか：</p>
+<p>・config.ymlが、どうしても日本語をまともに処理しないので、デプロイ直前に群れの笠と風刻を書き替えるUWSCマクロ<br>・Evernoteのブログ用ノートから必要記事吸出し,既存投稿とのsync,記事内画像sync,タグ転送,iframeまわり・・・<br>GitHub制御も含めて、ここらへんもUWSCマクロで、どうにかならないだろうか・・・<br>Evernoteの特定投稿を起動トリガーとするのも含めて、どこまで可能か検討中。</p>
+<p>以下JavaScriptによる<br>・スムーズスクロール（100％趣味、笑）<br>・スクロール下端到達時にフッターせり出し<br>・フッター内に記事内検索、ハイライト（Evernoteの外郭的なデータカテゴリとして個人でも見回りたいので、どうしても欲しい）<br>・フッター内にFacebookコメント<br>（これらが最初から表示されていると、ブログ本文読むのに気が散る。で、下端せり出しにしたい訳）</p>
+<p>やらない事：<br>・GAやらない。SEOも特に気にしない。IEも考えない。要するにそっち方面はめんどくさい。労力割くならコンテンツ（笑）<br>だったら何でこんな面倒なシステムに手ぇ突っ込んでるのか？って、そりゃEvernote連携＋αな事が出来れば、最終的に凄く便利だから。<br>まあとりあえず・・・今を時めくHTML5なので「Chrome以外でのブラウジングは非対応」とさせて頂きます。</p>
+<p>楽曲の感想やら何やらを趣味で書いていくだけの代物なので・・・そう、あくまで「趣味」。<br>一段落したらGoogleAPIの実験場としても使えるかなー、と。</p>
+<p>参考になった情報</p>
+<p><a href="http://liginc.co.jp/web/programming/server/104594?" target="_blank">所要時間3分!- Github PagesとHEXOで爆速ブログ構築してみよう！ - 株式会社LIG</a></p>
+<p><a href="http://qiita.com/kouh/items/30e7cbb673472c43b66f" target="_blank">Windowsにnode.jsを導入する方法 - Qiita</a></p>
+<p><a href="http://www.aoki.ecei.tohoku.ac.jp/~ito/python_windows.html" target="_blank">Python for Windows インストールメモ</a></p>
+<p><a href="http://pagent.github.io/2014/12/05/hexo-vs-octopress/" target="_blank">HexoとOctopressの比較 - Pagent</a></p>
 </div>
 </div>
 
@@ -363,13 +376,10 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="article-footer clearfix">
 <div class="article-fix">
 <!-- (pp)catetags.ejs -->
-<div class="article-tags">
-<span></span> <a href="/source/tags/ああああ/">ああああ</a><a href="/source/tags/あ阿/">あ阿</a>
-</div>
 <!-- (pp)catetags EOF -->
 <div class="article-share" id="share">
 <small class="share clearfix">
-<a href="http://mf-post.github.io/2015/04/11/index.html" target="_self">[permalink]</a>
+<a href="http://mf-post.github.io/2015/03/25/index.html" target="_self">[permalink]</a>
 </small>
 </div>
 </div>
@@ -381,15 +391,15 @@ fjs.parentNode.insertBefore(js, fjs);
 
 <nav class="article-nav clearfix">
 <div class="prev">
-<a href="/2015/04/12/" title="タグ付き投稿のテスト2">
+<a href="/2015/04/11/" title="タグ付き投稿のテスト1">
 <strong style="font-size:85%;">次の投稿:</strong><br/>
-<span>タグ付き投稿のテスト2</span>
+<span>タグ付き投稿のテスト1</span>
 </a>
 </div>
 <div class="next">
-<a href="/2015/03/25/"  title="日本語での動作チェック">
+<a href="/2015/03/23/"  title="Hello World">
 <strong style="font-size:85%;">前の投稿:</strong><br/> 
-<span>日本語での動作チェック</span>
+<span>Hello World</span>
 </a>
 </div>
 </nav>
@@ -466,10 +476,10 @@ fjs.parentNode.insertBefore(js, fjs);
 <span class="txt">
 
 <!-- Facebook Like -->
-<div style="float:left; margin-right:15px;" class="fb-like" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="85" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+<div style="float:left; margin-right:15px;" class="fb-like" data-href="http://mf-post.github.io/2015/03/25/index.html" data-width="85" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
 
 <!-- Facebook Comment -->
-<div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="600" data-numposts="10" data-colorscheme="light"></div>
+<div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/03/25/index.html" data-width="600" data-numposts="10" data-colorscheme="light"></div>
 
 <div style="clear:both;"></div>
 </span>
@@ -584,7 +594,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-I" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-C" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -592,7 +602,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-I<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
 }
 
 
