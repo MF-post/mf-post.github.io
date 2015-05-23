@@ -232,7 +232,7 @@ a,h1 {
 	left:26px;
 	font-size:20px;
 	color:#333333;
-}
+	}
 .find-up i {
 	position:relative;
 	top:11px;
@@ -265,6 +265,9 @@ a,h1 {
 	font-size:60%;
 	text-shadow:none !important;
 	color:#333333 !important;
+	}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget {
+	display:none !important;
 	}
 -->
 </style>
@@ -465,10 +468,8 @@ fjs.parentNode.insertBefore(js, fjs);
 <div id="fbox1">
 <span class="txt">
 
-<div style="float:left; margin-right:15px;">
 <!-- Facebook Like -->
-<iframe src="//www.facebook.com/plugins/like.php?href=http://mf-post.github.io/2015/04/12/index.html;width=100&amp;height=100&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=1018136558197616" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:100px;" allowTransparency="true"></iframe>
-</div>
+<div style="float:left; margin-right:15px;" class="fb-like" data-href="http://mf-post.github.io/2015/04/12/index.html" data-width="80" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
 
 <!-- Facebook Comment -->
 <div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/12/index.html" data-width="600" data-numposts="10" data-colorscheme="light"></div>
@@ -586,7 +587,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-E" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -594,7 +595,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-A<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-E<span id="chalert"></span></h3>';
 }
 
 
