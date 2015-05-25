@@ -26,17 +26,22 @@ window.onunload = function() {};
 var oURL = 'http://mf-post.github.io/2015/04/11/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
-var timeID = 0;
-var timeID_2 = 0;
 var ua = navigator.userAgent;
 var bwtp = 0;
+var timeID = 0;
 function sleep(time, callback){
 	clearTimeout(timeID);
 	timeID = setTimeout(callback, time);
 }
+var timeID_2 = 0;
 function sleep_2(time, callback){
 	clearTimeout(timeID_2);
 	timeID_2 = setTimeout(callback, time);
+}
+var timeID_3 = 0;
+function sleep_3(time, callback){
+	clearTimeout(timeID_3);
+	timeID_3 = setTimeout(callback, time);
 }
 if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
 	/* smapho */
@@ -184,7 +189,10 @@ a,h1 {
 	margin-left:9%;
 	margin-right:1%;
 	text-align:left;
-	padding:6px;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:6px;
+	padding-right:6px;
 	}
 #fbox2{
 	height:40px;
@@ -259,7 +267,8 @@ a,h1 {
 	}
 .fcap-bt {
 	text-align:left;
-	position:relative;
+	text-indent:4%;
+	margin: 0.1em 0px;
 	left:4%;
 	top:-15px;
 	font-size:60%;
@@ -466,6 +475,7 @@ fjs.parentNode.insertBefore(js, fjs);
 </div>
 <div class="cfooter-bottom">
 <div id="fbox1">
+<div id="fbdmy" style="width:1px; height:400px;"></div>
 <span class="txt">
 
 <div>
@@ -474,7 +484,7 @@ fjs.parentNode.insertBefore(js, fjs);
 </div>
 
 <!-- Facebook Comment -->
-<div style="float:left;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="600" data-numposts="10" data-colorscheme="light" data-order-by="reverse_time"></div>
+<div style="float:left; top:-60px;" class="fb-comments" data-href="http://mf-post.github.io/2015/04/11/index.html" data-width="600" data-numposts="10" data-colorscheme="light" data-order-by="reverse_time" data-locale="ja_JP"></div>
 
 <div style="clear:both;"></div>
 </span>
@@ -497,8 +507,9 @@ fjs.parentNode.insertBefore(js, fjs);
 </div>
 
 </label>
-<div style="width:1px; height:75px;"></div>
-<p class="fcap-bt">フッターを戻したい時は、<br>ページ再読込(F5)して下さい。</p>
+<div style="width:1px; height:65px;"></div>
+<p class="fcap-bt">フッターを戻したい時は、</p>
+<p class="fcap-bt">ページ再読込(F5)して下さい。</p>
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
 <p class="copyright">CMS Powered by <a href="http://hexo.io/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/leaf-hsiao/catman" target="_blank" title="Catman">Catman</a> - 2015
@@ -589,7 +600,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-C" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -597,7 +608,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-A<span id="chalert"></span></h3>';
 }
 
 
@@ -731,6 +742,7 @@ function footerLock(){
 		$(".fcap").css('left', fx2 - fx1 - ajsfc);
 		$(".fcap-bt").css('left', fx2 - fx1 - ajsfc);
 		$("#shinput").attr('size',ajsfz);
+		sleep_3(1500,function(){ $("#fbdmy").css('height','1px'); });
 	}
 	if( bwtp == 3 ){
 		$("#fbox1").mCustomScrollbar({
@@ -823,7 +835,7 @@ $win
 });
 
 
-// --- smooth scrool ---
+// --- smooth scroll ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
 var scrSpeed = 500;

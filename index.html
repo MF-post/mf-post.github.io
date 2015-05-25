@@ -27,17 +27,22 @@ window.onunload = function() {};
 var oURL = 'http://mf-post.github.io/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
-var timeID = 0;
-var timeID_2 = 0;
 var ua = navigator.userAgent;
 var bwtp = 0;
+var timeID = 0;
 function sleep(time, callback){
 	clearTimeout(timeID);
 	timeID = setTimeout(callback, time);
 }
+var timeID_2 = 0;
 function sleep_2(time, callback){
 	clearTimeout(timeID_2);
 	timeID_2 = setTimeout(callback, time);
+}
+var timeID_3 = 0;
+function sleep_3(time, callback){
+	clearTimeout(timeID_3);
+	timeID_3 = setTimeout(callback, time);
 }
 if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
 	/* smapho */
@@ -185,7 +190,10 @@ a,h1 {
 	margin-left:9%;
 	margin-right:1%;
 	text-align:left;
-	padding:6px;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:6px;
+	padding-right:6px;
 	}
 #fbox2{
 	height:40px;
@@ -260,7 +268,8 @@ a,h1 {
 	}
 .fcap-bt {
 	text-align:left;
-	position:relative;
+	text-indent:4%;
+	margin: 0.1em 0px;
 	left:4%;
 	top:-15px;
 	font-size:60%;
@@ -513,7 +522,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-C" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-A" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -521,7 +530,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-A<span id="chalert"></span></h3>';
 }
 
 
@@ -652,6 +661,7 @@ function footerLock(){
 		$(".fcap").css('left', fx2 - fx1 - ajsfc);
 		$(".fcap-bt").css('left', fx2 - fx1 - ajsfc);
 		$("#shinput").attr('size',ajsfz);
+		sleep_3(1500,function(){ $("#fbdmy").css('height','1px'); });
 	}
 	if( bwtp == 3 ){
 		$("#fbox1").mCustomScrollbar({
@@ -744,7 +754,7 @@ $win
 });
 
 
-// --- smooth scrool ---
+// --- smooth scroll ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
 var scrSpeed = 500;
