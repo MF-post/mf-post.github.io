@@ -3,10 +3,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="content-language" content="ja">
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 
 <title>群れの笠と風刻</title>
-<meta name="robots" content="noindex,follow" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
@@ -15,16 +14,17 @@
 <!-- custom OGP -->
 <meta property="fb:admins" content="100003715157063"/>
 <meta property="fb:app_id" content="1018136558197616"/>
-<meta property="og:url" content="http://mf-post.github.io/archives/2015/05/index.html" />
+<meta property="og:url" content="http://mf-post.github.io/page/2/index.html" />
 <meta property="og:site_name" content="群れの笠と風刻" />
 <meta property="og:title" content="群れの笠と風刻" />
 <meta property="og:image" content="http://mf-post.github.io/img/((OGImage)).png" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="ブログやってます。" />
 
 <script>
 // --- Head Run ---
 window.onunload = function() {};
-var oURL = 'http://mf-post.github.io/archives/2015/05/index.html';
+var oURL = 'http://mf-post.github.io/page/2/index.html';
 var clickOnce = 0;
 var footerLocked = 0;
 var ua = navigator.userAgent;
@@ -324,36 +324,66 @@ a,h1 {
 
 </header>
 <div id="container">
-<!-- archive.ejs -->
-	<!-- (p)archive.ejs -->
-
-
-<div class="archive-title">
-<h2 class="archive-icon">2015/5</h2>
-
-<script>
-ISarchives = 1;
-</script>
-<div class="archiveslist archive-float clearfix"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">5月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">4月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">3月 2015</a><span class="archive-list-count">2</span></li></ul></div>
-</div>
-
-<div id="main" class="archive-part clearfix">
-<div id="archive-page">
-	<!-- (p)article.ejs -->
+<!-- index.ejs -->
+<div id="main">
+<!-- (p)article.ejs -->
 <section class="post" itemscope itemprop="blogPost">
-<a href="/2015/05/06/" title="GWで完成、とはいかなかった・・・" itemprop="url">
-<h1 itemprop="name">GWで完成、とはいかなかった・・・</h1>
-<time datetime="2015-05-06T11:24:54.000Z" itemprop="datePublished">2015-05-06</time>
+<a href="/2015/03/25/" title="日本語での動作チェック" itemprop="url">
+<h1 itemprop="name">日本語での動作チェック</h1>
+<p itemprop="description" >さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多 ... </p>
+<time datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
 </a>
 </section>
 <!-- (p)article EOF -->
-
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost">
+<a href="/2015/03/23/" title="Hello World" itemprop="url">
+<h1 itemprop="name">Hello World</h1>
+<p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info ... </p>
+<time datetime="2015-03-23T13:32:10.987Z" itemprop="datePublished">2015-03-23</time>
+</a>
+</section>
+<!-- (p)article EOF -->
+<nav id="page-nav" class="clearfix">
+<a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+</nav>
 </div>
+<!-- index EOF -->
+
+	<!-- (p)sidebar.ejs -->
+
+<div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+<!-- (w)tag.ejs -->
+<div class="tagslist">
+<p class="asidetitle">All Tags</p>
+<ul class="clearfix">
+<li><a href="/source/tags/ああああ/" title="ああああ">ああああ<sup>2</sup></a></li>
+<li><a href="/source/tags/あ阿/" title="あ阿">あ阿<sup>1</sup></a></li>
+</ul>
+</div>
+<!-- (w)tag EOF -->
+
+	<!-- (w)links.ejs -->
+
+<div class="linkslist">
+<p class="asidetitle">Links</p>
+<ul>
+<li><a href="https://www.facebook.com/n.seki.ja" target="_blank" title="Facebook個人ページ">Facebook</a></li>
+<li><a href="https://soundcloud.com/norikazu-seki" target="_blank" title="作曲は大昔に挫折、個人的にはあくまでリスナーです。&lt;(_ _)&gt;">SoundCloud</a></li>
+<li><a href="/atom.xml" target="_blank">RSS</a></li>
+</ul>
 </div>
 
-	<!-- (p)archive EOF -->
+	<!-- (w)links EOF -->
 
-<!-- archive EOF -->
+</aside>
+</div>
+
+	<!-- (p)sidebar EOF -->
+
 </div>
 	<!-- (p)footer.ejs -->
 
