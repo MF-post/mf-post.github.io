@@ -82,6 +82,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+#contentMain{
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+	}
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
@@ -89,11 +93,30 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 .toc-number {
 	display:none;
 	}
+#wrdlogo {
+	font-size:85%;
+	}
 p,h2,h3,i,small {
 	text-shadow:0 0 1px rgba(129,124,124,.3);
+	text-align:justify;
+	line-break:strict;
 	}
 a,h1 {
 	text-shadow:0 0 2px rgba(44,166,203,.1);
+	}
+a.tpg:hover {
+	border:none;
+	color:#80C999;
+	background:#E6E6E6;
+	}
+.toptag {
+	float:left;
+	font-size:140%;
+	position:relative;
+	top:8px;
+	margin-left:10px;
+	margin-right:10px;
+	text-shadow:none;
 	}
 .cfooter-top {
 	width:100%;
@@ -171,9 +194,20 @@ a,h1 {
 	border-radius:10px;
 	font-size:80%;
 	}
-#contentMain{
-	word-wrap:break-word;
-	overflow-wrap:break-word;
+div.tbox {
+	display:table !important;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:125px;
+	}
+div.tbox_unit {
+	display:table-cell !important;
+	vertical-align:middle !important;
+	height:125px;
+	float:left;
+	align:left;
+	text-align:left;
 	}
 #fbox1{
 	height:135px;
@@ -326,8 +360,14 @@ a,h1 {
 <!-- (p)tags.ejs -->
 <div class="archive-title" >
 <h2 class="tag-icon">All Tags</h2>
+<a data-src="/source/tags/aaa/" href="#aaa" title="aaa">aaa<sup>3</sup></a>
+<a data-src="/source/tags/bbb/" href="#bbb" title="bbb">bbb<sup>1</sup></a>
+<a data-src="/source/tags/hexoのタグクラウド？/" href="#hexoのタグクラウド？" title="hexoのタグクラウド？">hexoのタグクラウド？<sup>1</sup></a>
+<a data-src="/source/tags/t111/" href="#t111" title="t111">t111<sup>2</sup></a>
+<a data-src="/source/tags/t222/" href="#t222" title="t222">t222<sup>1</sup></a>
+<a data-src="/source/tags/t333/" href="#t333" title="t333">t333<sup>1</sup></a>
+<a data-src="/source/tags/①②③/" href="#①②③" title="①②③">①②③<sup>1</sup></a>
 <a data-src="/source/tags/ああああ/" href="#ああああ" title="ああああ">ああああ<sup>2</sup></a>
-<a data-src="/source/tags/あ阿/" href="#あ阿" title="あ阿">あ阿<sup>1</sup></a>
 </div>
 <div id="main" class="archive-part">
 <div class="all-list-box"></div>
@@ -346,6 +386,8 @@ a,h1 {
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
+
+<script src="http://mf-post.github.io/nicemiddle.js"></script>
 
 
 
@@ -405,7 +447,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-O" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-R" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -413,7 +455,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-R<span id="chalert"></span></h3>';
 }
 
 
@@ -423,9 +465,10 @@ var m = $('#main'),
 a = $('#asidepart'),
 c = $('.closeaside'),
 o = $('.openaside');
+limit = 995;
 $(window).resize(function(){
 	getSize();
-	if (myWidth >= 1024) {
+	if (myWidth >= limit) {
 		$('header nav').removeClass('shownav');
 		$('.fb-comments').attr('data-width','350');
 	} else {
@@ -645,7 +688,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('　　※chrome推奨');
+		subalert('<br>※chromeで見て下さい...');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){

@@ -33,13 +33,17 @@
     <link href="http://mf-post.github.io/2015/04/12/"/>
     <id>http://mf-post.github.io/2015/04/12/</id>
     <published>2015-04-12T08:51:25.000Z</published>
-    <updated>2015-04-28T12:46:06.741Z</updated>
+    <updated>2015-05-31T12:07:32.662Z</updated>
     <content type="html"><![CDATA[<p>タグによってOGimage変える・・・？<br>記事アーカイブがFBログだから、やってみる価値はある。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>タグによってOGimage変える・・・？<br>記事アーカイブがFBログだから、やってみる価値はある。</p>
 ]]>
     </summary>
+    
+      <category term="aaa" scheme="http://mf-post.github.io/source/tags/aaa/"/>
+    
+      <category term="t111" scheme="http://mf-post.github.io/source/tags/t111/"/>
     
       <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
     
@@ -50,7 +54,7 @@
     <link href="http://mf-post.github.io/2015/04/11/"/>
     <id>http://mf-post.github.io/2015/04/11/</id>
     <published>2015-04-11T08:50:49.000Z</published>
-    <updated>2015-05-10T09:04:41.557Z</updated>
+    <updated>2015-05-31T12:07:22.990Z</updated>
     <content type="html"><![CDATA[<p>CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。</p>
 ]]></content>
     <summary type="html">
@@ -58,9 +62,21 @@
 ]]>
     </summary>
     
-      <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
+      <category term="aaa" scheme="http://mf-post.github.io/source/tags/aaa/"/>
     
-      <category term="あ阿" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E9%98%BF/"/>
+      <category term="bbb" scheme="http://mf-post.github.io/source/tags/bbb/"/>
+    
+      <category term="hexoのタグクラウド？" scheme="http://mf-post.github.io/source/tags/hexo%E3%81%AE%E3%82%BF%E3%82%B0%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%EF%BC%9F/"/>
+    
+      <category term="t111" scheme="http://mf-post.github.io/source/tags/t111/"/>
+    
+      <category term="t222" scheme="http://mf-post.github.io/source/tags/t222/"/>
+    
+      <category term="t333" scheme="http://mf-post.github.io/source/tags/t333/"/>
+    
+      <category term="①②③" scheme="http://mf-post.github.io/source/tags/%E2%91%A0%E2%91%A1%E2%91%A2/"/>
+    
+      <category term="ああああ" scheme="http://mf-post.github.io/source/tags/%E3%81%82%E3%81%82%E3%81%82%E3%81%82/"/>
     
   </entry>
   
@@ -69,7 +85,7 @@
     <link href="http://mf-post.github.io/2015/03/25/"/>
     <id>http://mf-post.github.io/2015/03/25/</id>
     <published>2015-03-25T10:32:23.000Z</published>
-    <updated>2015-03-28T22:07:22.409Z</updated>
+    <updated>2015-05-31T12:01:51.003Z</updated>
     <content type="html"><![CDATA[<p>さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。<br>Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。</p>
 <p>中国というと気になる「情報リーク」も、GitHubベースで動く物なので問題なさそうである。<br>所詮ネット上にデータ放り出すのだから、ガタガタ言った所でどうしようもないし。</p>
 <p>むしろ国内向けに多種のスキームを色んな人が作って提供しているという事は、現地のユーザー利用率は高いと言える。<br>危なっかしい物だとしたら、そういうのは敏感にわかる訳で、ここまで発展するとは考えにくい。<br>GitHubベースなので、どこぞの干渉を防ぐって効果もあるのかも知れないし。<br>ところで東方ネタのスキームがあるが、向こうでも人気なのだろうか？？？</p>
@@ -88,6 +104,8 @@
     <![CDATA[<p>さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。<br>Hexoとそのブログスキーム含めて開発元中国らしく・・・日本語対応にてこずった・・・が、多分、大丈夫なはず。</p>
 <p>中国というと気になる「情報リーク」も、GitHubベースで動く物なので問]]>
     </summary>
+    
+      <category term="aaa" scheme="http://mf-post.github.io/source/tags/aaa/"/>
     
   </entry>
   

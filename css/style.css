@@ -432,16 +432,16 @@ body >header a {
 }
 #textlogo h3.blog-motto {
   font-weight: normal;
-  font-size: font-size-30;
+  font-size: font-size-40;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h3.blog-motto {
-    font-size: font-size-50;
+    font-size: font-size-60;
   }
 }
 @media only screen and (min-width: 1010px) {
   #textlogo h3.blog-motto {
-    font-size: font-size-60;
+    font-size: font-size-70;
   }
 }
 .navbar {
@@ -692,8 +692,8 @@ header nav ul li a:hover {
   content: "\f0b1";
 }
 .archive-title {
-  margin: 1em 0;
-  width: 97%;
+  margin: 2em 0;
+  width: 80%;
   padding: 2em 0 2em 3%;
   background: #feffe8;
   border-left: 0.5em solid #ccc;
@@ -701,7 +701,7 @@ header nav ul li a:hover {
 @media only screen and (min-width: 1010px) {
   .archive-title {
     margin: 2em 0;
-    width: 18.5%;
+    width: 17%;
     padding-left: 0.5%;
     float: left;
   }

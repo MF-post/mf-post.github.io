@@ -83,6 +83,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+#contentMain{
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+	}
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
@@ -90,11 +94,30 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 .toc-number {
 	display:none;
 	}
+#wrdlogo {
+	font-size:85%;
+	}
 p,h2,h3,i,small {
 	text-shadow:0 0 1px rgba(129,124,124,.3);
+	text-align:justify;
+	line-break:strict;
 	}
 a,h1 {
 	text-shadow:0 0 2px rgba(44,166,203,.1);
+	}
+a.tpg:hover {
+	border:none;
+	color:#80C999;
+	background:#E6E6E6;
+	}
+.toptag {
+	float:left;
+	font-size:140%;
+	position:relative;
+	top:8px;
+	margin-left:10px;
+	margin-right:10px;
+	text-shadow:none;
 	}
 .cfooter-top {
 	width:100%;
@@ -172,9 +195,20 @@ a,h1 {
 	border-radius:10px;
 	font-size:80%;
 	}
-#contentMain{
-	word-wrap:break-word;
-	overflow-wrap:break-word;
+div.tbox {
+	display:table !important;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:125px;
+	}
+div.tbox_unit {
+	display:table-cell !important;
+	vertical-align:middle !important;
+	height:125px;
+	float:left;
+	align:left;
+	text-align:left;
 	}
 #fbox1{
 	height:135px;
@@ -327,35 +361,87 @@ a,h1 {
 <!-- index.ejs -->
 <div id="main">
 <!-- (p)article.ejs -->
-<section class="post" itemscope itemprop="blogPost">
-<a href="/2015/05/06/" title="GWで完成、とはいかなかった・・・" itemprop="url">
-<h1 itemprop="name">GWで完成、とはいかなかった・・・</h1>
-<p itemprop="description" >今年のGWは、結局5日間ずーっとhtmlやjsいじってた。うまくいってれば、最終日にどこか出掛けて何か投稿、といきたかったが・・・やっぱでけへん。(T_T)　ま ... </p>
+<section class="post" itemscope itemprop="blogPost" style="margin-right:15px;">
+<a href="/2015/05/06/" title="" itemprop="url">
+<div style="width:1px; height:12px;"></div>
+<h2 itemprop="name" style="font-size:18pt;line-height:20px;">GWで完成、とはいかなかった・・・</h2>
 <time datetime="2015-05-06T11:24:54.000Z" itemprop="datePublished">2015-05-06</time>
+<p itemprop="description" style="line-height:18pt;">今年のGWは、結局5日間ずーっとhtmlやjsいじってた。うまくいってれば、最終日にどこか ... </p>
+<div style="wihth:1px;height:15px;"></div>
 </a>
 </section>
+<div style="position:relative;left:20px;top:-55px;">
+<hr style="line-height:0px;border:none;">
+</div>
 <!-- (p)article EOF -->
 <!-- (p)article.ejs -->
-<section class="post" itemscope itemprop="blogPost">
-<a href="/2015/04/12/" title="タグ付き投稿のテスト2" itemprop="url">
-<h1 itemprop="name">タグ付き投稿のテスト2</h1>
-<p itemprop="description" >タグによってOGimage変える・・・？記事アーカイブがFBログだから、やってみる価値はある。 ... </p>
+<section class="post" itemscope itemprop="blogPost" style="margin-right:15px;">
+<a href="/2015/04/12/" title="" itemprop="url">
+<div style="width:1px; height:12px;"></div>
+<h2 itemprop="name" style="font-size:18pt;line-height:20px;">タグ付き投稿のテスト2</h2>
 <time datetime="2015-04-12T08:51:25.000Z" itemprop="datePublished">2015-04-12</time>
+<p itemprop="description" style="line-height:18pt;">タグによってOGimage変える・・・？記事アーカイブがFBログだから、やってみる価値はあ ... </p>
+<div style="wihth:1px;height:15px;"></div>
 </a>
 </section>
+<div style="position:relative;left:20px;top:-55px;">
+<div class="article-tags" style="width:105%;font-size:70%;border:none;">
+<i class="fa fa-tags toptag"></i>
+<a class="tpg" href="/source/tags/aaa/">aaa</a><a class="tpg" href="/source/tags/t111/">t111</a><a class="tpg" href="/source/tags/ああああ/">ああああ</a>
+</div>
+<hr style="line-height:0px;border:none;">
+</div>
 <!-- (p)article EOF -->
 <!-- (p)article.ejs -->
-<section class="post" itemscope itemprop="blogPost">
-<a href="/2015/04/11/" title="タグ付き投稿のテスト1" itemprop="url">
-<h1 itemprop="name">タグ付き投稿のテスト1</h1>
-<p itemprop="description" >CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・・のテスト。 ... </p>
+<section class="post" itemscope itemprop="blogPost" style="margin-right:15px;">
+<a href="/2015/04/11/" title="" itemprop="url">
+<div style="width:1px; height:12px;"></div>
+<h2 itemprop="name" style="font-size:18pt;line-height:20px;">タグ付き投稿のテスト1</h2>
 <time datetime="2015-04-11T08:50:49.000Z" itemprop="datePublished">2015-04-11</time>
+<p itemprop="description" style="line-height:18pt;">CMSコードがhtml内でどう吐き出されてるのか、複数タグ列挙のための区切り文字は何か・・ ... </p>
+<div style="wihth:1px;height:15px;"></div>
 </a>
 </section>
+<div style="position:relative;left:20px;top:-55px;">
+<div class="article-tags" style="width:105%;font-size:70%;border:none;">
+<i class="fa fa-tags toptag"></i>
+<a class="tpg" href="/source/tags/aaa/">aaa</a><a class="tpg" href="/source/tags/bbb/">bbb</a><a class="tpg" href="/source/tags/hexoのタグクラウド？/">hexoのタグクラウド？</a><a class="tpg" href="/source/tags/t111/">t111</a><a class="tpg" href="/source/tags/t222/">t222</a><a class="tpg" href="/source/tags/t333/">t333</a><a class="tpg" href="/source/tags/①②③/">①②③</a><a class="tpg" href="/source/tags/ああああ/">ああああ</a>
+</div>
+<hr style="line-height:0px;border:none;">
+</div>
 <!-- (p)article EOF -->
-<nav id="page-nav" class="clearfix">
-<span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-</nav>
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost" style="margin-right:15px;">
+<a href="/2015/03/25/" title="" itemprop="url">
+<div style="width:1px; height:12px;"></div>
+<h2 itemprop="name" style="font-size:18pt;line-height:20px;">日本語での動作チェック</h2>
+<time datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
+<p itemprop="description" style="line-height:18pt;">さて、どうやらHexoを最低限運用できる所までは漕ぎ着けたようである。Hexoとそのブログ ... </p>
+<div style="wihth:1px;height:15px;"></div>
+</a>
+</section>
+<div style="position:relative;left:20px;top:-55px;">
+<div class="article-tags" style="width:105%;font-size:70%;border:none;">
+<i class="fa fa-tags toptag"></i>
+<a class="tpg" href="/source/tags/aaa/">aaa</a>
+</div>
+<hr style="line-height:0px;border:none;">
+</div>
+<!-- (p)article EOF -->
+<!-- (p)article.ejs -->
+<section class="post" itemscope itemprop="blogPost" style="margin-right:15px;">
+<a href="/2015/03/23/" title="" itemprop="url">
+<div style="width:1px; height:12px;"></div>
+<h2 itemprop="name" style="font-size:18pt;line-height:20px;">Hello World</h2>
+<time datetime="2015-03-23T13:32:10.987Z" itemprop="datePublished">2015-03-23</time>
+<p itemprop="description" style="line-height:18pt;">Welcome to Hexo! This is your very first post ... </p>
+<div style="wihth:1px;height:15px;"></div>
+</a>
+</section>
+<div style="position:relative;left:20px;top:-55px;">
+<hr style="line-height:0px;border:none;">
+</div>
+<!-- (p)article EOF -->
 </div>
 <!-- index EOF -->
 
@@ -365,12 +451,23 @@ a,h1 {
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
+<div style="padding:5px; font-size:75%;">
+<div style="width:1px;height:40px;"></div>
+<p>トップページはタグ付きの簡易記事一覧です。他に適当な表示物がないので、とりあえず...</p>
+<p>メニューの「記事一覧」でFBログ（別サービス）に飛びますが、そちらの方がカレンダー付きで見やすいです。</p>
+</div>
 <!-- (w)tag.ejs -->
 <div class="tagslist">
 <p class="asidetitle">All Tags</p>
 <ul class="clearfix">
+<li><a href="/source/tags/aaa/" title="aaa">aaa<sup>3</sup></a></li>
+<li><a href="/source/tags/bbb/" title="bbb">bbb<sup>1</sup></a></li>
+<li><a href="/source/tags/hexoのタグクラウド？/" title="hexoのタグクラウド？">hexoのタグクラウド？<sup>1</sup></a></li>
+<li><a href="/source/tags/t111/" title="t111">t111<sup>2</sup></a></li>
+<li><a href="/source/tags/t222/" title="t222">t222<sup>1</sup></a></li>
+<li><a href="/source/tags/t333/" title="t333">t333<sup>1</sup></a></li>
+<li><a href="/source/tags/①②③/" title="①②③">①②③<sup>1</sup></a></li>
 <li><a href="/source/tags/ああああ/" title="ああああ">ああああ<sup>2</sup></a></li>
-<li><a href="/source/tags/あ阿/" title="あ阿">あ阿<sup>1</sup></a></li>
 </ul>
 </div>
 <!-- (w)tag EOF -->
@@ -413,12 +510,16 @@ a,h1 {
 </div>
 <div class="cfooter-bottom">
 <div id="footbio">
-<span class="txt">
+<div class="tbox">
+<div class="tbox_unit" style="width:10%;"></div>
+<div class="tbox_unit middle" style="width:25%;border:solid;text-align:right;padding-right:10px;">■</div>
+<div class="tbox_unit" style="width:55%;border:solid;">
 <p class="txt">prof</p>
 <p class="txt">prof</p>
 <p class="txt">prof</p>
 <p class="txt">prof</p>
-</span>
+</div>
+</div>
 </div>
 <div style="clear:both; height:10px;"></div>
 <div id="btm">
@@ -448,6 +549,8 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 <script src="http://mf-post.github.io/rangy-core.js"></script>
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
+
+<script src="http://mf-post.github.io/nicemiddle.js"></script>
 
 
 
@@ -507,7 +610,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-O" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-R" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -515,7 +618,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-R<span id="chalert"></span></h3>';
 }
 
 
@@ -525,9 +628,10 @@ var m = $('#main'),
 a = $('#asidepart'),
 c = $('.closeaside'),
 o = $('.openaside');
+limit = 995;
 $(window).resize(function(){
 	getSize();
-	if (myWidth >= 1024) {
+	if (myWidth >= limit) {
 		$('header nav').removeClass('shownav');
 		$('.fb-comments').attr('data-width','350');
 	} else {
@@ -747,7 +851,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('　　※chrome推奨');
+		subalert('<br>※chromeで見て下さい...');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){

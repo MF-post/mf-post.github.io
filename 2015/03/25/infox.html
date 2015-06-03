@@ -83,6 +83,10 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <!-- custom over-ride CSS -->
 <style type="text/css">
 <!-- 
+#contentMain{
+	word-wrap:break-word;
+	overflow-wrap:break-word;
+	}
 *.searchResult {
 	color: Black;
 	background-color: PaleGoldenRod;
@@ -90,11 +94,30 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 .toc-number {
 	display:none;
 	}
+#wrdlogo {
+	font-size:85%;
+	}
 p,h2,h3,i,small {
 	text-shadow:0 0 1px rgba(129,124,124,.3);
+	text-align:justify;
+	line-break:strict;
 	}
 a,h1 {
 	text-shadow:0 0 2px rgba(44,166,203,.1);
+	}
+a.tpg:hover {
+	border:none;
+	color:#80C999;
+	background:#E6E6E6;
+	}
+.toptag {
+	float:left;
+	font-size:140%;
+	position:relative;
+	top:8px;
+	margin-left:10px;
+	margin-right:10px;
+	text-shadow:none;
 	}
 .cfooter-top {
 	width:100%;
@@ -172,9 +195,20 @@ a,h1 {
 	border-radius:10px;
 	font-size:80%;
 	}
-#contentMain{
-	word-wrap:break-word;
-	overflow-wrap:break-word;
+div.tbox {
+	display:table !important;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:125px;
+	}
+div.tbox_unit {
+	display:table-cell !important;
+	vertical-align:middle !important;
+	height:125px;
+	float:left;
+	align:left;
+	text-align:left;
 	}
 #fbox1{
 	height:135px;
@@ -353,8 +387,8 @@ fjs.parentNode.insertBefore(js, fjs);
 </p>
 <p class="article-time">
 <time id="pub-time" datetime="2015-03-25T10:32:23.000Z" itemprop="datePublished">2015-03-25</time>
-<data id="upd-xmltime" value="2015-03-28T22:07:22.409Z" itemprop="dateModified">
-<abbr id="upd-time" title="upd:2015-03-29">.</abbr>
+<data id="upd-xmltime" value="2015-05-31T12:01:51.003Z" itemprop="dateModified">
+<abbr id="upd-time" title="upd:2015-05-31">.</abbr>
 </data>
 </p>
 </header>
@@ -388,6 +422,9 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="article-footer clearfix">
 <div class="article-fix">
 <!-- (pp)catetags.ejs -->
+<div class="article-tags" style="width:105%;">
+<span></span> <a href="/source/tags/aaa/">aaa</a>
+</div>
 <!-- (pp)catetags EOF -->
 <div class="article-share" id="share">
 <small class="share clearfix">
@@ -441,8 +478,14 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="tagslist">
 <p class="asidetitle">All Tags</p>
 <ul class="clearfix">
+<li><a href="/source/tags/aaa/" title="aaa">aaa<sup>3</sup></a></li>
+<li><a href="/source/tags/bbb/" title="bbb">bbb<sup>1</sup></a></li>
+<li><a href="/source/tags/hexoのタグクラウド？/" title="hexoのタグクラウド？">hexoのタグクラウド？<sup>1</sup></a></li>
+<li><a href="/source/tags/t111/" title="t111">t111<sup>2</sup></a></li>
+<li><a href="/source/tags/t222/" title="t222">t222<sup>1</sup></a></li>
+<li><a href="/source/tags/t333/" title="t333">t333<sup>1</sup></a></li>
+<li><a href="/source/tags/①②③/" title="①②③">①②③<sup>1</sup></a></li>
 <li><a href="/source/tags/ああああ/" title="ああああ">ああああ<sup>2</sup></a></li>
-<li><a href="/source/tags/あ阿/" title="あ阿">あ阿<sup>1</sup></a></li>
 </ul>
 </div>
 <!-- (w)tag EOF -->
@@ -552,6 +595,8 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 <script src="http://mf-post.github.io/rangy-textrange.js"></script>
 <script src="http://mf-post.github.io/rangy-cssclassapplier.js"></script>
 
+<script src="http://mf-post.github.io/nicemiddle.js"></script>
+
 
 
 
@@ -610,7 +655,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-O" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-R" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -618,7 +663,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-O<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-R<span id="chalert"></span></h3>';
 }
 
 
@@ -628,9 +673,10 @@ var m = $('#main'),
 a = $('#asidepart'),
 c = $('.closeaside'),
 o = $('.openaside');
+limit = 995;
 $(window).resize(function(){
 	getSize();
-	if (myWidth >= 1024) {
+	if (myWidth >= limit) {
 		$('header nav').removeClass('shownav');
 		$('.fb-comments').attr('data-width','350');
 	} else {
@@ -853,7 +899,7 @@ var scrEasing = 'easeOutCirc';
 var scrSet = 0;
 if( bwtp == 3 ){
 	if (uac.indexOf('chrome') == -1) {
-		subalert('　　※chrome推奨');
+		subalert('<br>※chromeで見て下さい...');
 	}
 	var mousewheelevent = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
 	$(document).on(mousewheelevent,function(e){
@@ -1094,7 +1140,7 @@ ta = $('#toc.toc-aside'),
 o  = $('.openaside'),
 c  = $('.closeaside'),
 w  = $(window).width(),
-limit = 1010;
+limit = 995;
 if ( w > limit ) {
 m.addClass('moveMain');
 a.css('display', 'none').addClass('fadeIn');
