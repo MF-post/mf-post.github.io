@@ -6,6 +6,8 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
 <title>GWで完成、とはいかなかった・・・ | 群れの笠と風刻</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="robots" content="noarchive" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
@@ -19,7 +21,8 @@
 <meta property="og:image" content="http://mf-post.github.io/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
 
-<script>
+<script type="text/javascript">
+// <!-- 
 // --- Head Run ---
 window.onunload = function() {};
 var oURL = 'http://mf-post.github.io/2015/05/06/index.html';
@@ -56,6 +59,7 @@ clickOnce = 1;
 footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
+// -->
 </script>
 
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
@@ -153,8 +157,8 @@ a.tpg:hover {
 	padding:15px 0;
 	}
 .cfooter-bottom .txt {
-	font-size:14px;
-	margin-bottom:10px;
+	font-size:13px;
+	margin-bottom:5px;
 	color:#999;
 	}
 .cfooter {
@@ -198,7 +202,7 @@ div.tbox {
 	margin-left:auto;
 	margin-right:auto;
 	width:100%;
-	height:125px;
+	height:155px;
 	}
 div.tbox_unit {
 	display:table-cell !important;
@@ -578,6 +582,7 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 
 
 <script type="text/javascript">
+// <!-- 
 
 $(window).unload(function(){});
 
@@ -601,7 +606,6 @@ function subalert(w){
 
 
 
-
 $(document).ready(function(){
 
 $('.navbar').click(function(){
@@ -615,6 +619,7 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
+
 
 
 // --- archives over-ride ---
@@ -632,7 +637,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-B" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-C" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -640,7 +645,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-B<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
 }
 
 
@@ -678,6 +683,7 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
+
 
 
 // --- footer scroll-fix ---
@@ -868,6 +874,7 @@ $win
 });
 
 
+
 // --- smooth scroll ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -894,6 +901,7 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
+
 
 
 // --- text search ---
@@ -1093,17 +1101,17 @@ function delproc(){
 	}
 }
 
-
 });
 
 
+
+// -->
 </script>
 
 
 
-
 <script type="text/javascript">
-
+// <!-- 
 // - Catman Routine -
 $(document).ready(function(){
 var ai = $('.article-content>iframe'),
@@ -1146,13 +1154,14 @@ ta.css("top",Math.max(140,250-$(this).scrollTop()));
 });
 };
 });
+// -->
 </script>
 
 
 
 
 <script type="text/javascript">
-
+// <!-- 
 // - Catman Routine -
 $(document).ready(function(){ 
 var $this = $('.share'),
@@ -1177,10 +1186,11 @@ $('.qrcode strong').text(' ');
 });
 });
 });
+// -->
 </script>
 
 <script type="text/javascript">
-
+// <!-- 
 // - Catman Routine -
 (function($) {
 var upperLimit = 1000;
@@ -1210,6 +1220,7 @@ $('html, body').animate({scrollTop:0}, scrollSpeed, 'easeInOutQuad');
 return false;
 });
 })(jQuery);
+// -->
 </script>
 
 

@@ -6,7 +6,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 
 <title>群れの笠と風刻</title>
-<meta name="robots" content="noindex,follow" />
+<meta name="robots" content="noindex,follow,noarchive" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
 <meta name="author" content="MF">
@@ -21,7 +21,8 @@
 <meta property="og:image" content="http://mf-post.github.io/img/((OGImage)).png" />
 <meta property="og:type" content="article" />
 
-<script>
+<script type="text/javascript">
+// <!-- 
 // --- Head Run ---
 window.onunload = function() {};
 var oURL = 'http://mf-post.github.io/archives/2015/05/index.html';
@@ -58,6 +59,7 @@ clickOnce = 1;
 footerLocked = 1;
 sleep(1500,function(){ clickOnce = 0; footerLocked = 0; });
 var ISarchives = 0;
+// -->
 </script>
 
 <link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
@@ -155,8 +157,8 @@ a.tpg:hover {
 	padding:15px 0;
 	}
 .cfooter-bottom .txt {
-	font-size:14px;
-	margin-bottom:10px;
+	font-size:13px;
+	margin-bottom:5px;
 	color:#999;
 	}
 .cfooter {
@@ -200,7 +202,7 @@ div.tbox {
 	margin-left:auto;
 	margin-right:auto;
 	width:100%;
-	height:125px;
+	height:155px;
 	}
 div.tbox_unit {
 	display:table-cell !important;
@@ -412,12 +414,19 @@ ISarchives = 1;
 <div id="footbio">
 <div class="tbox">
 <div class="tbox_unit" style="width:10%;"></div>
-<div class="tbox_unit" style="width:25%;border:solid;text-align:right;padding-right:10px;"><div class="middle">■</div></div>
-<div class="tbox_unit" style="width:55%;border:solid;">
-<p class="txt">prof</p>
-<p class="txt">prof</p>
-<p class="txt">prof</p>
-<p class="txt">prof</p>
+<div class="tbox_unit" style="width:25%;text-align:right;padding-right:20px;">
+<div class="middle">
+<img src="/img/author_90px.png" alt="author" title="author">
+<div style="width:1px;height:35px;"></div>
+</div>
+</div>
+<div class="tbox_unit" style="width:55%;">
+<div class="middle">
+<div style="width:1px;height:35px;"></div>
+<p class="txt">管理者：MF（関 宣一）</p>
+<p class="txt">しがないネット民。ブログタイトルは、在りし日のとある場所。<br>一度は手放してしまったが、せめて架空であっても、その場所を留めるべく。</p>
+<p class="txt">なーんて堅苦しいのはさておき...同人音楽聴き歩きのレビューだったり、あーだこーだ喚いたり。</p>
+</div>
 </div>
 </div>
 </div>
@@ -456,6 +465,7 @@ gdgd coading by <a href="http://mf-post.github.io" target="_self" title="MF">MF<
 
 
 <script type="text/javascript">
+// <!-- 
 
 $(window).unload(function(){});
 
@@ -479,7 +489,6 @@ function subalert(w){
 
 
 
-
 $(document).ready(function(){
 
 $('.navbar').click(function(){
@@ -493,6 +502,7 @@ function getSize(){
 		myWidth = document.documentElement.clientWidth;
 	}
 }
+
 
 
 // --- archives over-ride ---
@@ -510,7 +520,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-B" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-C" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -518,7 +528,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-B<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-C<span id="chalert"></span></h3>';
 }
 
 
@@ -554,6 +564,7 @@ o.click(function(){
 $(window).scroll(function(){
 	o.css("top",Math.max(80,208-$(this).scrollTop()));
 });
+
 
 
 // --- footer scroll-fix ---
@@ -743,6 +754,7 @@ $win
 });
 
 
+
 // --- smooth scroll ---
 var uac = window.navigator.userAgent.toLowerCase();
 var scrLength = 150;
@@ -769,6 +781,7 @@ if( bwtp == 3 ){
 		return false;
 	});
 }
+
 
 
 // --- text search ---
@@ -968,12 +981,12 @@ function delproc(){
 	}
 }
 
-
 });
 
 
-</script>
 
+// -->
+</script>
 
 
 
