@@ -133,7 +133,8 @@ link href='http://fonts.useso.com/css?family=Philosopher' rel='stylesheet' type=
 <div id='cse' style='width:100%;text-align:center'>search</div>:
 </div>
 </div>
-	<!-- (p)after_footer.ejs -->
+
+		<!-- (p)after_footer.ejs -->
 
 <script src="http://mf-post.github.io/jquery_213min.js"></script>
 <script src="http://mf-post.github.io/jquery.easing.js"></script>
@@ -185,7 +186,7 @@ var myWidth = 0;
 function getSize(){
 	if( typeof( window.innerWidth ) == 'number' ) {
 		myWidth = window.innerWidth;
-	} else if( document.documentElement && document.documentElement.clientWidth) {
+	} else if( document.documentElement && document.documentElement.clientWidth ) {
 		myWidth = document.documentElement.clientWidth;
 	}
 }
@@ -207,7 +208,7 @@ if( ISarchives == 1 ) {
 		$('#imglogo').css('top','25px');
 		$('#imglogo').css('left','10px');
 		$('.fb-comments').attr('data-width','300');
-		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-U" width="128px" height="128px">';
+		gEBI('imglogo').innerHTML = '<img src="/img/logo_flc_128px.png" alt="Type-X" width="128px" height="128px">';
 		wd += ('<a href="#" target="_blank" title="Backyard Info">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Past Library">' + ep + '</a>&emsp;');
 		wd += ('<a href="#" target="_blank" title="Emulation & Experiment">' + ep + '</a>');
@@ -215,7 +216,7 @@ if( ISarchives == 1 ) {
 		wd += '<p>&nbsp;</p>';
 	}
 	gEBI('footbio').innerHTML = wd;
-	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-U<span id="chalert"></span></h3>';
+	gEBI('wrdlogo').innerHTML = '<h3 class="blog-motto">Type-X<span id="chalert"></span></h3>';
 }
 
 
@@ -261,7 +262,7 @@ var $win = $(window);
 var $tob = $(".tobottom");
 var contentTop = 0;
 var clickOnce = 0;
-var roolOnce = 0;
+var rollOnce = 0;
 var lim = 0;
 var offsetBuf = 0;
 var smallOpt = 0;
@@ -297,7 +298,7 @@ function updateV(){
 	}
 }
 $tob.click(function(){
-	if( clickOnce == 0 && roolOnce == 0){
+	if( clickOnce == 0 && rollOnce == 0){
 		clickOnce = 1;
 		sleep(1500,function(){ clickOnce = 0; });
 		lim = 1;
@@ -462,8 +463,8 @@ if( bwtp == 3 ){
 		} else {
 			scrSet = $(document).scrollTop()-scrLength;
 		}
-		roolOnce = 1;
-		sleep_2(1000,function(){ roolOnce = 0; });
+		rollOnce = 1;
+		sleep_2(1000,function(){ rollOnce = 0; });
 		$('html,body').stop().animate({scrollTop:scrSet},scrSpeed,scrEasing);
 		return false;
 	});
@@ -519,7 +520,7 @@ function colReset(){
 }
 function avoidRush(){
 	var ret = 0;
-	if( clickOnce == 0 && roolOnce == 0 ){
+	if( clickOnce == 0 && rollOnce == 0 ){
 		clickOnce = 1;
 		sleep(300,function(){ clickOnce = 0; });
 	} else {
@@ -687,6 +688,8 @@ function delproc(){
 <!-- (p)search.ejs -->
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
+// <!-- 
+// - Catman Routine (googleSearch.inputBox) -
 google.load('search', '1', {language : 'ja',style: google.loader.themes.MINIMALIST});
 google.setOnLoadCallback(function(){
 var customSearchControl = new google.search.CustomSearchControl('009872468919514037611:0x2-l3h67qe');
@@ -703,7 +706,7 @@ customSearchControl.execute(search);
 </script>
 <!-- (p)search EOF -->
 
-	<!-- (p)after_footer EOF -->
+		<!-- (p)after_footer EOF -->
 
 </body>
 </html>
