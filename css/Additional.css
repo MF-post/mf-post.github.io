@@ -1,4 +1,7 @@
 @charset "utf-8";
+@media screen and (max-width: 480px) {
+	br { display : none ; }
+}
 #contentMain{
 	word-wrap:break-word;
 	overflow-wrap:break-word;
@@ -26,6 +29,12 @@ a.tpg:hover {
 	color:#80C999;
 	background:#E6E6E6;
 	}
+cite {
+	font-style: normal;
+	color: black;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
 .toptag {
 	float:left;
 	font-size:140%;
